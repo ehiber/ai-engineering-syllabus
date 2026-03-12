@@ -1,31 +1,43 @@
-# AI Engineering Projects
+# AI Engineering Syllabus
 
-Repository of hands-on projects for the **AI Engineering** program at 4Geeks Academy. Each folder is a standalone project with its own README, evaluation criteria, and (when applicable) `learn.json` for the platform.
+This repository contains the **AI Engineering syllabus** and related learning materials for 4Geeks Academy:
 
-Projects follow a pedagogical order: from web fundamentals (HTML, CSS, SEO, accessibility) and Tailwind, through the company site and programming milestones, collaborative work with Git, and logic with TypeScript.
+- **Curriculum content** (milestones, skills, contexts and theory).
+- **Hands-on projects** for each skill and milestone, under `content/projects/`.
+- Supporting files for the platform (`learn.json`, reference solutions, assets, etc.).
 
 ---
 
-## Projects (suggested order)
+## Projects (hands-on practice)
 
-1. **[Artist landing: HTML, CSS, SEO and accessibility](./html-css-artist-landing-seo-access)**  
+You can find the practical projects in [`content/projects`](./content/projects):
+
+1. **Artist landing: HTML, CSS, SEO and accessibility**  
    Accessible, SEO-optimized landing page for an artist using semantic HTML and CSS.
 
-2. **[Simple dashboard with Tailwind CSS](./first-dashboard-tailwind-css)**  
+2. **Simple dashboard with Tailwind CSS**  
    Responsive dashboard with HTML and Tailwind showing KPIs, drivers, and operational details (no React).
 
-3. **[Company Project Milestone: Web Fundamentals](./ai-eng-milestone-web-fundamentals)**  
-   Milestone 1 — Your company's public website: landing page plus application/sign-up form with semantic HTML5, Tailwind, Schema.org, and JavaScript validation. Follow `CONTEXT.md` for data and form fields.
+3. **Company Project Milestone: Web Fundamentals**  
+   Milestone 1 — Company public website: landing page plus application/sign-up form with semantic HTML5, Tailwind, Schema.org, and JavaScript validation.
 
-4. **[Collaborative project: online store with HTML and Tailwind](./collaborative-project-html-tailwind-online-store)**  
-   Collaborative e-commerce prototype (min. 5 pages: Home, Catalog, Product, Cart, Checkout) with HTML and Tailwind, teamwork with branches and pull requests.
+4. **Collaborative project: online store with HTML and Tailwind**  
+   Collaborative e-commerce prototype (Home, Catalog, Product, Cart, Checkout) with HTML and Tailwind, using Git branches and pull requests.
 
-5. **[Cinema Seat Manager (TypeScript)](./seats-management-typescript)**  
-   Command-line cinema seat reservation system using a 2D array, with reserve, count, and adjacent-seat search functions.
+5. **Cinema Seat Manager (TypeScript)**  
+   CLI cinema seat reservation system using a 2D array (reserve, count, adjacent-seat search).
 
-6. **[Programming Fundamentals Milestone (TypeScript)](./ai-eng-milestone-coding-fundamentals)**  
-   Milestone 2 — Programming fundamentals with TypeScript: small, testable modules focusing on control flow, arrays, objects, functions, and edge cases, using clean code practices.
+6. **Programming Fundamentals Milestone (TypeScript)**  
+   Milestone 2 — Programming fundamentals with TypeScript: small, testable modules for control flow, arrays, objects, functions and edge cases.
+
+For more details on each project, open its folder inside `content/projects/` and read the corresponding `README.md` (and `README.es.md` when available).
 
 ---
 
-Each project has detailed instructions in its folder (`README.md` and, if present, `README.es.md`). To get started, open the project folder and follow the README.
+## Structure of this repository
+
+- `content/` — Syllabus content (milestones, skills, contexts, and projects).
+  - `content/projects/` — All AI Engineering practice projects.
+- `.learn/` and `learn.json` files — Integration with the 4Geeks platform.
+
+This repository is used as the **single source of truth** for the AI Engineering program materials at 4Geeks Academy.
