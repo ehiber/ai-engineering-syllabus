@@ -85,7 +85,7 @@ Follow the steps in [how to start a coding project](https://4geeks.com/lesson/ho
 
 💡 **Important:** Create a new repository on GitHub for your code, update the remote (`git remote set-url origin <your-new-url>`) and push your changes with `add`, `commit` and `push`.
 
-If you want to use Tailwind without a build step, add the official Tailwind CSS v4 CDN snippet in your `<head>`:
+To incorporate Tailwind CSS into your project, add the official Tailwind CSS v4 CDN snippet in your `<head>`:
 
 ```html
 <head>
