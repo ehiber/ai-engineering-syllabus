@@ -85,6 +85,16 @@ Follow the steps in [how to start a coding project](https://4geeks.com/lesson/ho
 
 💡 **Important:** Create a new repository on GitHub for your code, update the remote (`git remote set-url origin <your-new-url>`) and push your changes with `add`, `commit` and `push`.
 
+To incorporate Tailwind CSS into your project, add the official Tailwind CSS v4 CDN snippet in your `<head>`:
+
+```html
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+```
+
+Before generating code with AI, explicitly tell it to work with **Tailwind CSS v4** and verify that it is **not** using `cdn.tailwindcss.com` or Tailwind v3 snippets.
+
 ---
 
 ## 💻 What you need to do
@@ -98,7 +108,7 @@ Build a dashboard that shows at least **three KPIs**, **three drivers**, and **o
 - [ ] **Charts (optional):** For KPIs or drivers you can use [Chart CSS](https://chartscss.org/) (CSS-only). Data can be sample data; focus on clear hierarchy and readability.
 - [ ] **Consistency:** Reuse the same patterns for similar elements (e.g. all KPI cards share the same structure and style).
 
-⚠️ **IMPORTANT:** This project uses **only HTML and Tailwind CSS**. Tell your AI Copilot **not to use other technologies** (e.g. React, Vue). Say this at the start.
+⚠️ **IMPORTANT:** This project uses **only HTML and Tailwind CSS**. Tell your AI Copilot **not to use other technologies** (e.g. React, Vue). Say this at the start. Also tell it to use **Tailwind CSS v4**, and double-check that the generated setup does not use `cdn.tailwindcss.com` or Tailwind v3 instructions.
 
 ---
 

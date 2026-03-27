@@ -86,6 +86,16 @@ Sigue los pasos en [cómo comenzar un proyecto de codificación](https://4geeks.
 
 💡 **Importante:** Crea un nuevo repositorio en GitHub para tu código, actualiza el remoto (`git remote set-url origin <tu-nueva-url>`) y sube los cambios con `add`, `commit` y `push`.
 
+Para incorporar Tailwind CSS en tu proyecto debes agregar en tu `<head>` el CDN oficial de Tailwind CSS v4:
+
+```html
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+```
+
+Antes de generar código con IA, indícale explícitamente que debe trabajar con **Tailwind CSS v4** y verifica que **no** esté usando `cdn.tailwindcss.com` ni snippets de Tailwind v3.
+
 ---
 
 ## 💻 Qué debes hacer
@@ -99,7 +109,7 @@ Construye un dashboard que muestre al menos **tres KPIs**, **tres drivers** y **
 - [ ] **Gráficos (opcional):** Para KPIs o drivers puedes usar [Chart CSS](https://chartscss.org/) (solo CSS). Los datos pueden ser de ejemplo; importa la jerarquía visual y la legibilidad.
 - [ ] **Consistencia:** Reutilizar los mismos patrones para elementos similares (p. ej. todas las cards de KPI comparten la misma estructura y estilo).
 
-⚠️ **IMPORTANTE:** En este proyecto solo se usa **HTML y Tailwind CSS**. Indica a tu IA Copiloto que **no use otras tecnologías** (p. ej. React, Vue). Dilo desde el inicio.
+⚠️ **IMPORTANTE:** En este proyecto solo se usa **HTML y Tailwind CSS**. Indica a tu IA Copiloto que **no use otras tecnologías** (p. ej. React, Vue). Dilo desde el inicio. También deja claro que debe usar **Tailwind CSS v4** y revisa que la configuración generada no utilice `cdn.tailwindcss.com` ni instrucciones de Tailwind v3.
 
 ---
 
