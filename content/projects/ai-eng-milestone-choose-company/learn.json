@@ -6,7 +6,7 @@
   },
   "status": "published",
   "template_url": "https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo",
-  "slug": "ai-eng-mileston-choose-company",
+  "slug": "ai-eng-milestone-choose-company",
   "description": {
     "en": "Pick the company you will automate with AI Engineering and record your decision in company-choice.md after reading the provided CONTEXT-company profiles.",
     "es": "Elige la empresa que automatizarás con AI Engineering y registra tu decisión en company-choice.md después de leer los perfiles proporcionados CONTEXT-company."
@@ -17,15 +17,15 @@
   "talents": [
     {
       "badge": "prompt-engineer",
-      "points": 3
+      "points": 1
     },
     {
       "badge": "system-designer",
-      "points": 2
+      "points": 1
     },
     {
       "badge": "problem-solver",
-      "points": 2
+      "points": 1
     }
   ],
   "translations": ["es", "en"],
