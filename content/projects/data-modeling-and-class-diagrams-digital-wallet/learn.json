@@ -6,10 +6,10 @@
   },
   "status": "published",
   "template_url": "self",
-  "slug": "data-modeling-and-class-diagrams",
+  "slug": "digital-wallet-modeling-and-class-diagrams",
   "description": {
-    "en": "Model two systems using class diagrams in diagram.4geeks.com: a music playlist player and a digital wallet with transaction history. Deliver both diagrams exported as PNG files.",
-    "es": "Modela dos sistemas usando diagramas de clases en diagram.4geeks.com: un reproductor de playlist de musica y una billetera digital con historial de movimientos. Entrega ambos diagramas exportados en archivos PNG."
+    "en": "Model a digital wallet using class diagrams in diagram.4geeks.com. Deliver the diagram exported as a PNG file.",
+    "es": "Modela una billetera digital usando diagramas de clases en diagram.4geeks.com. Entrega el diagrama exportado como un archivo PNG."
   },
   "difficulty": "beginner",
   "duration": 1,
