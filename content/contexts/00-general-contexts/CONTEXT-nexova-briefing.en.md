@@ -4,7 +4,7 @@
 
 ---
 
-Nexova Solutions is a human resources consulting and talent acquisition firm founded in 2011, headquartered in Santiago, Chile, with a commercial office in Buenos Aires, Argentina. The company has 120 employees and generates approximately 8 million dollars in annual revenue across three business lines: executive and mid-management headhunting, customer support team outsourcing for technology companies, and corporate training in soft skills and leadership.
+Nexova Solutions is a human resources consulting and talent acquisition firm founded in 2011, headquartered in Valencia, Spain, with an expansion office in Miami, Florida. The company has 120 employees and generates approximately 8 million dollars in annual revenue across three business lines: executive and mid-management headhunting, customer support team outsourcing for technology companies, and corporate training in soft skills and leadership.
 
 Nexova's clients are mid-sized companies — mostly in technology, retail, and financial services — that have decided to outsource some or all of their talent management. They come to Nexova because finding the right people, training them, and keeping them engaged is hard, and Nexova has spent twelve years building the expertise to do it well.
 

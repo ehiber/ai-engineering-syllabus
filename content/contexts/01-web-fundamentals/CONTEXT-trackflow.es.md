@@ -10,7 +10,7 @@ _These instructions are [available in English](./CONTEXT-trackflow.md)._
 
 ## Tu empresa
 
-**TrackFlow** es una empresa de gestión de almacenes y entregas de última milla fundada en 2009 en Monterrey, México. Opera en dos mercados —México y España (Zaragoza)— y ofrece tres servicios: gestión de almacenes para marcas de e-commerce, entregas de última milla (el último tramo desde el almacén hasta el cliente final), y logística inversa (devoluciones y reacondicionamiento de productos). Tiene aproximadamente 130 empleados y genera alrededor de 9 millones de euros en facturación anual. Sus clientes son marcas medianas de moda, electrónica y cosmética que venden en línea.
+**TrackFlow** es una empresa de gestión de almacenes y entregas de última milla fundada en 2009 en Los Ángeles, Estados Unidos. Opera en dos mercados —Estados Unidos (Los Ángeles) y España (Zaragoza)— y ofrece tres servicios: gestión de almacenes para marcas de e-commerce, entregas de última milla (el último tramo desde el almacén hasta el cliente final), y logística inversa (devoluciones y reacondicionamiento de productos). Tiene aproximadamente 130 empleados y genera alrededor de 9 millones de euros en facturación anual. Sus clientes son marcas medianas de moda, electrónica y cosmética que venden en línea.
 
 ---
 
@@ -26,7 +26,7 @@ Trabajas en la unidad **TrackFlow Tech**, reportando directamente al CTO Andrés
 
 > Hola,
 >
-> Necesitamos un nuevo sitio web que presente TrackFlow como lo que somos: un operador logístico serio con presencia en México y España. Debe explicar nuestros tres servicios principales: gestión de almacenes, última milla, y logística inversa. También necesito una página con un formulario para que empresas interesadas puedan solicitar información. Actualmente nos llegan consultas muy vagas por email y perdemos mucho tiempo calificando si son clientes reales o no. Quiero capturar: datos de la empresa, tipo de producto que manejan, volumen mensual estimado de envíos, países donde operan, y qué servicios les interesan. El sitio debe ser responsive, accesible, y optimizado para SEO. Usa Tailwind y asegúrate de que el formulario tenga validación completa.
+> Necesitamos un nuevo sitio web que presente TrackFlow como lo que somos: un operador logístico serio con presencia en Estados Unidos y España. Debe explicar nuestros tres servicios principales: gestión de almacenes, última milla, y logística inversa. También necesito una página con un formulario para que empresas interesadas puedan solicitar información. Actualmente nos llegan consultas muy vagas por email y perdemos mucho tiempo calificando si son clientes reales o no. Quiero capturar: datos de la empresa, tipo de producto que manejan, volumen mensual estimado de envíos, países donde operan, y qué servicios les interesan. El sitio debe ser responsive, accesible, y optimizado para SEO. Usa Tailwind y asegúrate de que el formulario tenga validación completa.
 
 ---
 
@@ -42,7 +42,7 @@ Tu landing page debe incluir las siguientes secciones, en este orden:
 ### Hero
 
 - **Titular:** "Logística que escala con tu e-commerce"
-- **Subtítulo:** "Gestión de almacenes, entregas de última milla y logística inversa en México y España. Más de 15 años ayudando a marcas de moda, electrónica y cosmética a crecer sin preocuparse por la operación."
+- **Subtítulo:** "Gestión de almacenes, entregas de última milla y logística inversa en Estados Unidos y España. Más de 15 años ayudando a marcas de moda, electrónica y cosmética a crecer sin preocuparse por la operación."
 - **Call to action:** Botón "Solicitar información" que enlace al formulario
 
 ### Servicios (3 columnas)
@@ -50,7 +50,7 @@ Tu landing page debe incluir las siguientes secciones, en este orden:
 1. **Gestión de Almacenes**
    - Almacenamiento, picking y packing
    - Inventario en tiempo real
-   - Operamos almacenes en Monterrey y Zaragoza
+   - Operamos almacenes en Los Ángeles y Zaragoza
 
 2. **Entregas de Última Milla**
    - Red de carriers certificados en ambos países
@@ -64,10 +64,10 @@ Tu landing page debe incluir las siguientes secciones, en este orden:
 
 ### Cobertura (2 columnas)
 
-- **México**
-  - Almacén en Monterrey
+- **Estados Unidos**
+  - Almacén en Los Ángeles
   - Cobertura nacional
-  - Carriers: Estafeta, FedEx, DHL
+  - Carriers: UPS, FedEx, DHL
 
 - **España**
   - Almacén en Zaragoza
@@ -76,7 +76,7 @@ Tu landing page debe incluir las siguientes secciones, en este orden:
 
 ### Por qué TrackFlow (4 beneficios)
 
-- **Operación binacional:** El único operador con infraestructura propia en México y España
+- **Operación binacional:** El único operador con infraestructura propia en Estados Unidos y España
 - **+130 profesionales** dedicados a tu logística
 - **Tecnología propia** para visibilidad total de tu inventario
 - **Especialización e-commerce** en moda, electrónica y cosmética
@@ -84,7 +84,7 @@ Tu landing page debe incluir las siguientes secciones, en este orden:
 ### Contacto
 
 - Email: <comercial@trackflow.com>
-- Monterrey: +52 81 1234 5678
+- Los Ángeles: +1 213 555 0147
 - Zaragoza: +34 976 123 456
 
 ### Footer
@@ -105,7 +105,7 @@ Tu formulario debe capturar la siguiente información:
 | **Email corporativo**                     | email    | Formato válido de email                                  | Sí          |
 | **Teléfono**                              | tel      | Formato: +[código país] [número]                         | Sí          |
 | **Sitio web de la empresa**               | url      | Formato URL válido                                       | No          |
-| **País de operación principal**           | select   | México / España / Ambos / Otro                           | Sí          |
+| **País de operación principal**           | select   | Estados Unidos / España / Ambos / Otro                   | Sí          |
 | **Tipo de producto**                      | select   | Moda / Electrónica / Cosmética / Alimentación / Otro     | Sí          |
 | **Volumen mensual estimado de envíos**    | select   | 0-100 / 101-500 / 501-2000 / 2000+ / No estoy seguro     | Sí          |
 | **Servicios de interés**                  | checkbox | Almacenaje / Última milla / Logística inversa (múltiple) | Sí          |
@@ -135,7 +135,7 @@ Cuando un campo no cumpla la validación, muestra estos mensajes específicos:
 - **Nombre de empresa:** "El nombre de la empresa debe tener al menos 2 caracteres"
 - **Persona de contacto:** "Ingresa nombre y apellido del contacto"
 - **Email:** "Ingresa un email corporativo válido (ejemplo: <nombre@empresa.com>)"
-- **Teléfono:** "El teléfono debe incluir código de país (ejemplo: +52 81 1234 5678)"
+- **Teléfono:** "El teléfono debe incluir código de país (ejemplo: +1 213 555 0147)"
 - **Sitio web:** "Si incluyes sitio web, debe ser una URL válida"
 - **País:** "Selecciona el país de operación principal"
 - **Tipo de producto:** "Selecciona el tipo de producto que manejas"
@@ -180,9 +180,9 @@ Implementa el siguiente marcado Schema.org en tu landing page:
   "address": [
     {
       "@type": "PostalAddress",
-      "addressCountry": "MX",
-      "addressLocality": "Monterrey",
-      "addressRegion": "Nuevo León"
+      "addressCountry": "US",
+      "addressLocality": "Los Ángeles",
+      "addressRegion": "California"
     },
     {
       "@type": "PostalAddress",
@@ -193,7 +193,7 @@ Implementa el siguiente marcado Schema.org en tu landing page:
   ],
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+52-81-1234-5678",
+    "telephone": "+1-213-555-0147",
     "contactType": "sales",
     "availableLanguage": ["Spanish", "English"]
   },
@@ -201,7 +201,7 @@ Implementa el siguiente marcado Schema.org en tu landing page:
   "areaServed": [
     {
       "@type": "Country",
-      "name": "Mexico"
+      "name": "Estados Unidos"
     },
     {
       "@type": "Country",

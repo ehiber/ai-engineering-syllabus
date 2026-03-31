@@ -9,7 +9,7 @@
 
 ## Acerca de TrackFlow
 
-TrackFlow es una empresa de gestión de última milla y almacenes que opera en México (Monterrey) y España (Zaragoza). La empresa gestiona almacenes para marcas de e-commerce y maneja la entrega final a los clientes finales. Eres parte de TrackFlow Tech, la unidad interna que lidera la transformación digital de la empresa.
+TrackFlow es una empresa de gestión de última milla y almacenes que opera en Estados Unidos (Los Ángeles) y España (Zaragoza). La empresa gestiona almacenes para marcas de e-commerce y maneja la entrega final a los clientes finales. Eres parte de TrackFlow Tech, la unidad interna que lidera la transformación digital de la empresa.
 
 ---
 
@@ -69,7 +69,7 @@ type ProductCategory =
   | "Cosmetics"
   | "Home"
   | "Other";
-type WarehouseLocation = "Monterrey" | "Zaragoza";
+type WarehouseLocation = "Los Angeles" | "Zaragoza";
 type ProductStatus = "Active" | "Low stock" | "Out of stock" | "Discontinued";
 ```
 
@@ -111,7 +111,7 @@ interface Destination {
   distanceKm: number; // Distancia desde el almacén de origen
 }
 
-type Country = "Mexico" | "Spain";
+type Country = "United States" | "Spain";
 type ShipmentPriority = "Standard" | "Express" | "Same-day";
 type ShipmentStatus =
   | "Pending"
@@ -137,8 +137,8 @@ Representa un transportista de entregas con el que TrackFlow trabaja.
 
 ```typescript
 interface Carrier {
-  id: string; // ID del transportista (ej: "CAR-ESTAFETA")
-  name: string; // Nombre del transportista (ej: "Estafeta")
+  id: string; // ID del transportista (ej: "CAR-UPS")
+  name: string; // Nombre del transportista (ej: "UPS")
   operatesIn: Country[]; // Países donde opera
   baseRateUSD: number; // Costo base de entrega (USD)
   ratePerKgUSD: number; // Costo adicional por kg (USD)
@@ -355,7 +355,7 @@ const sampleProducts: Product[] = [
     category: "Fashion",
     weightKg: 0.8,
     dimensions: { lengthCm: 35, widthCm: 22, heightCm: 12 },
-    warehouse: "Monterrey",
+    warehouse: "Los Angeles",
     stockQuantity: 45,
     minStockThreshold: 20,
     unitCostUSD: 35.0,
@@ -381,7 +381,7 @@ const sampleProducts: Product[] = [
     category: "Cosmetics",
     weightKg: 0.3,
     dimensions: { lengthCm: 12, widthCm: 8, heightCm: 15 },
-    warehouse: "Monterrey",
+    warehouse: "Los Angeles",
     stockQuantity: 120,
     minStockThreshold: 30,
     unitCostUSD: 85.0,
@@ -396,9 +396,9 @@ const sampleProducts: Product[] = [
 ```typescript
 const sampleCarriers: Carrier[] = [
   {
-    id: "CAR-ESTAFETA",
-    name: "Estafeta",
-    operatesIn: ["Mexico"],
+    id: "CAR-UPS",
+    name: "UPS",
+    operatesIn: ["United States"],
     baseRateUSD: 5.0,
     ratePerKgUSD: 1.2,
     ratePerKmUSD: 0.05,
@@ -424,7 +424,7 @@ const sampleCarriers: Carrier[] = [
   {
     id: "CAR-DHL",
     name: "DHL Express",
-    operatesIn: ["Mexico", "Spain"],
+    operatesIn: ["United States", "Spain"],
     baseRateUSD: 12.0,
     ratePerKgUSD: 2.0,
     ratePerKmUSD: 0.1,
@@ -489,4 +489,4 @@ Si no estás seguro sobre algún requisito, pregunta a tu mentor/a. En un entorn
 
 ---
 
-_Este es un proyecto real de TrackFlow. Lo que construyas aquí se convertirá en parte del sistema de gestión de almacenes y transportistas en producción usado en Monterrey y Zaragoza._
+_Este es un proyecto real de TrackFlow. Lo que construyas aquí se convertirá en parte del sistema de gestión de almacenes y transportistas en producción usado en Los Ángeles y Zaragoza._

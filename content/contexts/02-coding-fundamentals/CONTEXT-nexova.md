@@ -9,7 +9,7 @@
 
 ## About Nexova
 
-Nexova is a human resources consulting and talent acquisition firm based in Santiago, Chile, with operations in Buenos Aires. The company operates three business lines: executive headhunting, customer support outsourcing for tech companies, and corporate training. You're part of the newly formed AI Engineering team tasked with modernising Nexova's operations.
+Nexova is a human resources consulting and talent acquisition firm based in Valencia, Spain, with expansion operations in Miami, Florida. The company operates three business lines: executive headhunting, customer support outsourcing for tech companies, and corporate training. You're part of the newly formed AI Engineering team tasked with modernising Nexova's operations.
 
 ---
 
@@ -55,7 +55,7 @@ interface Candidate {
   currentSalary: number; // Current salary in USD
   expectedSalary: number; // Expected salary in USD
   availability: AvailabilityStatus; // Current availability
-  location: string; // City and country (e.g., "Santiago, Chile")
+  location: string; // City and country (e.g., "Valencia, Spain")
   remoteOnly: boolean; // Only accepts remote positions
   status: CandidateStatus; // Current status in the database
 }
@@ -311,7 +311,7 @@ const sampleCandidates: Candidate[] = [
     currentSalary: 3500,
     expectedSalary: 4200,
     availability: "1 month",
-    location: "Santiago, Chile",
+    location: "Valencia, Spain",
     remoteOnly: false,
     status: "Active",
   },
@@ -327,7 +327,7 @@ const sampleCandidates: Candidate[] = [
     currentSalary: 2200,
     expectedSalary: 2800,
     availability: "Immediate",
-    location: "Buenos Aires, Argentina",
+    location: "Miami, Florida, United States",
     remoteOnly: true,
     status: "Active",
   },
@@ -343,7 +343,7 @@ const sampleCandidates: Candidate[] = [
     currentSalary: 5500,
     expectedSalary: 6500,
     availability: "2 weeks",
-    location: "Santiago, Chile",
+    location: "Valencia, Spain",
     remoteOnly: false,
     status: "Active",
   },

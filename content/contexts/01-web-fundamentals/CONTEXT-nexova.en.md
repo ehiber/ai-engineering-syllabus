@@ -10,7 +10,7 @@ _Estas instrucciones están [disponibles en español](./CONTEXT-nexova.es.md)._
 
 ## Your company
 
-**Nexova** is a human resources consulting and talent acquisition firm founded in 2011, headquartered in Santiago, Chile, with a commercial office in Buenos Aires, Argentina. It operates across three business lines: executive and mid-management headhunting, customer support team outsourcing for technology companies, and corporate training in soft skills and leadership. It has approximately 120 employees and generates 8 million dollars in annual revenue. Its clients are primarily mid-sized companies in the technology, retail, and financial services sectors.
+**Nexova** is a human resources consulting and talent acquisition firm founded in 2011, headquartered in Valencia, Spain, with an expansion office in Miami, Florida. It operates across three business lines: executive and mid-management headhunting, customer support team outsourcing for technology companies, and corporate training in soft skills and leadership. It has approximately 120 employees and generates 8 million dollars in annual revenue. Its clients are primarily mid-sized companies in the technology, retail, and financial services sectors.
 
 ---
 
@@ -62,15 +62,15 @@ Your landing page must include the following sections, in this order:
 ### Why Nexova (2 columns)
 
 - **12 years of experience** in the Latin American market
-- **Regional presence:** Chile and Argentina
+- **Regional presence:** Spain and United States
 - **+500 successful selection processes** completed
 - **Sector specialization** in technology, retail, and finance
 
 ### Contact
 
 - Email: <contacto@nexova.com>
-- Santiago: +56 2 2345 6789
-- Buenos Aires: +54 11 4567 8901
+- Valencia: +34 960 123 456
+- Miami: +1 305 555 0191
 
 ### Footer
 
@@ -87,8 +87,8 @@ Your form must capture the following information:
 | ---------------------------- | -------- | ------------------------------------------------------------- | -------- |
 | **Full name**                | text     | Minimum 2 words                                               | Yes      |
 | **Email**                    | email    | Valid email format                                            | Yes      |
-| **Phone**                    | tel      | Format: +[country code] [number] (e.g., +56 9 1234 5678)      | Yes      |
-| **Country of residence**     | select   | Chile / Argentina / Other                                     | Yes      |
+| **Phone**                    | tel      | Format: +[country code] [number] (e.g., +34 612 345 678)      | Yes      |
+| **Country of residence**     | select   | Spain / United States / Other                                 | Yes      |
 | **Years of experience**      | number   | Between 0 and 50                                              | Yes      |
 | **Sector of interest**       | select   | Technology / Retail / Financial Services / Consulting / Other | Yes      |
 | **English level**            | select   | Basic / Intermediate / Advanced / Native                      | Yes      |
@@ -116,7 +116,7 @@ When a field doesn't meet validation, display these specific messages:
 
 - **Full name:** "Name must contain at least first and last name"
 - **Email:** "Enter a valid email (example: <name@company.com>)"
-- **Phone:** "Phone must include country code (example: +56 9 1234 5678)"
+- **Phone:** "Phone must include country code (example: +34 612 345 678)"
 - **Country:** "Select your country of residence"
 - **Years of experience:** "Years of experience must be between 0 and 50"
 - **Sector:** "Select your sector of interest"
@@ -161,19 +161,20 @@ Implement the following Schema.org markup on your landing page:
   "address": [
     {
       "@type": "PostalAddress",
-      "addressCountry": "CL",
-      "addressLocality": "Santiago",
-      "addressRegion": "Metropolitan Region"
+      "addressCountry": "ES",
+      "addressLocality": "Valencia",
+      "addressRegion": "Comunidad Valenciana"
     },
     {
       "@type": "PostalAddress",
-      "addressCountry": "AR",
-      "addressLocality": "Buenos Aires"
+      "addressCountry": "US",
+      "addressLocality": "Miami",
+      "addressRegion": "Florida"
     }
   ],
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+56-2-2345-6789",
+    "telephone": "+34-960-123-456",
     "contactType": "customer service",
     "availableLanguage": ["Spanish", "English"]
   },

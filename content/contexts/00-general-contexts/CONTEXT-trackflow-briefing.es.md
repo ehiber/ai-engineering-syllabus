@@ -4,29 +4,29 @@
 
 ---
 
-TrackFlow es una empresa de logística de última milla y gestión de almacenes fundada en 2009 en Monterrey, México. Opera en dos mercados — México y España — con almacenes en Monterrey y Zaragoza. La empresa cuenta con unos 130 empleados y factura alrededor de 9 millones de euros anuales.
+TrackFlow es una empresa de logística de última milla y gestión de almacenes fundada en 2009 en Los Ángeles, Estados Unidos. Opera en dos mercados — Estados Unidos y España — con almacenes en Los Ángeles y Zaragoza. La empresa cuenta con unos 130 empleados y factura alrededor de 9 millones de euros anuales.
 
 TrackFlow existe porque las marcas de e-commerce son buenas haciendo y vendiendo productos, pero no haciendo llegar esos productos a la puerta del cliente. Eso es lo que hace TrackFlow por ellas: almacena su inventario, prepara y empaqueta los pedidos, los envía a través de una red de transportistas y gestiona las devoluciones cuando los productos regresan. Para las marcas que trabajan con TrackFlow, toda la operación logística — desde el momento en que se hace un pedido hasta el momento en que se entrega o se devuelve — es responsabilidad de TrackFlow.
 
 ## Cómo está organizada la empresa
 
-TrackFlow está liderada por **Daniel Espinoza**, fundador y CEO, con sede en Monterrey. La empresa tiene una oficina de tecnología en Zaragoza, España, donde están el CTO Andrés Kim y la mayor parte del equipo técnico. Los equipos de operaciones, comercial y atención al cliente están distribuidos entre los dos países.
+TrackFlow está liderada por **Thomas Harry**, fundador y CEO, con sede en Los Ángeles. La empresa tiene una oficina de tecnología en Zaragoza, España, donde están el CTO Andrés Kim y la mayor parte del equipo técnico. Los equipos de operaciones, comercial y atención al cliente están distribuidos entre los dos países.
 
 La empresa se organiza en las siguientes áreas:
 
-**Operaciones de Almacén** es donde ocurre el trabajo físico de la logística. Ana Whitfield supervisa los dos almacenes —uno en Monterrey, otro en Zaragoza— y los aproximadamente 70 operarios que los gestionan. Cada día, cientos de pedidos llegan, se recogen de las estanterías, se empaquetan y se entregan a los transportistas. Los dos almacenes funcionan con sistemas distintos y no tienen una visión compartida del inventario.
+**Operaciones de Almacén** es donde ocurre el trabajo físico de la logística. Ana Whitfield supervisa los dos almacenes —uno en Los Ángeles, otro en Zaragoza— y los aproximadamente 70 operarios que los gestionan. Cada día, cientos de pedidos llegan, se recogen de las estanterías, se empaquetan y se entregan a los transportistas. Los dos almacenes funcionan con sistemas distintos y no tienen una visión compartida del inventario.
 
-**Última Milla y Gestión de Transportistas** gestiona la relación con los 8 transportistas con los que TrackFlow trabaja en los dos países — entre ellos Estafeta, FedEx, MRW y SEUR. Carlos Vega coordina qué transportista lleva cada envío, hace seguimiento de las entregas y gestiona las incidencias que inevitablemente ocurren: paquetes perdidos, entregas fallidas, direcciones incorrectas. Hoy, la mayor parte de esto se hace de forma manual, transportista por transportista.
+**Última Milla y Gestión de Transportistas** gestiona la relación con los 8 transportistas con los que TrackFlow trabaja en los dos países — entre ellos UPS, FedEx, MRW y SEUR. Carlos Vega coordina qué transportista lleva cada envío, hace seguimiento de las entregas y gestiona las incidencias que inevitablemente ocurren: paquetes perdidos, entregas fallidas, direcciones incorrectas. Hoy, la mayor parte de esto se hace de forma manual, transportista por transportista.
 
 **Logística Inversa** gestiona lo que ocurre cuando un producto regresa. Sofía Ramos lidera este equipo de cinco personas. Las devoluciones representan entre el 18% y el 25% del volumen total según el cliente y el país, y cada devolución implica una cadena de decisiones — aprobar o rechazar, recoger o no, reacondicionar o desechar — que actualmente pasan todas por revisión humana.
 
-**Atención al Cliente** es la primera línea entre TrackFlow y las personas a las que sirve. Valentina Cruz gestiona 15 agentes en Monterrey y Zaragoza que atienden consultas tanto de las marcas (que quieren saber cómo va su operación) como de los consumidores finales (que quieren saber dónde está su paquete). La gran mayoría de las consultas son repetitivas, y ahora mismo cada una de ellas la responde una persona.
+**Atención al Cliente** es la primera línea entre TrackFlow y las personas a las que sirve. Valentina Cruz gestiona 15 agentes en Los Ángeles y Zaragoza que atienden consultas tanto de las marcas (que quieren saber cómo va su operación) como de los consumidores finales (que quieren saber dónde está su paquete). La gran mayoría de las consultas son repetitivas, y ahora mismo cada una de ellas la responde una persona.
 
 **Comercial y Relación con Clientes** gestiona la cartera de clientes marca de TrackFlow. Miguel Torres lidera a los account managers y al equipo de desarrollo de negocio, responsables de retener a los clientes actuales y ganar nuevos. Los contratos son anuales, y las renovaciones se ganan o se pierden en función de si los clientes sienten que su operación logística está funcionando bien.
 
 **Tecnología** es el equipo que construye y mantiene todo. Andrés Kim lidera desde Zaragoza a un equipo de desarrolladores, data engineers y personas de sistemas. La arquitectura actual es un patchwork: dos sistemas de almacén distintos, un ERP de principios de los años 2010 e integraciones entre ellos que se construyeron con rapidez y nunca se documentaron bien. Cuando algo falla, el equipo se entera por un mensaje de WhatsApp de alguien en operaciones.
 
-**Dirección Ejecutiva** recae en Daniel, que gestiona el negocio desde Monterrey con un informe semanal consolidado que cada director prepara manualmente — un proceso que consume horas cada domingo por la noche y que aun así entrega datos que ya llevan uno o dos días de antigüedad.
+**Dirección Ejecutiva** recae en Thomas, que gestiona el negocio desde Los Ángeles con un informe semanal consolidado que cada director prepara manualmente — un proceso que consume horas cada domingo por la noche y que aun así entrega datos que ya llevan uno o dos días de antigüedad.
 
 ## Dónde está la empresa hoy
 
@@ -46,7 +46,7 @@ Daniel ha creado una unidad interna llamada **TrackFlow Tech** con un mandato cl
 
 **Responsable:** Ana Whitfield (~70 operarios + 2 responsables de almacén)
 
-El almacén de Monterrey y el de Zaragoza utilizan sistemas de gestión de almacén (SGA) diferentes — uno es software comercial, el otro es una hoja de cálculo avanzada. No existe visibilidad de inventario en tiempo real a nivel global. Los pedidos entrantes llegan por email en formatos distintos según el cliente y se transcriben manualmente. El picking se hace con listas en papel. Las discrepancias de inventario son frecuentes y se detectan tarde.
+El almacén de Los Ángeles y el de Zaragoza utilizan sistemas de gestión de almacén (SGA) diferentes — uno es software comercial, el otro es una hoja de cálculo avanzada. No existe visibilidad de inventario en tiempo real a nivel global. Los pedidos entrantes llegan por email en formatos distintos según el cliente y se transcriben manualmente. El picking se hace con listas en papel. Las discrepancias de inventario son frecuentes y se detectan tarde.
 
 **Qué necesitan:** Una API de inventario unificada que devuelva el stock en tiempo real de cualquier SKU en cualquiera de los dos almacenes, un pipeline de ingesta de pedidos que parsee los emails automáticamente, un dashboard de operaciones de almacén, y alertas de stock bajo que notifiquen al cliente y al equipo de compras.
 
@@ -56,7 +56,7 @@ El almacén de Monterrey y el de Zaragoza utilizan sistemas de gestión de almac
 
 **Responsable:** Carlos Vega (6 coordinadores logísticos)
 
-TrackFlow trabaja con 8 transportistas en ambos países (Estafeta, FedEx y DHL en México; MRW, SEUR y DHL en España, más dos transportistas locales). La asignación de transportista por envío es manual. El seguimiento de paquetes obliga a consultar múltiples portales de cada transportista por separado. No hay datos históricos de rendimiento: sin tasa de entrega a tiempo, sin incidencias por ruta, sin coste por kg.
+TrackFlow trabaja con 8 transportistas en ambos países (UPS, FedEx y DHL en Estados Unidos; MRW, SEUR y DHL en España, más dos transportistas locales). La asignación de transportista por envío es manual. El seguimiento de paquetes obliga a consultar múltiples portales de cada transportista por separado. No hay datos históricos de rendimiento: sin tasa de entrega a tiempo, sin incidencias por ruta, sin coste por kg.
 
 **Qué necesitan:** Un motor de selección de transportista que recomiende la opción óptima dado el destino, peso y urgencia; un endpoint unificado de tracking que agregue el estado desde cualquier transportista; un portal de seguimiento público para el destinatario; y un dashboard de rendimiento de transportistas.
 
@@ -74,7 +74,7 @@ Las devoluciones representan entre el 18% y el 25% del volumen según cliente y 
 
 ### 📞 Experiencia del cliente
 
-**Responsable:** Valentina Cruz (15 agentes en Monterrey y Zaragoza)
+**Responsable:** Valentina Cruz (15 agentes en Los Ángeles y Zaragoza)
 
 TrackFlow atiende a dos tipos de cliente: las marcas (B2B) que contratan sus servicios y los consumidores finales (B2C) que reciben los paquetes. Los 15 agentes gestionan ambos a través de email, WhatsApp y teléfono sin un sistema unificado de tickets. El 80% de las consultas podría resolverse automáticamente. No hay base de conocimiento. La cobertura fuera del horario de oficina es cero.
 
@@ -96,7 +96,7 @@ Los account managers gestionan sus cuentas en hojas de cálculo personales e hil
 
 **CTO:** Andrés Kim (equipo de 7 personas en Zaragoza)
 
-La arquitectura tecnológica de TrackFlow es el resultado de años de crecimiento no planificado: dos SGA diferentes, un ERP corporativo de principios de la década de 2010, scripts de Python punto a punto sin documentar, y bases de datos en dos proveedores cloud distintos. No hay telemetría centralizada. Cuando un endpoint falla en Monterrey, el equipo de Zaragoza se entera por WhatsApp. Desplegar una nueva funcionalidad lleva entre una y dos semanas.
+La arquitectura tecnológica de TrackFlow es el resultado de años de crecimiento no planificado: dos SGA diferentes, un ERP corporativo de principios de la década de 2010, scripts de Python punto a punto sin documentar, y bases de datos en dos proveedores cloud distintos. No hay telemetría centralizada. Cuando un endpoint falla en Los Ángeles, el equipo de Zaragoza se entera por WhatsApp. Desplegar una nueva funcionalidad lleva entre una y dos semanas.
 
 **Qué necesitan:** Telemetría y logging centralizados de ambos países, un pipeline de datos que alimente todos los dashboards de la empresa, monitorización en tiempo real con alertas automáticas, un agente de documentación técnica, y automatización de tareas de operaciones (backups, health checks, notificaciones de incidencias con contexto).
 

@@ -9,7 +9,7 @@
 
 ## Acerca de Nexova
 
-Nexova es una firma de consultoría de recursos humanos y adquisición de talento con sede en Santiago, Chile, y operaciones en Buenos Aires. La empresa opera tres líneas de negocio: headhunting ejecutivo, outsourcing de equipos de soporte al cliente para empresas tecnológicas, y formación corporativa. Eres parte del equipo de Ingeniería de IA recientemente formado para modernizar las operaciones de Nexova.
+Nexova es una firma de consultoría de recursos humanos y adquisición de talento con sede en Valencia, España, y operaciones de expansión en Miami, Florida. La empresa opera tres líneas de negocio: headhunting ejecutivo, outsourcing de equipos de soporte al cliente para empresas tecnológicas, y formación corporativa. Eres parte del equipo de Ingeniería de IA recientemente formado para modernizar las operaciones de Nexova.
 
 ---
 
@@ -55,7 +55,7 @@ interface Candidate {
   currentSalary: number; // Salario actual en USD
   expectedSalary: number; // Salario esperado en USD
   availability: AvailabilityStatus; // Disponibilidad actual
-  location: string; // Ciudad y país (ej: "Santiago, Chile")
+  location: string; // Ciudad y país (ej: "Valencia, España")
   remoteOnly: boolean; // Solo acepta posiciones remotas
   status: CandidateStatus; // Estado actual en la base de datos
 }
@@ -311,7 +311,7 @@ const sampleCandidates: Candidate[] = [
     currentSalary: 3500,
     expectedSalary: 4200,
     availability: "1 month",
-    location: "Santiago, Chile",
+    location: "Valencia, España",
     remoteOnly: false,
     status: "Active",
   },
@@ -327,7 +327,7 @@ const sampleCandidates: Candidate[] = [
     currentSalary: 2200,
     expectedSalary: 2800,
     availability: "Immediate",
-    location: "Buenos Aires, Argentina",
+    location: "Miami, Florida, Estados Unidos",
     remoteOnly: true,
     status: "Active",
   },
@@ -343,7 +343,7 @@ const sampleCandidates: Candidate[] = [
     currentSalary: 5500,
     expectedSalary: 6500,
     availability: "2 weeks",
-    location: "Santiago, Chile",
+    location: "Valencia, España",
     remoteOnly: false,
     status: "Active",
   },
