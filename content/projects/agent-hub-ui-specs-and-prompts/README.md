@@ -84,40 +84,40 @@ The panel should feel professional and immediately usable as a reference for fut
 - [ ] Use **Tailwind CSS via CDN** for all styling — no custom CSS files, no inline `style` attributes.
 - [ ] Implement a persistent **sidebar** with navigation links to all six sections and an active state indicator on the current section.
 
-**Dashboard**
+#### Dashboard
 
 - [ ] Four metric cards (total revenue, discount losses, active agents, failing agents), each with an icon, a label, and a hardcoded value.
 - [ ] A full-width placeholder area below the cards representing a weekly activity chart.
 
-**User Management**
+#### User Management
 
 - [ ] A table with at least 5 hardcoded user rows showing name, email, plan, and status badge.
 - [ ] Each row has a `⋮` action dropdown with "View detail" and "Delete".
 - [ ] "View detail" opens a modal with the full user record. The modal closes via a close button and by clicking the backdrop.
 
-**Agent Management**
+#### Agent Management
 
 - [ ] A listing with at least 4 agents, each showing name, owner, status badge, and a collapsed skill list.
 - [ ] Clicking the expand control reveals the agent's associated skills with a smooth transition; clicking again collapses them.
 - [ ] Each agent has a `⋮` action dropdown with "Configure" and "Delete". "Configure" opens a modal with the agent's system prompt in an editable `<textarea>`.
 
-**Skills**
+#### Skills
 
 - [ ] A catalog of at least 4 skills, each showing name, description, and the number of agents that have it enabled.
 - [ ] A brief in-panel explanation of what a "skill" is in the AgentHub context.
 - [ ] Each skill has a `⋮` action dropdown with "View detail" and "Delete".
 
-**Agent Contracts**
+#### Agent Contracts
 
 - [ ] A table with at least 4 contracts showing client, agent, contracted skills, start/end dates, and amount paid.
 - [ ] Each row has a `⋮` action dropdown. "View detail" opens a modal with the full contract breakdown, including itemized skills and their individual prices.
 
-**Error Log**
+#### Error Log
 
 - [ ] At least 6 hardcoded error entries showing timestamp, agent name, color-coded error type badge, and short description.
 - [ ] Each entry has a `⋮` action dropdown with "View detail" and "Mark as resolved".
 
-**Global interactions**
+#### Global interactions
 
 - [ ] A dark/light mode toggle in the top bar switches the entire panel between color schemes using Tailwind's `dark:` utilities. The chosen mode is preserved while navigating between sections.
 - [ ] All action dropdowns close when clicking outside their menu area.
