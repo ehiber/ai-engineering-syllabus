@@ -21,7 +21,7 @@ A startup called **AgentHub** is building a SaaS platform where companies can re
 
 The founding team has a working backend and a rough idea of what their internal admin panel should look like, but no one on the team has time to build it. They've brought you in as a freelance frontend developer. Your first deliverable is a **fully designed HTML prototype** of the admin panel — something the team can review, validate, and hand off to backend developers later.
 
-Before writing a single line of HTML, you'll need to produce a **specification document** — a structured description of what you're going to build, written in enough detail that an AI coding agent (or another developer) could implement it from scratch without asking questions. This is the core practice of **Spec-Driven Development (SDD)**: you define the what and the rules before you start building. The spec isn't a formality — it's your contract with the codebase.
+Before writing a single line of HTML, you'll need to produce a **specification document** — a structured description of what you're going to build, written in enough detail that an AI coding agent (or another developer) could implement it from scratch without asking questions. This follows a **Vision to spec** approach: you define the what and the rules before you start building. The spec isn't a formality — it's your contract with the codebase.
 
 The product team has shared the following brief:
 
