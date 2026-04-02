@@ -80,12 +80,15 @@ Para cumplir el encargo de tu amigo:
 - [ ] **Accesibilidad:** Uso correcto con lectores de pantalla (p. ej. `aria-label`, `alt`, jerarquía de encabezados).
 - [ ] **Schema.org:** Datos estructurados (JSON-LD o Microdata) que describan al artista o su obra.
 - [ ] **Requisitos:** Todas las secciones acordadas (navbar, hero, sobre mí, trayectoria, próximas presentaciones) presentes y navegables.
+- [ ] **Rendimiento (PageSpeed Insights):** Verificar la URL pública del proyecto en [PageSpeed Insights](https://pagespeed.web.dev/) y obtener **al menos 80 puntos** de puntuación (idealmente, **más de 90**).
 
 ---
 
 ## 📦 Cómo entregar
 
 Sigue los pasos habituales de entrega para subir tu repositorio a GitHub y compártelo según las indicaciones de tu instructor.
+Incluye en el repositorio una captura del resultado de PageSpeed de la URL pública del proyecto (por ejemplo, `pagespeed-result.png`).
+<img src="./.learn/page-speed-example.png" alt="Ejemplo de resultado de PageSpeed Insights" width="260" />
 
 ## Contribuidores
 

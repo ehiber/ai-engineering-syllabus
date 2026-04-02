@@ -135,7 +135,7 @@ Desarrollar el prototipo de e-commerce **en equipo**, aplicando lo visto hasta a
 - [ ] **Carrito** — vista completa: listado de productos (miniatura, precio unitario, cantidad, total por línea), resumen (subtotal, impuestos, total), botón “Comprar”; p. ej. 3 productos de ejemplo para ver el comportamiento; navbar y footer.
 - [ ] **Formulario de pago (checkout)** — 3 pasos: (1) Datos personales, (2) Dirección de entrega, (3) Pago con tarjeta; navbar y footer.
 
-**Git y trabajo en equipo (Skill 5):**
+**Skill de Git y trabajo en equipo:**
 
 - [ ] Usar **una rama por vista o funcionalidad** (p. ej. `feature/home`, `feature/catalogo`). No trabajar directamente en `main`.
 - [ ] **Abrir una pull request (PR)** por cada rama antes de integrarla en `main`. Describir qué incluye la PR.
@@ -153,6 +153,7 @@ Desarrollar el prototipo de e-commerce **en equipo**, aplicando lo visto hasta a
 - [ ] **Diseño responsivo:** Las cinco vistas usables en distintos tamaños de pantalla; sin layout roto ni scroll horizontal en móvil.
 - [ ] **Schema.org:** Datos estructurados (p. ej. Product, Organization) donde aplique (p. ej. producto o home).
 - [ ] **Flujo con Git:** Uso de ramas por vista/funcionalidad; al menos una PR por parte importante; commits con mensajes descriptivos; no trabajo prolongado directo en `main`.
+- [ ] **Rendimiento (PageSpeed Insights):** Verificar la URL pública del proyecto en [PageSpeed Insights](https://pagespeed.web.dev/) y obtener **al menos 80 puntos** de puntuación (idealmente, **más de 90**).
 
 Entregable: **al menos 5 archivos HTML** (uno por vista), enlazados entre sí, más estilos compartidos (Tailwind y CSS adicional si aplica).
 
@@ -161,6 +162,8 @@ Entregable: **al menos 5 archivos HTML** (uno por vista), enlazados entre sí, m
 ## 📦 Cómo entregar este proyecto
 
 Sigue los pasos habituales de entrega para subir tu repositorio a GitHub y compártelo según las indicaciones de tu instructor.
+Incluye en el repositorio una captura del resultado de PageSpeed de la URL pública del proyecto (por ejemplo, `pagespeed-result.png`).
+<img src="./.learn/page-speed-example.png" alt="Ejemplo de resultado de PageSpeed Insights" width="260" />
 
 ---
 

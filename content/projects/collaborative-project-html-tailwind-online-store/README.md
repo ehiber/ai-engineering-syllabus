@@ -127,7 +127,7 @@ Follow the steps in [how to start a coding project](https://4geeks.com/lesson/ho
 
 Develop the e-commerce prototype **as a team**, applying what you’ve learned: **semantic HTML**, **Tailwind**, **Schema.org**, responsive design, and **Git** (branches, commits, pull requests). Use AI step by step and keep the scope to HTML + Tailwind only.
 
-**Views to implement (and link between them):**
+- [ ] **Views to implement (and link between them):**
 
 - [ ] **Home** — navbar, Hero, “New arrivals” and “Best sellers” product lists, footer (navbar and footer reused on all pages).
 - [ ] **Catalog** — navbar, filter bar (category, size), product grid (e.g. 4×5), footer.
@@ -135,7 +135,7 @@ Develop the e-commerce prototype **as a team**, applying what you’ve learned: 
 - [ ] **Cart** — full-page cart: list of items (thumbnail, unit price, quantity, line total), summary (subtotal, tax, total), “Purchase” button; e.g. 3 sample products to show behavior; navbar and footer.
 - [ ] **Payment form (checkout)** — 3 steps: (1) Personal details, (2) Shipping address, (3) Card payment; navbar and footer.
 
-**Git and collaboration (Skill 5):**
+- [ ] **Git and collaboration skills:**
 
 - [ ] Use **one branch per view or feature** (e.g. `feature/home`, `feature/catalog`). Do not work directly on `main`.
 - [ ] **Open a pull request (PR)** for each branch before merging into `main`. Describe what the PR contains.
@@ -153,14 +153,17 @@ Develop the e-commerce prototype **as a team**, applying what you’ve learned: 
 - [ ] **Responsive design:** All five views usable on different screen sizes; no broken layout or horizontal scroll on small screens.
 - [ ] **Schema.org:** Structured data (e.g. Product, Organization) where it makes sense (e.g. product or home page).
 - [ ] **Git workflow:** Branches used for features/views; at least one PR per major part; meaningful commits; no long-term work directly on `main`.
+- [ ] **Performance (PageSpeed Insights):** Check the project public URL in [PageSpeed Insights](https://pagespeed.web.dev/) and achieve **at least 80 points** (ideally, **above 90**).
 
-Deliverable: **at least 5 HTML files** (one per view), linked to each other, plus shared styles (Tailwind and any extra CSS).
+- [ ] **Deliverable:** At least 5 HTML files (one per view), linked to each other, plus shared styles (Tailwind and any extra CSS).
 
 ---
 
 ## 📦 How to submit this project
 
 Follow the usual submission steps to push your repository to GitHub and share it according to your instructor’s instructions.
+Include in the repository a screenshot of the PageSpeed result for the public project URL (for example, `pagespeed-result.png`).
+<img src="./.learn/page-speed-example.png" alt="Example PageSpeed Insights result" width="260" />
 
 ---
 

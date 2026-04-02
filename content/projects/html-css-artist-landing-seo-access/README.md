@@ -80,10 +80,13 @@ To fulfill your friend's request:
 - [ ] **Accessibility:** Usable with screen readers (e.g. `aria-label`, `alt`, heading hierarchy, focus management).
 - [ ] **Schema.org:** Structured data (JSON-LD or Microdata) describing the artist or their work.
 - [ ] **Requirements:** All agreed sections (navbar, hero, about, career, upcoming shows) present and navigable.
+- [ ] **Performance (PageSpeed Insights):** Check the project public URL in [PageSpeed Insights](https://pagespeed.web.dev/) and achieve **at least 80 points** (ideally, **above 90**).
 
 ## 📦 How to Submit
 
 Follow the usual submission steps to upload your repository to GitHub and share it according to your instructor's guidelines.
+Include in the repository a screenshot of the PageSpeed result for the public project URL (for example, `pagespeed-result.png`).
+<img src="./.learn/page-speed-example.png" alt="Example PageSpeed Insights result" width="260" />
 
 ## Contributors
 
