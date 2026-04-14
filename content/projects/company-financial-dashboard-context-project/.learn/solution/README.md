@@ -44,6 +44,14 @@ A reference-quality solution should:
 - Validate each rule against a real project task (for example: making documentation changes, creating commits, updating backend routes, or changing frontend behavior).
 - Refine rules that are too broad, ambiguous, or disconnected from reality.
 
+Expected `.agents` structure:
+
+```text
+./.agents
+└─ /rules
+   └─ <rule-name>.md
+```
+
 ## Phase 4 - `memory-bank` generation
 
 The `memory-bank` folder should include at least:
