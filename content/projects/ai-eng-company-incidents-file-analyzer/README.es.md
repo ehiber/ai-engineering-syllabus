@@ -1,8 +1,8 @@
-# Script procesador de Reportes de Incidentes
+# Analizador de Incidencias — Script y Panel de Control
 
 <!-- hide -->
 
-Por [@4GeeksAcademy](https://github.com/4GeeksAcademy) y [otros contribuidores](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo/graphs/contributors) en [4Geeks Academy](https://4geeksacademy.com/)
+Por [@4GeeksAcademy](https://github.com/4GeeksAcademy) y [otros colaboradores](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo/graphs/contributors) en [4Geeks Academy](https://4geeksacademy.com/)
 
 [![build by developers](https://img.shields.io/badge/build_by-Developers-blue)](https://4geeks.com)
 [![4Geeks Academy](https://img.shields.io/twitter/follow/4geeksacademy?style=social&logo=x)](https://x.com/4geeksacademy)
@@ -11,91 +11,129 @@ _These instructions are [available in English](./README.md)._
 
 <!-- endhide -->
 
-**Antes de comenzar:** Lee tu **[CONTEXT-company.md](https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/contexts)** antes de escribir cualquier línea de código; allí se definen los nombres exactos de campos CSV, categorías válidas, estados permitidos y los valores esperados que tu script debe producir.
+**Antes de empezar:** Lee tu **[CONTEXT-company.md](https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/contexts/incidents-file-analysis)** antes de escribir código — define los nombres exactos de los campos del CSV, las categorías válidas, los estados posibles y los valores esperados que debe producir tu implementación.
 
 ---
 
-## 🎯 El reto
+## 🎯 Tu reto
 
-Llega un tipo de solicitud diferente: no hay interfaz que construir ni API que levantar. Lo que necesitas entregar es una **herramienta de análisis de datos** que resuelva un problema real y urgente.
+El departamento de atención postventa de tu empresa gestiona las incidencias de sus clientes: quejas, solicitudes, fallos operativos. Acaban de preparar un fichero CSV con **100 registros** extraídos de su sistema — la primera muestra de un volumen real de datos que podría alcanzar el millón de líneas.
 
-El departamento de soporte postventa de tu empresa gestiona incidentes de clientes: reclamos, solicitudes, fallos operativos. Acaban de preparar un archivo CSV con **100 registros** extraídos de su sistema: la primera muestra de un volumen real de datos que podría llegar al millón de filas.
+El problema es que **ese fichero no puede enviarse a una herramienta de IA**. Contiene información sensible de clientes: identificadores personales, correos electrónicos, datos de contacto. El análisis tiene que ocurrir internamente.
 
-El problema es que **este archivo no se puede enviar a una herramienta de IA**. Contiene información sensible de clientes: identificadores personales, direcciones de correo y datos de contacto. El equipo necesita analizar los datos internamente.
+Tu responsable técnico ha decidido proceder en dos fases. Primero, un script en Python para validar rápidamente que el proceso de análisis funciona sobre los 100 registros de prueba. Si el resultado es correcto, el script se ejecutará sobre el fichero de producción completo. Una vez confirmado que la lógica es sólida, la funcionalidad se integrará en la plataforma que tu empresa ya está construyendo: una API en el backend y una interfaz web desde la que el equipo pueda cargar el fichero, consultar el resumen y exportar los resultados.
 
-Tu trabajo es escribir un **script en Python** que cargue el archivo, lo valide, extraiga métricas clave y entregue un resumen estructurado. Si el script funciona correctamente con la muestra de 1.000 registros, luego se ejecutará sobre el archivo completo de producción.
+> **Nota de tu responsable técnico:** _"Empieza por el script — necesitamos confirmar que la lógica de validación y el cálculo de métricas son correctos antes de construir nada encima. Cuando el script funcione y los números cuadren con los valores esperados del CONTEXT, pásalo a la API y monta la interfaz. El objetivo final es que cualquier persona del departamento pueda subir el fichero desde el navegador, ver el resumen en pantalla y descargarlo en CSV sin tocar la terminal."_
 
-> **Nota de tu tech lead:** _"Necesitamos un script que cualquiera del equipo pueda ejecutar con_ `python analyze.py incidents.csv`_. La salida en consola tiene que ser legible y profesional. Dales también una opción para exportar resultados a JSON o CSV; no todo el mundo trabaja desde la terminal. Asegúrate de detectar registros corruptos o incompletos; si no validamos datos antes de procesarlos, el análisis del archivo grande será basura. Los valores esperados para el CSV de prueba están en tu CONTEXT."_
+### ¿Qué es un registro incompleto o corrupto?
 
-### ¿Qué se considera un registro incompleto o corrupto?
-
-Los datos del mundo real siempre tienen problemas. Para este proyecto, un registro se considera **inválido** si le falta al menos uno de los campos requeridos definidos en tu CONTEXT, o si contiene un valor en un campo que no está dentro del conjunto permitido (estados y categorías). Tu script debe detectarlos, contarlos y excluirlos del análisis principal, pero nunca ignorarlos silenciosamente.
+Los datos reales siempre tienen problemas. Para este proyecto, un registro se considera **inválido** si le falta al menos uno de los campos obligatorios definidos en tu CONTEXT, o si contiene un valor en un campo que no está dentro del conjunto de valores permitidos (estados y categorías). La lógica debe detectarlos, contarlos y excluirlos del análisis principal — pero nunca ignorarlos en silencio.
 
 ---
 
-## 🌱 Cómo empezar el proyecto
+## 🌱 Cómo Empezar el Proyecto
 
-1. Haz fork del repositorio del curso:
+1. Si aún no tienes el repositorio de la asignatura en local, haz fork y clónalo:
+
    ```text
    https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo
    ```
-2. Clona tu fork en local.
-3. Lee tu archivo **CONTEXT-company.md** antes de escribir una sola línea de código. Ahí se define la estructura CSV, campos requeridos, valores válidos y resultados esperados que tu script debe cumplir.
-4. Trabaja dentro del directorio correspondiente a este proyecto en el monorepo.
 
-No hay código inicial. El script empieza desde cero.
+2. Lee tu fichero **CONTEXT-company.md** antes de escribir ninguna línea de código. Define la estructura del CSV, los campos obligatorios, los valores válidos y los resultados esperados.
+3. Trabaja dentro de las carpetas correspondientes del monorepo (ver sección de entrega).
+
+No hay starter code. El proyecto parte de cero.
 
 ---
 
-## 💻 Lo que debes hacer
+## 💻 Qué Debes Hacer
 
-### Script principal de análisis
+### Fase 1 — Script de análisis (`/scripts`)
 
-- [ ] Crea el script principal (`analyze.py`) que acepte la ruta al CSV como argumento de línea de comandos: `python analyze.py incidents.csv`.
-- [ ] El script debe cargar y leer el archivo fila por fila (o con pandas, tú eliges).
-- [ ] Detectar y contar registros inválidos. Detalla cuántos hay y por qué (campo faltante, valor fuera de rango, etc.).
-- [ ] Calcula las siguientes métricas sobre **registros válidos**:
-  - [ ] Número total de elementos procesados (válidos e inválidos por separado).
-  - [ ] Desglose por categoría de incidente.
-  - [ ] Desglose por estado (`open`, `closed`, `discarded`, o sus equivalentes en tu CONTEXT).
-  - [ ] Índice promedio de satisfacción para casos cerrados que tengan una puntuación registrada.
-- [ ] Imprime el resumen en consola con formato legible: usa separadores, etiquetas claras y alineación. No es un `print` crudo de un diccionario.
+- [ ] Crea el script principal (`analyze.py`) que acepte como argumento la ruta al fichero CSV: `python analyze.py incidents-COMPANY.csv`.
+- [ ] El script debe cargar y leer el fichero (con lectura nativa o pandas, a tu elección).
+- [ ] Detecta y contabiliza los registros inválidos. Detalla cuántos hay y por qué tipo de problema (campo faltante, valor fuera de rango, etc.).
+- [ ] Calcula las siguientes métricas sobre los **registros válidos**:
+  - [ ] Cantidad total de elementos procesados (válidos e inválidos por separado).
+  - [ ] Totalización por categoría de incidencia.
+  - [ ] Totalización por estado (`abierto`, `cerrado`, `descartado` — o sus equivalentes en tu CONTEXT).
+  - [ ] Índice de satisfacción medio en los casos con estado `cerrado` que tengan puntuación registrada.
+- [ ] Imprime el resumen por consola en un formato legible: usa separadores, etiquetas claras y alineación.
+- [ ] Al final de la ejecución, pregunta al usuario: `¿Deseas exportar los resultados a CSV? [s / n]`. Si elige `s`, guarda los resultados en `results.csv` (una fila por métrica).
+- [ ] Verifica que los resultados coinciden exactamente con los valores esperados de tu CONTEXT.
 
-### Exportación de resultados
+### Fase 2 — Integración en la plataforma (`/apps`)
 
-- [ ] Al final de la ejecución, el script debe preguntar al usuario (entrada interactiva): `Export results to CSV? [y / n]`
-- [ ] Si el usuario elige `y`, guarda los resultados en `results.csv` (una fila por métrica).
-- [ ] Si el usuario elige `n`, el script termina sin exportar.
+Una vez validada la lógica del script, extrae esa misma lógica a servicios reutilizables e intégrala en el sistema.
 
-### Validación contra valores esperados
+**Backend (`/apps/api`)**
 
-- [ ] Compara los resultados de tu script con los valores esperados indicados en tu CONTEXT. Los totales deben coincidir exactamente.
+- [ ] Crea un endpoint `POST /api/incidents/analyze` que acepte un fichero CSV como `multipart/form-data`.
+- [ ] El endpoint debe ejecutar la misma lógica de validación y análisis que el script y devolver el resumen en JSON.
+- [ ] Crea un endpoint `GET /api/incidents/results/export` que devuelva el último análisis en formato CSV descargable.
+- [ ] Los errores (fichero vacío, formato incorrecto) deben devolver respuestas HTTP apropiadas con mensaje descriptivo.
 
-⚠️ **IMPORTANTE:** Los nombres de campos, categorías, estados y valores esperados en tu implementación deben coincidir exactamente con lo especificado en tu CONTEXT.md. No se aceptará un script genérico que ignore la estructura de datos de tu empresa.
+**Frontend (`/apps/web`)**
+
+- [ ] Crea una página de análisis de incidencias accesible desde el menú de la aplicación.
+- [ ] Incluye un componente de carga de fichero (drag & drop o selector) que envíe el CSV al endpoint de la API.
+- [ ] Muestra el resumen de resultados en pantalla: métricas generales, desglose por categoría, desglose por estado e índice de satisfacción.
+- [ ] Incluye un botón para descargar los resultados en CSV.
+- [ ] Informa al usuario si el fichero contiene registros inválidos y cuántos son de cada tipo.
+
+⚠️ **IMPORTANTE:** Los nombres de campos, categorías, estados y valores esperados en tu implementación deben coincidir exactamente con lo especificado en tu CONTEXT.md. Una implementación genérica que ignore el contexto de tu empresa no será aceptada.
 
 ---
 
 ## ✅ Qué vamos a evaluar
 
-- [ ] El script acepta la ruta del CSV como argumento de línea de comandos y funciona sin modificar el código.
-- [ ] Los registros corruptos o inválidos se detectan, clasifican y se muestran en el resumen junto a su tipo de problema.
-- [ ] Las cinco métricas requeridas (total procesado, por categoría, por estado, registros corruptos, índice de satisfacción) aparecen en la salida de consola.
-- [ ] El formato en consola es legible: no es un volcado de datos crudo. Incluye separadores, etiquetas y alineación.
-- [ ] La exportación a CSV funciona correctamente y genera un archivo bien estructurado.
-- [ ] Los resultados del script coinciden con los valores esperados en el CONTEXT.
-- [ ] El código está organizado en funciones con responsabilidades claras (carga, validación, análisis, salida, exportación).
+### Script
+
+- [ ] Acepta la ruta al CSV como argumento y funciona sin modificar el código.
+- [ ] Detecta, clasifica y muestra los registros inválidos con su tipo de problema.
+- [ ] Las cinco métricas requeridas aparecen en la salida de consola con formato legible.
+- [ ] La exportación a CSV funciona y produce un fichero bien estructurado.
+- [ ] Los resultados coinciden exactamente con los valores esperados del CONTEXT.
+
+### Backend
+
+- [ ] El endpoint de análisis acepta el CSV, lo procesa y devuelve el resumen en JSON.
+- [ ] El endpoint de exportación devuelve un CSV descargable correctamente formateado.
+- [ ] Los errores de entrada devuelven códigos HTTP apropiados.
+
+### Frontend
+
+- [ ] El fichero puede cargarse desde la interfaz sin usar la terminal.
+- [ ] El resumen se muestra en pantalla de forma clara e interpretable.
+- [ ] El botón de exportación descarga el CSV de resultados.
+- [ ] Los registros inválidos se comunican al usuario de forma comprensible.
+
+### Transversal
+
+- [ ] La lógica de análisis y validación es la misma en el script y en la API — no está duplicada sino extraída a funciones o módulos compartidos.
+- [ ] El código está organizado según la estructura de carpetas del monorepo.
 
 ---
 
-## 📦 Cómo entregar
+## 📦 Cómo entregar este proyecto
 
-1. Asegúrate de que tu repositorio contenga:
-   - `analyze.py`: el script de análisis.
-   - `COMPANY-incidents.csv`: se envía como archivo adjunto (ver `COMPANY-incidents.csv` en los archivos del proyecto).
-   - Un `README` breve en el directorio del proyecto que explique cómo ejecutar el script.
-2. Haz push de tu rama y abre un Pull Request al repositorio original.
-3. Asegúrate de que el PR incluya una captura de la salida de consola usando el CSV de 100 filas.
+El proyecto debe estar organizado en el monorepo de la siguiente forma:
+
+```text
+scripts/
+  analyze.py              ← script de análisis (Fase 1)
+  incidents-COMPANY.csv   ← fichero de prueba (adjunto, ver CONTEXT)
+
+apps/
+  api/                    ← backend con los endpoints de análisis y exportación
+  web/                    ← interfaz web con carga de fichero y visualización
+```
+
+1. Haz push de tu rama con la estructura anterior y abre un Pull Request al repositorio original.
+2. Asegúrate de que el PR incluye:
+   - Una captura de pantalla del output de consola del script con el CSV de 100 filas.
+   - Una captura de la interfaz web con un análisis cargado y visible en pantalla.
 
 ---
 
-Este y muchos otros proyectos son construidos por estudiantes como parte de los [Coding Bootcamps](https://4geeksacademy.com/) en 4Geeks Academy. Por [@4GeeksAcademy](https://github.com/4GeeksAcademy) y [otros contribuidores](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo/graphs/contributors). Descubre más sobre [Full-Stack Software Developer](https://4geeksacademy.com/en/career-programs/full-stack), [Data Science & Machine Learning](https://4geeksacademy.com/en/career-programs/data-science-ml), [Cybersecurity](https://4geeksacademy.com/en/career-programs/cybersecurity) e [AI Engineering](https://4geeksacademy.com/en/career-programs/ai-engineering).
+Este y muchos otros proyectos son construidos por estudiantes como parte de los [Coding Bootcamps](https://4geeksacademy.com/) de 4Geeks Academy. Encuentra más acerca de los [cursos](https://4geeksacademy.com/es/comparar-programas) de [Full-Stack Software Developer](https://4geeksacademy.com/es/programas-de-carrera/desarrollo-full-stack), [Data Science & Machine Learning](https://4geeksacademy.com/es/programas-de-carrera/ciencia-de-datos-ml), [Ciberseguridad](https://4geeksacademy.com/es/programas-de-carrera/ciberseguridad) e [Ingeniería de IA](https://4geeksacademy.com/es/programas-de-carrera/ingenieria-ia).

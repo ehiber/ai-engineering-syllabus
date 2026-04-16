@@ -1,4 +1,4 @@
-# Incident Report Processor Script
+# Incident Analyzer — Script and Control Panel
 
 <!-- hide -->
 
@@ -11,90 +11,128 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 <!-- endhide -->
 
-**Before you start:** Read your **[CONTEXT-company.md](https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/contexts)** before writing any code — it defines the exact CSV field names, valid categories, allowed statuses, and the expected output values your script must produce.
+**Before you start:** Read your **[CONTEXT-company.md](https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/contexts/incidents-file-analysis)** before writing any code — it defines the exact CSV field names, valid categories, allowed statuses, and the expected output values your implementation must produce.
 
 ---
 
-## 🎯 The Challenge
-
-A different kind of request arrives: no interface to build, no API to spin up. What you need to deliver is a **data analysis tool** that solves a real, urgent problem.
+## 🎯 Your challenge
 
 Your company's after-sales support department manages customer incidents: complaints, requests, operational failures. They've just prepared a CSV file with **100 records** extracted from their system — the first sample of a real data volume that could reach one million rows.
 
-The problem is that **this file cannot be sent to an AI tool**. It contains sensitive customer information: personal identifiers, email addresses, contact details. The team needs to analyse the data internally.
+The problem is that **this file cannot be sent to an AI tool**. It contains sensitive customer information: personal identifiers, email addresses, contact details. The analysis must happen internally.
 
-Your job is to write a **Python script** that loads the file, validates it, extracts the key metrics, and delivers a structured summary. If the script works correctly on the 1,000-record sample, it will then be run on the full production file.
+Your tech lead has decided to proceed in two phases. First, a Python script to quickly validate that the analysis process works correctly on the 100-record test file. If the output is correct, the script will be run on the full production file. Once the logic is confirmed solid, the functionality will be integrated into the platform your company is already building: a backend API and a web interface from which the team can upload the file, view the summary, and export the results.
 
-> **Note from your tech lead:** _"We need a script that anyone on the team can run with_ `python analyze.py incidents.csv`_. The console output has to be readable and professional. Give them an option to export the results to JSON or CSV too — not everyone works from the terminal. Make sure it catches corrupt or incomplete records; if we don't validate the data before processing, the analysis on the big file is going to be garbage. The expected values for the test CSV are in your CONTEXT."_
+> **Note from your tech lead:** _"Start with the script — we need to confirm that the validation logic and metric calculations are correct before building anything on top of them. Once the script works and the numbers match the expected values in the CONTEXT, move it into the API and build the interface. The end goal is that anyone on the team can upload the file from the browser, see the summary on screen, and download it as CSV without touching the terminal."_
 
 ### What counts as an incomplete or corrupt record?
 
-Real-world data always has problems. For this project, a record is considered **invalid** if it is missing at least one of the required fields defined in your CONTEXT, or if it contains a value in a field that is not within the allowed set (statuses and categories). Your script must detect them, count them, and exclude them from the main analysis — but never silently ignore them.
+Real-world data always has problems. For this project, a record is considered **invalid** if it is missing at least one of the required fields defined in your CONTEXT, or if it contains a value in a field that is not within the allowed set (statuses and categories). The logic must detect them, count them, and exclude them from the main analysis — but never silently ignore them.
 
 ---
 
 ## 🌱 How to Start the Project
 
-1. Fork the course repository:
-   ```text
+1. If you haven't already forked and cloned the course repository, do so now:
+
+   ```
    https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo
    ```
-2. Clone your fork locally.
-3. Read your **CONTEXT-company.md** file before writing a single line of code. It defines the CSV structure, required fields, valid values, and the expected results your script must match.
-4. Work inside the directory corresponding to this project in the monorepo.
 
-There is no starter code. The script starts from scratch.
+2. Read your **CONTEXT-company.md** file before writing a single line of code. It defines the CSV structure, required fields, valid values, and the expected results your implementation must match.
+3. Work inside the corresponding folders of the monorepo (see the submission section).
+
+There is no starter code. The project starts from scratch.
 
 ---
 
 ## 💻 What You Need to Do
 
-### Main analysis script
+### Phase 1 — Analysis script (`/scripts`)
 
-- [ ] Create the main script (`analyze.py`) that accepts the path to the CSV as a command-line argument: `python analyze.py incidents.csv`.
-- [ ] The script must load and read the file row by row (or with pandas — your choice).
+- [ ] Create the main script (`analyze.py`) that accepts the path to the CSV as a command-line argument: `python analyze.py incidents-COMPANY.csv`.
+- [ ] The script must load and read the file (with native reading or pandas — your choice).
 - [ ] Detect and count invalid records. Detail how many there are and why (missing field, out-of-range value, etc.).
 - [ ] Calculate the following metrics on **valid records**:
   - [ ] Total number of elements processed (valid and invalid separately).
   - [ ] Breakdown by incident category.
   - [ ] Breakdown by status (`open`, `closed`, `discarded` — or their equivalents in your CONTEXT).
   - [ ] Average satisfaction index for closed cases that have a recorded score.
-- [ ] Print the summary to the console in a readable format: use separators, clear labels, and alignment. This is not a raw `print` of a dictionary.
+- [ ] Print the summary to the console in a readable format: use separators, clear labels, and alignment.
+- [ ] At the end of execution, ask the user: `Export results to CSV? [y / n]`. If they choose `y`, save the results to `results.csv` (one row per metric).
+- [ ] Verify that the results match exactly the expected values in your CONTEXT.
 
-### Results export
+### Phase 2 — Integration into the platform (`/apps`)
 
-- [ ] At the end of execution, the script must ask the user (interactive input): `Export results to CSV? [y / n]`
-- [ ] If the user chooses `y`, save the results to `results.csv` (one row per metric).
-- [ ] If the user chooses `n`, the script exits without exporting.
+Once the script logic is validated, extract that same logic into reusable services and integrate it into the system.
 
-### Validation against expected values
+**Backend (`/apps/api`)**
 
-- [ ] Compare your script's results against the expected values stated in your CONTEXT. The totals must match exactly.
+- [ ] Create a `POST /api/incidents/analyze` endpoint that accepts a CSV file as `multipart/form-data`.
+- [ ] The endpoint must run the same validation and analysis logic as the script and return the summary as JSON.
+- [ ] Create a `GET /api/incidents/results/export` endpoint that returns the last analysis as a downloadable CSV.
+- [ ] Errors (empty file, incorrect format) must return appropriate HTTP responses with a descriptive message.
 
-⚠️ **IMPORTANT:** Field names, categories, statuses, and expected values in your implementation must match exactly what is specified in your CONTEXT.md. A generic script that ignores your company's data structure will not be accepted.
+**Frontend (`/apps/web`)**
+
+- [ ] Create an incident analysis page accessible from the application menu.
+- [ ] Include a file upload component (drag & drop or file selector) that sends the CSV to the API endpoint.
+- [ ] Display the results summary on screen: general metrics, category breakdown, status breakdown, and satisfaction index.
+- [ ] Include a button to download the results as CSV.
+- [ ] Inform the user if the file contains invalid records and how many of each type.
+
+⚠️ **IMPORTANT:** Field names, categories, statuses, and expected values in your implementation must match exactly what is specified in your CONTEXT.md. A generic implementation that ignores your company's context will not be accepted.
 
 ---
 
-## ✅ What We Will Evaluate
+## ✅ What we will evaluate
 
-- [ ] The script accepts the CSV path as a command-line argument and works without modifying the code.
-- [ ] Corrupt or invalid records are detected, classified, and shown in the summary with their type of problem.
-- [ ] All five required metrics (total processed, by category, by status, corrupt records, satisfaction index) appear in the console output.
-- [ ] The console format is readable: not a raw data dump. It includes separators, labels, and alignment.
-- [ ] CSV export works correctly and produces a well-structured file.
-- [ ] The script's results match the expected values in the CONTEXT.
-- [ ] Code is organised into functions with clear responsibilities (loading, validation, analysis, output, export).
+### Script
+
+- [ ] Accepts the CSV path as a command-line argument and works without modifying the code.
+- [ ] Detects, classifies, and shows invalid records with their type of problem.
+- [ ] All five required metrics appear in the console output with a readable format.
+- [ ] CSV export works and produces a well-structured file.
+- [ ] Results match exactly the expected values in the CONTEXT.
+
+### Backend
+
+- [ ] The analysis endpoint accepts the CSV, processes it, and returns the summary as JSON.
+- [ ] The export endpoint returns a correctly formatted downloadable CSV.
+- [ ] Input errors return appropriate HTTP status codes.
+
+### Frontend
+
+- [ ] The file can be uploaded from the interface without using the terminal.
+- [ ] The summary is displayed on screen in a clear and interpretable way.
+- [ ] The export button downloads the results CSV.
+- [ ] Invalid records are communicated to the user in an understandable way.
+
+### Cross-cutting
+
+- [ ] The analysis and validation logic is the same in the script and the API — not duplicated but extracted into shared functions or modules.
+- [ ] Code is organised according to the monorepo folder structure.
 
 ---
 
-## 📦 How to Submit
+## 📦 How to submit this project
 
-1. Make sure your repository contains:
-   - `analyze.py` — the analysis script.
-   - `COMPANY-incidents.csv` — has been sent as an attachment (see `COMPANY-incidents.csv` in the project files).
-   - A brief `README` in the project directory explaining how to run the script.
-2. Push your branch and open a Pull Request to the original repository.
-3. Make sure the PR includes a screenshot of the console output with the 100-row CSV.
+The project must be organised in the monorepo as follows:
+
+```text
+scripts/
+  analyze.py              ← analysis script (Phase 1)
+  incidents-COMPANY.csv   ← test file (attached, see CONTEXT)
+
+apps/
+  api/                    ← backend with analysis and export endpoints
+  web/                    ← web interface with file upload and visualisation
+```
+
+1. Push your branch with the structure above and open a Pull Request to the original repository.
+2. Make sure the PR includes:
+   - A screenshot of the script console output with the 100-row CSV.
+   - A screenshot of the web interface with a loaded analysis visible on screen.
 
 ---
 
