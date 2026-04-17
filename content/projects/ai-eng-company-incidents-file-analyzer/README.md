@@ -33,9 +33,9 @@ Real-world data always has problems. For this project, a record is considered **
 
 ## 🌱 How to Start the Project
 
-1. If you haven't already forked and cloned the course repository, do so now:
+1. Work in [**ai-engineering-company-project-monorepo**](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo). If you have not set it up yet, fork it, then open your fork in **GitHub Codespaces** or clone it locally:
 
-   ```
+   ```text
    https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo
    ```
 

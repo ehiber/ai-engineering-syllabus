@@ -33,7 +33,7 @@ Los datos reales siempre tienen problemas. Para este proyecto, un registro se co
 
 ## 🌱 Cómo Empezar el Proyecto
 
-1. Si aún no tienes el repositorio de la asignatura en local, haz fork y clónalo:
+1. Trabaja en el monorepo [**ai-engineering-company-project-monorepo**](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo). Si aún no lo tienes configurado, haz fork y luego ábrelo en **GitHub Codespaces** o clónalo localmente:
 
    ```text
    https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo

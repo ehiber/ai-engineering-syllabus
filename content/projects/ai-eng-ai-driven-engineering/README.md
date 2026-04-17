@@ -75,7 +75,7 @@ An **agent skill** is a structured, reusable instruction: more concrete than a g
 Read your `CONTEXT-company.md` before doing anything else. The memory bank you are going to build must describe the company and project from your specific scenario — not a generic fictional company.
 
 1. Fork the template repository: [ai-engineering-company-project-monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)
-2. Clone your fork locally and review the existing structure before creating new folders
+2. Open your fork in **GitHub Codespaces** or clone it locally, then review the existing structure before creating new folders
 3. Configure your coding agent with access to the full repository
 4. Document initial setup decisions in the memory bank **before** writing any application code
 

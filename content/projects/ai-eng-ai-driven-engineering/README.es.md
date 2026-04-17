@@ -75,7 +75,7 @@ Una **skill de agente** es una instrucción estructurada y reutilizable: más co
 Lee tu `CONTEXT-company.md` antes de hacer nada más. El banco de memoria que vas a construir debe describir la empresa y el proyecto de tu escenario específico — no una empresa ficticia genérica.
 
 1. Haz fork del repositorio de plantilla: [ai-engineering-company-project-monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)
-2. Clona tu fork en local y revisa la estructura existente antes de crear carpetas nuevas
+2. Ábrelo en **GitHub Codespaces** o clónalo localmente y revisa la estructura existente antes de crear carpetas nuevas
 3. Configura tu agente de programación con acceso al repositorio completo
 4. Documenta las decisiones de configuración inicial en el banco de memoria **antes** de escribir código de aplicación
 

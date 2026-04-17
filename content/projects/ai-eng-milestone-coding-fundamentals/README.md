@@ -84,9 +84,9 @@ You can include a simple HTML page with Tailwind CSS to manually test your funct
 
 ## 🌱 How to Start the Project
 
-1. Fork the base repository: [https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepot](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepot)
+1. Fork the base repository: [https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)
 
-2. Clone your fork to your local machine:
+2. Open your fork in **GitHub Codespaces** or clone it locally:
 
    ```bash
    git clone <your-fork-url>

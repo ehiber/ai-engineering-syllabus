@@ -86,7 +86,7 @@ Puedes incluir una página HTML simple con Tailwind CSS para probar tus funcione
 
 1. Ve a tu repositorio del proyecto de compañía que ya tienes. Si no lo has creado aún, ve al [repositorio plantilla del proyecto transversal](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo) y haz clic en el botón de la derecha "Usar esta plantilla" y selecciona "Crear un nuevo repositorio" o [haz clic aquí](https://github.com/new?template_name=ai-engineering-company-project-monorepo&template_owner=4GeeksAcademy).
 
-2. Una vez tengas tu propio repositorio, ábrelo en un Codespace o clónalo localmente.
+2. Una vez tengas tu propio repositorio, ábrelo en **GitHub Codespaces** o clónalo localmente.
 
 3. Lee completamente tu archivo **[CONTEXT-company.md](https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/contexts)** antes de escribir código. Allí encontrarás:
    - Las entidades específicas que debes modelar (productos, clientes, pedidos, etc.)

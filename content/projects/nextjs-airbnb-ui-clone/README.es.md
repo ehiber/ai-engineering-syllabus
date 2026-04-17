@@ -49,7 +49,8 @@ Después:
 
 1. Crea tu propio repositorio en GitHub.
 2. Inicializa git dentro de la carpeta del proyecto y sube tu primer commit.
-3. ¿Necesitas un repaso sobre el inicio de proyectos? [Lee esta guía](https://4geeks.com/lesson/como-comenzar-un-proyecto-de-codificacion).
+3. Abre el repositorio en **GitHub Codespaces** o clónalo localmente.
+4. ¿Necesitas un repaso sobre el inicio de proyectos? [Lee esta guía](https://4geeks.com/lesson/como-comenzar-un-proyecto-de-codificacion).
 
 ---
 
