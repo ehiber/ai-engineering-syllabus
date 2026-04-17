@@ -31,7 +31,7 @@ The Head of People has shared what they need with urgency:
 > - Add internal notes to a candidate and delete them when they're no longer relevant.
 > - Register new candidates directly from the interface and edit a candidate's data when something needs to be corrected.
 
-The API is ready and documented. All requests must be handled asynchronously — the UI must communicate loading states and handle errors gracefully. The team cannot afford a tool that breaks silently or leaves the user without feedback.
+The API is ready and documented at [https://playground.4geeks.com/tracker/api/v1/docs](https://playground.4geeks.com/tracker/api/v1/docs). All requests must be handled asynchronously — the UI must communicate loading states and handle errors gracefully. The team cannot afford a tool that breaks silently or leaves the user without feedback.
 
 This is a real internal tool that real people will use from day one. Build it like one.
 

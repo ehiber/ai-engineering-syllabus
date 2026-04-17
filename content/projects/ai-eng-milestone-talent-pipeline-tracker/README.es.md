@@ -31,7 +31,7 @@ La responsable de People ha compartido lo que necesitan con urgencia:
 > - Añadir notas internas a una candidatura y eliminarlas cuando ya no sean relevantes.
 > - Registrar nuevas candidaturas directamente desde la interfaz y editar los datos de una cuando haya que corregir algo.
 
-La API ya está lista y documentada. Todas las peticiones deben gestionarse de forma asíncrona — la interfaz debe comunicar los estados de carga y manejar los errores con claridad. El equipo no puede permitirse una herramienta que falle en silencio o que deje al usuario sin saber qué está pasando.
+La API ya está lista y está documentada en [https://playground.4geeks.com/tracker/api/v1/docs](https://playground.4geeks.com/tracker/api/v1/docs). Todas las peticiones deben gestionarse de forma asíncrona — la interfaz debe comunicar los estados de carga y manejar los errores con claridad. El equipo no puede permitirse una herramienta que falle en silencio o que deje al usuario sin saber qué está pasando.
 
 Esta es una herramienta interna real que va a usar gente real desde el primer día. Constrúyela como tal.
 
