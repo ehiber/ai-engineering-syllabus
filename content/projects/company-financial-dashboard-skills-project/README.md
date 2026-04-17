@@ -57,7 +57,7 @@ You will leave this session with an improved codebase _and_ a documented skill o
 
 You will continue working on the **same repository** you used in the previous session. Do not fork a new repo.
 
-1. Open your existing `company-financial-dashboard-context-project` repository in GitHub Codespaces or clone it locally.
+1. Open your existing financial dashboard repository (your fork of [**ai-eng-financial-dashboard-context-project**](https://github.com/4GeeksAcademy/ai-eng-financial-dashboard-context-project)) in GitHub Codespaces or clone it locally.
 2. Make sure your memory bank (`memory-bank/`) and context rules (`.cursor/rules/` or equivalent) from the previous session are committed and up to date.
 3. Pull the latest changes if you are working in a team: `git pull origin main`.
 4. Create a new branch for today's work: `git checkout -b feature/agent-skills`.

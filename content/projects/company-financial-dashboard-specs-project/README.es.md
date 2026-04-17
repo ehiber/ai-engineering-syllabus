@@ -59,7 +59,7 @@ Tus especificaciones deben ser lo suficientemente precisas para que cualquier de
 
 Este proyecto continúa en el mismo repositorio que usaste para el dashboard financiero. No hagas fork de un repo nuevo.
 
-1. Abre tu repositorio existente del dashboard financiero en GitHub Codespaces o clónalo localmente.
+1. Abre tu repositorio existente del dashboard financiero (tu fork de [**ai-eng-financial-dashboard-context-project**](https://github.com/4GeeksAcademy/ai-eng-financial-dashboard-context-project)) en GitHub Codespaces o clónalo localmente.
 2. Crea una nueva rama llamada `feature/frontend-specs` desde tu `main` actual.
 3. Crea una carpeta llamada `frontend/specs/` — aquí irán todos tus archivos de especificación.
 4. Arranca el backend y visita `/docs` para explorar los endpoints antes de escribir ninguna especificación.
