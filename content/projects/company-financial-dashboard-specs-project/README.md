@@ -59,7 +59,7 @@ Your specifications must be precise enough that a developer — or an AI agent �
 
 This project continues in the same repository you used for the financial dashboard. Do not fork a new repo.
 
-1. Open your existing financial dashboard repository in GitHub Codespaces or clone it locally.
+1. Open your existing financial dashboard repository (your fork of [**ai-eng-financial-dashboard-context-project**](https://github.com/4GeeksAcademy/ai-eng-financial-dashboard-context-project)) in GitHub Codespaces or clone it locally.
 2. Create a new branch called `feature/frontend-specs` from your current `main`.
 3. Create a folder called `frontend/specs/` — all your specification files go here.
 4. Start the backend and visit `/docs` to explore the endpoints before writing any spec.
