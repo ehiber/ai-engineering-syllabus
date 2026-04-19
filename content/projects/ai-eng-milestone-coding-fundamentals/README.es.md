@@ -79,6 +79,7 @@ src/
 ```
 
 Puedes incluir una página HTML simple con Tailwind CSS para probar tus funciones manualmente si lo deseas, pero el foco principal está en la lógica TypeScript.
+Como mínimo, tu proyecto debe incluir un comando claro para validar o ejecutar el código TypeScript durante el desarrollo, por ejemplo `npx tsc --noEmit`, `npm run typecheck` o `npx tsx src/demo.ts`.
 
 ---
 
@@ -102,6 +103,14 @@ Puedes incluir una página HTML simple con Tailwind CSS para probar tus funcione
 
 5. Organiza tu código en la estructura de carpetas propuesta y comienza a implementar las funciones.
 
+6. Asegúrate de que el proyecto pueda validarse o ejecutarse con un comando claro de TypeScript durante el desarrollo. Ejemplo:
+
+   ```bash
+   npx tsc --noEmit
+   ```
+
+7. Comienza a implementar las funciones.
+
 ---
 
 ## 💻 Lo que Debes Hacer
@@ -119,6 +128,7 @@ Implementa las siguientes funcionalidades en TypeScript. Todos los nombres de en
 - [ ] Implementa **validaciones de negocio** que verifiquen que los objetos cumplen con las reglas de tu CONTEXT.md antes de ser procesados
 - [ ] Todas las funciones deben tener **tipos explícitos** en parámetros y valores de retorno
 - [ ] El código debe seguir el principio de **responsabilidad única**: cada función hace una sola cosa
+- [ ] El proyecto incluye un comando claro para validar o ejecutar el código TypeScript durante el desarrollo
 
 ⚠️ **IMPORTANTE:** Los nombres de campos, tipos de entidades y reglas de validación en tu implementación deben coincidir exactamente con lo especificado en tu CONTEXT.md. Una implementación genérica que ignore el contexto no será aceptada.
 
@@ -127,6 +137,12 @@ Implementa las siguientes funcionalidades en TypeScript. Todos los nombres de en
 - [ ] Crea una página HTML simple con **Tailwind CSS** que te permita probar tus funciones manualmente
 - [ ] Incluye botones o controles para ejecutar diferentes operaciones (filtrar, buscar, ordenar, generar reportes)
 - [ ] Muestra los resultados de las operaciones en la interfaz de forma clara
+
+Si agregas una página `index.html` para probar tus funciones manualmente, asegúrate de poder servirla en local o en Codespaces con un comando simple como:
+
+```bash
+npx http-server . -p 3000 -a 0.0.0.0
+```
 
 ### Calidad de Código
 
@@ -151,6 +167,7 @@ Implementa las siguientes funcionalidades en TypeScript. Todos los nombres de en
 - [ ] Las agregaciones calculan correctamente totales, promedios, conteos y valores extremos
 - [ ] Las validaciones rechazan datos que no cumplen con las reglas de negocio del CONTEXT.md
 - [ ] No hay errores de compilación de TypeScript en ningún archivo
+- [ ] Existe un comando documentado para validar o ejecutar TypeScript en local (`npx tsc --noEmit`, `npm run typecheck`, etc.)
 
 ### Estructura y organización
 

@@ -79,6 +79,7 @@ src/
 ```
 
 You can include a simple HTML page with Tailwind CSS to manually test your functions if you wish, but the main focus is on the TypeScript logic.
+At minimum, your project must include a clear command to validate or execute the TypeScript code during development, such as `npx tsc --noEmit`, `npm run typecheck`, or `npx tsx src/demo.ts`.
 
 ---
 
@@ -93,7 +94,7 @@ You can include a simple HTML page with Tailwind CSS to manually test your funct
    cd transversal-project
    ```
 
-3. Read your **[CONTEXT-company.md](https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/contexts)** file completely before writing code. There you will find:
+3. Read your **[CONTEXT.md](https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/contexts)** file completely before writing code. There you will find:
    - The specific entities you must model (products, customers, orders, etc.)
    - The exact field names and their types
    - Your company's specific validation rules
@@ -106,6 +107,14 @@ You can include a simple HTML page with Tailwind CSS to manually test your funct
    ```
 
 5. Organize your code in the proposed folder structure and start implementing the functions.
+
+6. Make sure the project can be validated or executed with a clear TypeScript command during development. Example:
+
+   ```bash
+   npx tsc --noEmit
+   ```
+
+7. Start implementing the functions.
 
 ---
 
@@ -124,6 +133,7 @@ Implement the following functionalities in TypeScript. All entity names, fields,
 - [ ] Implement **business validations** that verify objects comply with the rules in your CONTEXT.md before being processed
 - [ ] All functions must have **explicit types** in parameters and return values
 - [ ] The code must follow the **single responsibility principle**: each function does one thing
+- [ ] The project includes a clear command to validate or execute the TypeScript code during development
 
 ⚠️ **IMPORTANT:** Field names, entity types, and validation rules in your implementation must match exactly what is specified in your CONTEXT.md. A generic implementation that ignores the context will not be accepted.
 
@@ -132,6 +142,12 @@ Implement the following functionalities in TypeScript. All entity names, fields,
 - [ ] Create a simple HTML page with **Tailwind CSS** that allows you to manually test your functions
 - [ ] Include buttons or controls to execute different operations (filter, search, sort, generate reports)
 - [ ] Display operation results in the interface clearly
+
+If you add an `index.html` page to test your functions manually, make sure you can serve it locally or in Codespaces with a simple command such as:
+
+```bash
+npx http-server . -p 3000 -a 0.0.0.0
+```
 
 ### Code Quality
 
@@ -156,6 +172,7 @@ Implement the following functionalities in TypeScript. All entity names, fields,
 - [ ] Aggregations correctly calculate totals, averages, counts, and extreme values
 - [ ] Validations reject data that does not comply with the business rules in CONTEXT.md
 - [ ] There are no TypeScript compilation errors in any file
+- [ ] There is a documented command to run TypeScript validation or execution locally (`npx tsc --noEmit`, `npm run typecheck`, etc.)
 
 ### Structure and organization
 
@@ -179,7 +196,7 @@ Implement the following functionalities in TypeScript. All entity names, fields,
 
 ## 📦 How to Submit
 
-1. Make sure all your changes are in the `milestone-2-coding-fundamentals` branch
+1. Make sure all your changes are in the `milestone-2-programming-fundamentals` branch
 
 2. Commit your changes with descriptive messages. Example:
 
