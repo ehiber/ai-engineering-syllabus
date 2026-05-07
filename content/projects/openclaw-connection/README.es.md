@@ -1,4 +1,4 @@
-# Conecta tu Agente: Telegram, Google Drive y Calendario
+# Conecta tu Agente: Telegram, Google Docs y Calendario
 
 <!-- hide -->
 
@@ -23,9 +23,9 @@ Esta mañana llegó el pedido: conectar el agente a las herramientas que el equi
 
 > El team lead envió este mensaje por Slack:
 >
-> > "El agente está funcionando muy bien como asistente básico. Ahora hagámoslo útil. Conéctalo a Google Drive y Google Calendar, y conéctalo a Telegram para que podamos hablarle desde cualquier lugar. Quiero probarlo yo mismo: le voy a mandar un mensaje pidiéndole que cree un documento, y espero que cree el doc, bloquee tiempo en mi calendario para revisarlo y me confirme en Telegram que ya está hecho. Nada complicado, solo un flujo que funcione de punta a punta."
+> > "El agente está funcionando muy bien como asistente básico. Ahora hagámoslo útil. Conéctalo a Google Docs y Google Calendar, y conéctalo a Telegram para que podamos hablarle desde cualquier lugar. Quiero probarlo yo mismo: le voy a mandar un mensaje pidiéndole que cree un documento, y espero que cree el doc, bloquee tiempo en mi calendario para revisarlo y me confirme en Telegram que ya está hecho. Nada complicado, solo un flujo que funcione de punta a punta."
 
-Para integrar Google Drive y Google Calendar rápidamente sin construir conectores propios, usarás el **MCP de Zapier** — un puente que expone las acciones preconstruidas de Zapier como skills que tu agente puede invocar directamente. No es la única forma de conectar estos servicios, pero es el camino más rápido hacia un prototipo funcional.
+Para integrar Google Docs y Google Calendar rápidamente sin construir conectores propios, usarás el **MCP de Zapier** — un puente que expone las acciones preconstruidas de Zapier como skills que tu agente puede invocar directamente. No es la única forma de conectar estos servicios, pero es el camino más rápido hacia un prototipo funcional.
 
 Este proyecto es de **configuración, no de código**. Estás ensamblando un agente funcional a partir de servicios y conectores ya existentes. Piensa en cómo cada integración convierte una API de terceros en una habilidad que tu agente puede usar — porque eso es exactamente lo que estás haciendo.
 
@@ -38,10 +38,10 @@ Este proyecto no requiere hacer fork de un repositorio de código. En su lugar, 
 1. Asegúrate de tener una instancia activa de **OpenClaw** en funcionamiento (configurada en el [proyecto openclaw-setup](https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/openclaw-setup)).
 2. Crea un **bot de Telegram** con BotFather si aún no lo tienes.
 3. Crea una cuenta en **Zapier** (el plan gratuito es suficiente) y configura la conexión MCP.
-4. Conecta **Google Drive** y **Google Calendar** mediante las integraciones preconstruidas de Zapier.
+4. Conecta **Google Docs** y **Google Calendar** mediante las integraciones preconstruidas de Zapier.
 5. Documenta los pasos de tu configuración y toma capturas de pantalla como evidencia de cada conexión.
 
-> ⚠️ **IMPORTANTE:** No conectes cuentas personales con información sensible o privada a OpenClaw en este ejercicio. Usa una cuenta de prueba para Google Drive y Google Calendar. Nunca expongas tokens o claves de API en capturas de pantalla ni en archivos enviados.
+> ⚠️ **IMPORTANTE:** No conectes cuentas personales con información sensible o privada a OpenClaw en este ejercicio. Usa una cuenta de prueba para Google Docs y Google Calendar. Nunca expongas tokens o claves de API en capturas de pantalla ni en archivos enviados.
 
 ---
 
@@ -57,14 +57,14 @@ Este proyecto no requiere hacer fork de un repositorio de código. En su lugar, 
 
 - [ ] Crear una cuenta en Zapier y localizar la opción de configuración del MCP
 - [ ] Agregar el MCP de Zapier al agente en OpenClaw
-- [ ] Conectar Google Drive a través de Zapier y verificar que el agente puede crear documentos
+- [ ] Conectar Google Docs a través de Zapier y verificar que el agente puede crear documentos
 - [ ] Conectar Google Calendar a través de Zapier y verificar que el agente puede crear eventos
 
 ### Flujo completo de punta a punta
 
 - [ ] Enviar un mensaje por Telegram pidiendo al agente que cree un documento (especificar título o tema)
 - [ ] Si el agente necesita información adicional para completar la tarea, verificar que la solicita antes de continuar
-- [ ] Verificar que se crea un nuevo documento en Google Drive
+- [ ] Verificar que se crea un nuevo documento en Google Docs
 - [ ] Verificar que se crea un evento en el calendario para reservar tiempo para revisar el documento
 - [ ] Confirmar que el agente envía un mensaje por Telegram reportando que la tarea se completó
 
@@ -72,7 +72,7 @@ Este proyecto no requiere hacer fork de un repositorio de código. En su lugar, 
 
 - [ ] Captura de pantalla de cada integración conectada correctamente en OpenClaw
 - [ ] Captura de pantalla de la conversación completa en Telegram (solicitud → preguntas del agente si las hay → confirmación)
-- [ ] Captura de pantalla del documento creado en Google Drive
+- [ ] Captura de pantalla del documento creado en Google Docs
 - [ ] Captura de pantalla del evento creado en el calendario
 
 > ⚠️ **IMPORTANTE:** Difumina o recorta cualquier información personal (nombres completos, direcciones de correo) en tus capturas antes de enviarlas.
@@ -83,7 +83,7 @@ Este proyecto no requiere hacer fork de un repositorio de código. En su lugar, 
 
 - [ ] El bot de Telegram está correctamente creado y conectado a OpenClaw
 - [ ] El MCP de Zapier está agregado y activo en la configuración del agente
-- [ ] La integración con Google Drive funciona: el agente crea un documento en respuesta a la solicitud del usuario
+- [ ] La integración con Google Docs funciona: el agente crea un documento en respuesta a la solicitud del usuario
 - [ ] La integración con Google Calendar funciona: el agente crea un evento vinculado a la revisión del documento
 - [ ] El agente confirma la finalización de la tarea por Telegram
 - [ ] El agente solicita información faltante cuando el mensaje del usuario no es suficientemente específico

@@ -40,13 +40,13 @@ Your tech lead is counting on you to deliver a functional instance by end of day
 This project does not use a starter repository — it is a server configuration project. Follow these steps to begin:
 
 1. Access the VPS provided by the platform (credentials will be shared via the course platform).
-2. Connect to the VPS via SSH from your terminal:
+2. Connect to the VPS via your Codespaces/VS Code editor so you can get help from your Copilot in case you needed. Or you can connect via SSH from your terminal:
 
    ```bash
    ssh your_user@your_vps_ip
    ```
 
-3. Follow the [4Geeks OpenClaw installation guide](https://4geeks.com) step by step — do not skip any phase.
+3. Follow the 4Geeks OpenClaw installation guide (read the lesson "Setting Up Your Personal AI Assistant") step by step — do not skip any phase.
 4. Create a **new GitHub repository** named `openclaw-setup-<your_github_username>` to store your delivery files (screenshot + config).
 
 > If you are working locally instead of on a VPS, confirm this with your instructor first. The setup steps differ.
@@ -57,13 +57,12 @@ This project does not use a starter repository — it is a server configuration 
 
 ### VPS & SSH Access
 
-- [ ] Successfully connect to the VPS via SSH from your local terminal.
+- [ ] Successfully connect to the VPS via SSH from your Code Editor or your local terminal.
 - [ ] Confirm the server OS and available resources before starting the installation.
 
 ### OpenClaw Installation
 
 - [ ] Install OpenClaw on the VPS following the 4Geeks installation guide.
-- [ ] Select the installation method indicated by your instructor (1-click, Docker, or manual).
 
 ### Core Configuration (in order)
 
