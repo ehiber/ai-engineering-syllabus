@@ -36,7 +36,7 @@ No se trata de escribir pruebas por el mero hecho de escribirlas. Se trata de co
 > - La batería de pruebas debe cubrir todos los endpoints de la API de autenticación
 > - Cada endpoint debe tener como mínimo: una prueba de camino feliz, una prueba de caso límite y una prueba de modo de fallo
 > - Usar `pytest` para el backend en FastAPI y `Jest` para la lógica en TypeScript
-> - Las pruebas deben pasar limpiamente con `pytest` y `jest --coverage`
+> - Las pruebas deben pasar limpiamente con `uv run pytest` y `jest --coverage`
 > - No probar la serialización HTTP — probar la lógica
 >
 > **Entregable:** Una batería de pruebas funcional incluida junto al código de la API existente, con un `TESTING.md` breve que explique cómo ejecutarla.
@@ -52,14 +52,14 @@ Este es el tipo de trabajo que distingue a un junior que entrega funcionalidades
 Trabajarás sobre tu proyecto de API de autenticación existente — no hay un repositorio nuevo que clonar.
 
 1. Abre tu proyecto de API de autenticación del hito anterior.
-2. Si trabajas en local, asegúrate de que tu entorno virtual está activo y las dependencias instaladas.
+2. Si trabajas en local, asegúrate de haber ejecutado `uv sync` para instalar las dependencias.
 3. Si usas GitHub Codespaces, reabre tu proyecto existente desde tu perfil de GitHub.
 
 Instala las dependencias de testing si aún no están presentes:
 
 ```bash
 # Python / FastAPI
-pip install pytest pytest-cov httpx
+uv add --dev pytest pytest-cov httpx
 
 # TypeScript (si aplica)
 npm install --save-dev jest @types/jest ts-jest
@@ -84,8 +84,8 @@ Si tienes dudas sobre cómo configurar un proyecto desde cero, visita: [cómo in
   - [ ] Una prueba de camino feliz (entrada válida, respuesta esperada)
   - [ ] Una prueba de caso límite (entrada en el límite: campo vacío, usuario duplicado, etc.)
   - [ ] Una prueba de modo de fallo (credenciales inválidas, token expirado, solicitud malformada)
-- [ ] Todas las pruebas deben pasar al ejecutar `pytest` desde la raíz del proyecto.
-- [ ] Ejecuta `pytest --cov` y comprueba que tu batería alcanza al menos **70% de cobertura** en el módulo de autenticación.
+- [ ] Todas las pruebas deben pasar al ejecutar `uv run pytest` desde la raíz del proyecto.
+- [ ] Ejecuta `uv run pytest --cov` y comprueba que tu batería alcanza al menos **70% de cobertura** en el módulo de autenticación.
 
 ### TypeScript — Jest (si tu proyecto incluye lógica de utilidades en TypeScript)
 
@@ -143,9 +143,9 @@ El CTO marcó AUTH-088 como el bloqueante, pero hay dos tickets que llevan seman
 ## ✅ Qué vamos a evaluar
 
 - [ ] Existe un archivo `TESTING.md` que documenta el plan de pruebas, cómo ejecutarlas y los resultados de cobertura.
-- [ ] `pytest` se ejecuta sin errores desde la raíz del proyecto y todas las pruebas pasan.
+- [ ] `uv run pytest` se ejecuta sin errores desde la raíz del proyecto y todas las pruebas pasan.
 - [ ] La batería incluye pruebas de camino feliz, casos límite y modos de fallo para cada endpoint de autenticación.
-- [ ] La cobertura del módulo de autenticación es igual o superior al 70% (verificada con `pytest --cov`).
+- [ ] La cobertura del módulo de autenticación es igual o superior al 70% (verificada con `uv run pytest --cov`).
 - [ ] Las pruebas afirman lógica de negocio, no serialización HTTP ni comportamiento del framework.
 - [ ] Si existen funciones de utilidad en TypeScript, los tests de Jest están presentes y pasan.
 - [ ] El flujo asistido por IA es evidente: `TESTING.md` menciona al menos un caso identificado con ayuda de la IA o un bug detectado por la batería de pruebas.
