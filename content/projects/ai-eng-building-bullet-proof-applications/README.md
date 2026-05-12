@@ -36,7 +36,7 @@ This is not about writing tests for their own sake. It's about building confiden
 > - Test suite must cover all endpoints in the authentication API
 > - Each endpoint must have at minimum: one happy-path test, one edge-case test, and one failure-mode test
 > - Use `pytest` for the FastAPI backend and `Jest` for any TypeScript logic
-> - Tests must pass cleanly with `pytest` and `jest --coverage`
+> - Tests must pass cleanly with `uv run pytest` and `jest --coverage`
 > - Do not test HTTP serialisation — test the logic
 >
 > **Deliverable:** A working test suite committed alongside the existing API code, with a brief `TESTING.md` explaining how to run it.
@@ -52,14 +52,14 @@ This is the kind of work that separates a junior who ships features from a profe
 You will work on top of your existing authentication API project — there is no new repository to fork.
 
 1. Open your authentication API project from the previous milestone.
-2. If you are working locally, make sure your virtual environment is active and dependencies are installed.
+2. If you are working locally, make sure you have run `uv sync` to install the dependencies.
 3. If you are using GitHub Codespaces, reopen your existing project from your GitHub profile.
 
 Install the testing dependencies if they are not already present:
 
 ```bash
 # Python / FastAPI
-pip install pytest pytest-cov httpx
+uv add --dev pytest pytest-cov httpx
 
 # TypeScript (if applicable)
 npm install --save-dev jest @types/jest ts-jest
@@ -84,8 +84,8 @@ If you have any questions about how to set up a project from scratch, visit: [ho
   - [ ] One happy-path test (valid input, expected response)
   - [ ] One edge-case test (boundary input: empty field, duplicate user, etc.)
   - [ ] One failure-mode test (invalid credentials, expired token, malformed request)
-- [ ] All tests must pass when running `pytest` from the project root.
-- [ ] Run `pytest --cov` and ensure your test suite achieves at least **70% coverage** on the authentication module.
+- [ ] All tests must pass when running `uv run pytest` from the project root.
+- [ ] Run `uv run pytest --cov` and ensure your test suite achieves at least **70% coverage** on the authentication module.
 
 ### TypeScript — Jest (if your project includes TypeScript utility logic)
 
@@ -143,9 +143,9 @@ The CTO just marked AUTH-088 as the blocker, but two other tickets have been sit
 ## ✅ What We Will Evaluate
 
 - [ ] A `TESTING.md` file is present and documents the test plan, how to run tests, and coverage results.
-- [ ] `pytest` runs without errors from the project root and all tests pass.
+- [ ] `uv run pytest` runs without errors from the project root and all tests pass.
 - [ ] The test suite includes happy-path, edge-case, and failure-mode tests for each authentication endpoint.
-- [ ] Test coverage on the authentication module is at or above 70% (verified with `pytest --cov`).
+- [ ] Test coverage on the authentication module is at or above 70% (verified with `uv run pytest --cov`).
 - [ ] Tests assert business logic, not HTTP serialisation or framework behaviour.
 - [ ] If TypeScript utility functions exist, Jest tests are present and passing.
 - [ ] The AI-assisted workflow is evident: `TESTING.md` notes at least one case identified with AI assistance or one bug caught by the test suite.
