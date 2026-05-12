@@ -1,0 +1,41 @@
+{
+  "gitpod": true,
+  "title": {
+    "en": "EduTrack Data Audit",
+    "es": "Auditoría de Datos en EduTrack"
+  },
+  "description": {
+    "en": "Audit the EduTrack enrollments table in Supabase: write 12 SQL queries (SELECT, INSERT, UPDATE, DELETE, GROUP BY, HAVING) and document the real findings in a Markdown analysis report.",
+    "es": "Audita la tabla de inscripciones de EduTrack en Supabase: escribe 12 consultas SQL (SELECT, INSERT, UPDATE, DELETE, GROUP BY, HAVING) y documenta los hallazgos reales en un informe de análisis en Markdown."
+  },
+  "status": "draft",
+  "template_url": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/edutrack-data-audit-sql/edutrack.sql",
+  "slug": "edutrack-data-audit-sql",
+  "difficulty": "beginner",
+  "duration": 1,
+  "technologies": [
+    "sql",
+    "supabase",
+    "postgres",
+    "data-analysis",
+    "data-cleaning",
+    "technical-documentation"
+  ],
+  "translations": ["es", "en"],
+  "projectType": "project",
+  "telemetry": {
+    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id="
+  },
+  "solution": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/edutrack-data-audit-sql/.learn/solution/README.md",
+  "preview": "https://raw.githubusercontent.com/4GeeksAcademy/ai-engineering-syllabus/main/content/projects/edutrack-data-audit-sql/.learn/preview.png",
+  "sharing": [
+    {
+      "en": "I just completed the EduTrack Data Audit with LearnPack @4GeeksAcademy: 12 SQL queries on Supabase plus a written analysis report. Check it out: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/edutrack-data-audit-sql #SQL #Supabase #DataAnalysis #LearnPack #4GeeksAcademy",
+      "es": "Acabo de completar la Auditoría de Datos en EduTrack con LearnPack @4GeeksAcademy: 12 consultas SQL en Supabase y un informe de análisis escrito. Mira el proyecto: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/edutrack-data-audit-sql #SQL #Supabase #DataAnalysis #LearnPack #4GeeksAcademy"
+    },
+    {
+      "en": "Built and shipped: EduTrack Data Audit - cleaning enrollments data with SQL on Supabase and reporting the findings. Learning by building with @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/edutrack-data-audit-sql #SQL #Postgres #DataCleaning #LearnPack #4GeeksAcademy",
+      "es": "Construido y publicado: Auditoría de Datos en EduTrack - limpieza de inscripciones con SQL en Supabase y reporte de hallazgos. Aprendiendo con proyectos reales en @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/edutrack-data-audit-sql #SQL #Postgres #DataCleaning #LearnPack #4GeeksAcademy"
+    }
+  ]
+}
