@@ -61,7 +61,7 @@ There is no starter code. The project starts from scratch.
 ### Seeder
 
 - [ ] Create a `seed.py` script that loads the initial suppliers defined in your CONTEXT into TinyDB.
-- [ ] The seeder must be executable with `pipenv run seed` without modifying the code.
+- [ ] The seeder must be executable with `uv run seed` without modifying the code.
 - [ ] If the database already has data, the seeder must not create duplicates — check before inserting.
 - [ ] Confirm in the console how many records were inserted when it finishes.
 
@@ -99,7 +99,7 @@ There is no starter code. The project starts from scratch.
 
 ### Seeder
 
-- [ ] `pipenv run seed` runs without errors and loads the CONTEXT suppliers into the database.
+- [ ] `uv run seed` runs without errors and loads the CONTEXT suppliers into the database.
 - [ ] Running the seeder more than once does not produce duplicates.
 - [ ] The number of records inserted is confirmed in the console when it finishes.
 
@@ -151,7 +151,7 @@ uis/
 
 1. Push your branch with the structure above and open a Pull Request to the original repository.
 2. Make sure the PR includes:
-   - A screenshot of the `pipenv run seed` output in the terminal.
+   - A screenshot of the `uv run seed` output in the terminal.
    - A screenshot of the response from at least one of the filter endpoints (by country or by category) in Swagger UI or an HTTP client.
    - A screenshot of the supplier list in the web interface with at least one filter applied.
 
