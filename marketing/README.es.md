@@ -2,6 +2,12 @@
 
 _This content is also available in [English](./README.md)._
 
+Cosas que faltan mencionar: 
+ - VPS y configuracion de tu propia nube.
+ - 
+ - Logos: Antropic, Claude, OpenAI, ChatGPT, Gemini, 
+ - 
+
 ---
 
 ## IA y Agentes (Core)
