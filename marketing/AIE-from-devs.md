@@ -1,12 +1,23 @@
-# AI Engineering — Program modules
+# AI Engineering from devs — Program modules
 
-_Este contenido también está disponible en [espanol](./README.es.md)._
+_Este contenido también está disponible en [espanol](./AIE-from-devs.es.md)._
+
+## AI Engineering Course Introduction
+
+This program is designed for **software engineers who are ready to make the leap into AI Engineering** — professionals who already know how to build and ship software, and now want to apply that foundation to the systems shaping the next decade of the industry.
+
+The curriculum assumes you bring working knowledge of **frontend development** (React, Next.js, JavaScript / TypeScript) and **backend development** (FastAPI or Flask). You will not spend time on the basics of web development or API design — instead, you will move directly into the AI-specific layer: agents, LLMs, retrieval systems, multi-agent orchestration, agentic infrastructure, and the security practices that production AI applications demand.
+
+If you have been building software professionally and want to reposition yourself at the frontier of the discipline — this is the program for you.
+
+---
 
 ## Core AI and Agents
 
 ### Personal Assistants with OpenClaw
 
 `AI` `Agents` `OpenClaw` `Deployment`
+
 You will learn to deploy and configure an open-source, self-hosted AI assistant — yours, under your control, without relying on external vendors. The practical foundation for the program's more advanced agent modules.
 
 **Skills developed:**
@@ -19,6 +30,7 @@ You will learn to deploy and configure an open-source, self-hosted AI assistant 
 ### Advanced Personal Assistants with OpenClaw
 
 `Agent Skills` `Memory` `Tool Calling` `Advanced configuration`
+
 You will take your basic assistant agent to a productive tool. You will learn to teach it new skills, choose the right memory type for each case, and configure it to operate with real autonomy in business contexts.
 
 **Skills developed:**
@@ -33,6 +45,7 @@ You will take your basic assistant agent to a productive tool. You will learn to
 ### Working with AI Coding Agents
 
 `Coding Agents` `Context Engineering` `Agent Rules` `Memory Banks` `Skills`
+
 The leap from "using AI" to "working professionally with AI." You will learn to build memory banks and context rules that turn a coding agent into a collaborator that understands your codebase. You will master writing specifications an agent can execute with precision.
 
 **Skills developed:**
@@ -46,6 +59,7 @@ The leap from "using AI" to "working professionally with AI." You will learn to 
 ### LLMs, Training & RAG
 
 `RAG` `Vector DBs` `Chunking` `Fine-tuning` `Embeddings` `Model Evaluation`
+
 You will understand how the models that power agents work — and how to make them smarter for specific use cases. You will implement RAG so your agent answers with proprietary, up-to-date knowledge, and learn when and how to train or fine-tune a model.
 
 **Skills developed:**
@@ -60,6 +74,7 @@ You will understand how the models that power agents work — and how to make th
 ### Agentic Engineering
 
 `Tool Calling` `CLIs` `MCPs` `Guardrails` `Agent Memory`
+
 The technical heart of the program. You will build agents that can call tools, access external systems via MCPs and CLIs, operate with persistent memory, and behave safely under guardrails. The knowledge that separates an AI engineer from someone who only uses chatbots.
 
 **Skills developed:**
@@ -75,6 +90,7 @@ The technical heart of the program. You will build agents that can call tools, a
 ### Agentic Workflows & Orchestration
 
 `Multi-Agent Systems` `LangGraph` `State Graphs` `Routing` `Human-in-the-Loop` `Checkpointing`
+
 When one agent is not enough. You will learn to design and orchestrate multi-agent systems with LangGraph, mastering the state graph model that makes complex agent collaboration possible. You will define state schemas, implement conditional routing and cycles with termination conditions, build human-in-the-loop checkpoints for approval and escalation, and compose modular subgraphs that can be reused across projects. You will also learn to trace, evaluate, and debug multi-agent flows — understanding which agent did what, why routing took a specific path, and what each decision cost.
 
 **Skills developed:**
@@ -92,37 +108,38 @@ When one agent is not enough. You will learn to design and orchestrate multi-age
 
 ## Infrastructure for AI
 
-### Backend Development with Coding Agents
+### Container Applications with Docker
 
-`Python` `FastAPI` `Agent Loops` `APIs` `Document DBs`
-The backend that brings agents to life. You will build robust APIs with FastAPI, implement agent loops in Python, and learn to design backend architectures oriented to AI use cases — from data processing to LLM integration.
+`Docker` `Containerization` `Deployment` `Reproducible Environments`
+
+Packaging and deploying full applications with Docker for productive, reproducible environments. You will learn to containerize AI-powered applications and ensure they run consistently across development and production.
 
 **Skills developed:**
 
-- Design backend architectures for AI-powered solutions
-- Create agent loops integrating LLMs with APIs
-- Implement lightweight storage and CSV data processing
-- Build and expose REST APIs for frontends and agents
+- Package applications and their dependencies into containers
+- Deploy containerized full-stack applications with Docker
+- Configure reproducible environments for AI workloads
 
 ---
 
-### Workflow Automations
+### Architecture Optimization
 
-`n8n` `LLM Nodes` `Webhooks` `Automation`
-Business automation with integrated AI. You will learn to represent business processes as executable flows, implement them in n8n, and connect LLMs and third-party apps in those flows. The outcome: processes that run autonomously without manual intervention.
+`Performance` `Caching` `Serialization` `Lazy Loading` `Scalability`
+
+Performance strategies for frontend and backend systems that serve AI workloads. You will apply caching, serialization, lazy loading, and high-load practices to build systems that remain responsive under real usage.
 
 **Skills developed:**
 
-- Model business logic with workflow diagrams
-- Implement basic and advanced flows in n8n
-- Integrate LLMs and external apps in automations
-- Deploy maintainable workflows with error handling
+- Apply caching strategies to reduce latency in AI-integrated backends
+- Optimize serialization and data transfer between services
+- Implement lazy loading and other high-load performance patterns
 
 ---
 
 ### Data Pipelines
 
 `Pandas` `ETL` `Data Pipelines`
+
 Data is the fuel of any AI solution. You will learn to build pipelines that take raw data from an application, transform it, and leave it ready to feed models, reports, or agents — the link that determines output quality.
 
 **Skills developed:**
@@ -135,6 +152,7 @@ Data is the fuel of any AI solution. You will learn to build pipelines that take
 ### Telemetry
 
 `Observability` `Reporting` `Data Collection` `Analysis`
+
 You cannot improve what you do not measure. You will learn to instrument applications to collect behavioral data, build reports from that data, and make business decisions based on real evidence — not intuition.
 
 **Skills developed:**
@@ -149,6 +167,7 @@ You cannot improve what you do not measure. You will learn to instrument applica
 ### Asynchronous Processing and Agentic Deployment
 
 `Queues` `Background Jobs` `Workers` `Redis` `Serverless` `Durable Execution` `Cronjobs`
+
 Tasks that must not block the user go to the queue — and agent workflows that must run reliably go here too. You will learn to implement background processing and queue systems that let agents and applications delegate heavy work without sacrificing response time. Then you will take it further: deploying agentic workflows into production with serverless functions, durable execution patterns, and cron-triggered pipelines. You will implement retry and resume from checkpoints, trigger LangGraph pipelines via webhooks, and build the infrastructure that keeps multi-agent systems running autonomously, continuously, and at scale.
 
 **Skills developed:**
@@ -162,46 +181,10 @@ Tasks that must not block the user go to the queue — and agent workflows that 
 
 ---
 
-### Real-Time
-
-`WebSockets` `Streaming` `Pub/Sub` `Event Architecture`
-The layer that makes AI feel alive. You will implement real-time communication between users and language models using streaming, WebSockets, and event-driven architectures — the same technology behind modern conversational interfaces.
-
-**Skills developed:**
-
-- Build support chats with LLMs in real time
-- Implement response streaming with generators (yield)
-- Integrate webhooks and pub/sub in AI applications
-
----
-
-### Web Application Authentication
-
-`JWT` `FastAPI` `Auth flows` `Security`
-Every productive application needs to know who is who. You will learn to implement secure authentication in FastAPI and build complete login flows that define what each user can do — and what agents can invoke on their behalf.
-
-**Skills developed:**
-
-- Implement authentication and route restrictions in FastAPI
-- Build complete authentication flows (login, tokens, sessions)
-
----
-
-### Error Handling, Debugging and Testing
-
-`Error Handling` `Testing` `Debugging` `TDD`
-Code that agents generate must be verified. You will learn to handle errors in a controlled way, write test suites that validate expected behavior, and debug applications with judgment — the quality standards that separate professional software from prototypes.
-
-**Skills developed:**
-
-- Understand and manage runtime errors with flow control
-- Develop test suites for robust applications
-
----
-
 ### Cybersecurity in AI Applications
 
 `OWASP` `AI Security` `LLM Auditing` `Guardrails`
+
 AI introduces attack vectors traditional security does not cover. You will learn to identify the most critical vulnerabilities in AI applications, implement safe practices in model integration, and use LLMs themselves to audit a system.
 
 **Skills developed:**
@@ -209,39 +192,3 @@ AI introduces attack vectors traditional security does not cover. You will learn
 - Identify and fix OWASP Top 10 vulnerabilities in web applications
 - Implement security practices specific to AI integrations
 - Use LLMs as a cybersecurity auditing tool
-
----
-
-## Other complementary knowledge
-
-### Foundations and technical support skills
-
-`Algorithms` `Data Structures` `Docker` `TypeScript` `React` `Next.js` `Tailwind` `SQL` `Git` `Command Line`
-These modules provide the essential foundations to collaborate effectively with software agents and review their work:
-
-- **Collaboration tools:** Command line, Git, and GitHub for collaborative, safe workflows.
-- **Containerization:** Packaging and deploying full applications with Docker for productive, reproducible environments.
-- **Programming:** Logic, algorithms, data structures, and OOP with TypeScript and Python to understand and improve AI-generated code.
-- **Modern frontend:** Building and reviewing interfaces with React, Next.js, and visual specs; accessible, optimized styling with HTML, CSS, and Tailwind.
-- **Databases:** SQL, PostgreSQL, and ORMs for robust data handling and relational queries.
-- **Optimization:** Performance strategies on frontend and backend: caching, serializers, lazy loading, and practices for high load.
-  This knowledge complements and strengthens the full development cycle of AI- and agent-driven systems.
-
----
-
-## Capstone
-
-### AI-transformed company
-
-`Final Project` `AI-First Company`
-The program closes with a real deliverable: the full transformation of a company through AI. You will integrate everything you have learned — agent-generated frontend, authenticated APIs, telemetry, automated workflows, a RAG knowledge layer, and agents with tool calling — into a working, deployed system. Not an academic exercise: a demonstration of professional capability.
-
-**Deliverable components:**
-
-- AI-generated frontend
-- API with full authentication
-- Telemetry and reporting pipeline
-- Agent-generated automated workflows
-- RAG knowledge layer
-- Agents with tool calling
-- Real-time communication
