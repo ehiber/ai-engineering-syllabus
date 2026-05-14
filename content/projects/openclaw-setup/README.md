@@ -47,8 +47,8 @@ This project does not use a starter repository — it is a server configuration 
 3. Follow the 4Geeks OpenClaw installation guide (read the lesson "Setting Up Your Personal AI Assistant") step by step — do not skip any phase.
 4. Create a **new GitHub repository** named `openclaw-setup-<your_github_username>` to save your entire openclaw configurations and files, Github will be used as the main backup for your agent.
 
-4.1 Make sure to include the [following gitignore file](https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/openclaw-setup/.learn/assets/.gitignore) in the root of your `.openclaw` directory.
-4.2 Make sure to commit and push the entire .openclaw directory.
+     4.1 Make sure to include the [following gitignore file](https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/openclaw-setup/.learn/assets/.gitignore) in the root of your `.openclaw` directory.  
+     4.2 Make sure to commit and push the entire .openclaw directory.
 
 > If you are working locally instead of on a VPS, confirm this with your instructor first. The setup steps differ.
 
