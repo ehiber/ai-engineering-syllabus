@@ -1,4 +1,4 @@
-# AI Native Full Stack — Program modules
+# AI Engineering — Program modules
 
 _Este contenido también está disponible en [espanol](./README.es.md)._
 
