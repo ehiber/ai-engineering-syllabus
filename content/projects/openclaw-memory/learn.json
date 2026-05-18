@@ -1,0 +1,40 @@
+{
+  "gitpod": true,
+  "title": {
+    "en": "Give Your Agent a Memory",
+    "es": "Dale memoria a tu agente"
+  },
+  "description": {
+    "en": "Design a personal memory architecture for your OpenClaw agent: persistent context in Memory.md, episodic notes in /memory, QMD for retrieval (keyword, semantic, reranking), and a justified MEMORY_DESIGN.md — with fresh-session recall demonstrated.",
+    "es": "Diseña una arquitectura de memoria personal para tu agente OpenClaw: contexto persistente en Memory.md, notas episódicas en /memory, QMD para recuperación (keyword, semántica, reranking) y un MEMORY_DESIGN.md justificado — con demostración de recall en sesión nueva."
+  },
+  "status": "draft",
+  "template_url": "https://github.com/openclaw/openclaw",
+  "slug": "openclaw-memory",
+  "difficulty": "intermediate",
+  "duration": 3,
+  "technologies": [
+    "openclaw",
+    "qmd",
+    "agent-memory",
+    "markdown",
+    "technical-documentation"
+  ],
+  "translations": ["es", "en"],
+  "projectType": "project",
+  "telemetry": {
+    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id="
+  },
+  "solution": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/openclaw-memory/.learn/solution/README.md",
+  "preview": "https://raw.githubusercontent.com/4GeeksAcademy/ai-engineering-syllabus/main/content/projects/openclaw-memory/.learn/preview.png",
+  "sharing": [
+    {
+      "en": "I just completed Give Your Agent a Memory with LearnPack @4GeeksAcademy. Check it out: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/openclaw-memory #AIEngineering #LearnPack #4GeeksAcademy #openclaw #qmd #agentmemory",
+      "es": "Acabo de completar Dale memoria a tu agente con LearnPack @4GeeksAcademy. Mira el proyecto: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/openclaw-memory #AIEngineering #LearnPack #4GeeksAcademy #openclaw #qmd #agentmemory"
+    },
+    {
+      "en": "Built and shipped: Give Your Agent a Memory. Learning by building with @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/openclaw-memory #AIEngineering #LearnPack #4GeeksAcademy #openclaw #qmd #agentmemory",
+      "es": "Construido y publicado: Dale memoria a tu agente. Aprendiendo con proyectos reales en @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/openclaw-memory #AIEngineering #LearnPack #4GeeksAcademy #openclaw #qmd #agentmemory"
+    }
+  ]
+}
