@@ -1,6 +1,6 @@
 # Welcome to HealthCore
 
-### AI Engineering · 4Geeks Academy — Company Briefing
+## AI Engineering · 4Geeks Academy — Company Briefing
 
 ---
 
@@ -41,6 +41,91 @@ Operating in healthcare adds a layer of responsibility that does not exist in ot
 Dr. Okonkwo has created an internal unit called **HealthCore Digital** to build the systems, workflows, and intelligent tools that will allow the company to operate as a modern healthcare provider — safe, efficient, and genuinely centred on the patient.
 
 **You are part of that unit.**
+
+---
+
+## The Departments and Their Problems
+
+### 🏥 Clinical Operations
+
+**Director:** Dr. Marcus Reid (~120 clinical staff across 12 locations)
+
+Each of the 12 clinics operates with its own processes and patient records system. US clinics use one EHR platform, UK clinics use another, and they cannot communicate with each other. Clinical staff spend 35 minutes per day on documentation tasks that could be assisted by AI. When a patient moves between locations or crosses the US-UK boundary, their history does not follow them.
+
+**What they need:** A unified patient record API that surfaces data from both EHR systems, AI-assisted clinical documentation to reduce administrative time, cross-location patient history visibility, and a clinical operations dashboard showing appointment volume, patient flow, and documentation time by location.
+
+---
+
+### 🗓️ Patient Experience and Access
+
+**Manager:** Priya Nair (London)
+
+Patients in the US book appointments by phone. Patients in the UK call a front desk. There is no shared online booking system. A 22% no-show rate across the network represents both poor patient experience and significant financial loss — approximately $1.8 million annually in lost appointment slots. No proactive outreach system exists to remind patients or reschedule at-risk appointments.
+
+**What they need:** A unified online booking platform for both markets, an intelligent appointment reminder system with SMS/email/app notifications, a no-show prediction model that flags high-risk appointments for proactive contact, and a patient experience dashboard tracking booking rates, no-shows, and patient satisfaction by location.
+
+---
+
+### 💰 Revenue Cycle and Billing
+
+**Manager:** Tom Callahan
+
+In the US, a 14% claims denial rate — more than double the industry average of 5-8% — is costing HealthCore significant revenue. Claims are submitted manually with inconsistent coding practices across locations. In the UK, billing is split between private pay and a small NHS contract, managed separately with no unified view. Tom cannot answer "what is our collection rate this month?" without making phone calls.
+
+**What they need:** An AI-assisted claims review system that flags high-risk submissions before they go out, automated coding suggestions based on clinical notes, a unified billing dashboard showing US and UK revenue streams in real time, denial pattern analysis to identify systematic issues, and automated follow-up workflows for denied or unpaid claims.
+
+---
+
+### 🔒 Compliance and Data Governance
+
+**Manager:** Claire Whitfield
+
+HealthCore operates under two different legal frameworks: HIPAA in the United States and UK GDPR in the United Kingdom. Every system that handles patient data must be evaluated through both lenses. Data access logs are maintained separately in each EHR system. Audit trails are incomplete. When a patient requests their data under GDPR or HIPAA, compiling it requires manual work across multiple systems.
+
+**What they need:** A centralised compliance monitoring dashboard showing data access patterns across both jurisdictions, automated audit trail consolidation, a patient data request automation tool that compiles records from all systems, and a compliance risk scoring system that flags potential violations before they become breaches.
+
+---
+
+### 👥 People and Workforce
+
+**Manager:** Diane Foster
+
+Managing 200 employees across 12 locations in two countries, each with different employment law frameworks, creates significant overhead. Clinical roles are hard to fill and take an average of 47 days to close — nearly 20 days longer than industry benchmarks. Onboarding is manual. Continuing medical education (CME) hours, which clinicians are legally required to track to maintain their licences, are recorded on a spreadsheet.
+
+**What they need:** An internal HR portal for holiday requests, absence management, and policy queries, an automated clinical onboarding flow with credential verification checklists, a CME tracking system with automatic expiry alerts, an HR KPI dashboard tracking time-to-hire, turnover, and absenteeism by location and role, and an HR chatbot that answers common employee questions.
+
+---
+
+### 💻 Technology
+
+**CTO:** James Osei (6-person team in Austin)
+
+HealthCore's technology estate is a patchwork of systems acquired or built over a decade: two different EHR platforms, a US billing system, a UK billing spreadsheet, a phone-based US scheduling system, and manual diaries for UK bookings. There is no shared data layer. No telemetry. No centralised logging. When a system fails, the team finds out when a clinic calls to report it.
+
+**What they need:** A HealthCore central API that unifies patient, appointment, billing, and staff data across both EHR systems, real-time telemetry and monitoring from all 12 locations, a data pipeline feeding clinical, operations, and finance dashboards, automated health checks with alerts, and technical documentation indexed for semantic search.
+
+---
+
+### 📊 Executive Leadership
+
+**CEO:** Dr. Sandra Okonkwo
+
+Dr. Okonkwo manages a 28-million-dollar healthcare network across two countries without a unified dashboard. Her decisions are based on weekly reports from each department head — all formatted differently, sometimes contradictory, and always several days old. She cannot answer basic operational questions like "what is our no-show rate this week?" or "which location has the highest claims denial rate this month?" without making phone calls.
+
+**What she needs:** A unified executive dashboard with real-time KPIs from all departments (appointment volume, no-show rate, claims denial rate, revenue by location, patient satisfaction), an automatically generated weekly report delivered every Monday at 7am, threshold alerts for critical metrics, and a natural-language AI assistant she can query directly.
+
+---
+
+## Why Choose HealthCore?
+
+Choose HealthCore if you are drawn to:
+
+- **Healthcare and regulated data** — building systems that handle protected health information under HIPAA and UK GDPR, where errors have legal consequences and privacy is non-negotiable.
+- **Cross-border healthcare operations** — two countries, two regulatory frameworks, two EHR systems, and a unified patient experience that must work across all of it.
+- **High-stakes AI applications** — clinical documentation assistance, claims denial prediction, and appointment no-show forecasting are not optional enhancements; they directly impact patient care and company viability.
+- **Systems that serve real patients** — every dashboard, API, and automation you build exists to help people get the healthcare they need, when they need it, without unnecessary friction.
+
+The AI challenges at HealthCore include natural language processing of clinical notes for billing code suggestions, predictive models for appointment no-shows trained on multi-location data, RAG systems over compliance documentation in two jurisdictions, and intelligent scheduling that balances patient preferences with clinic capacity. If you want to build systems where technical excellence directly translates to better healthcare delivery, HealthCore is your company.
 
 ---
 
