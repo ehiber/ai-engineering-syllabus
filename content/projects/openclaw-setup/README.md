@@ -38,7 +38,7 @@ Get it running.
 This project does not use a starter repository — it is a server configuration project. Follow these steps to begin:
 
 1. Access the VPS provided by the platform (credentials will be shared via the course platform).
-2. Connect to the VPS via your Codespaces/VS Code editor so you can get help from your Copilot in case you needed. Or you can connect via SSH from your terminal:
+2. Connect to the VPS via your VS Code editor so you can get help from your Copilot in case you needed. Or you can connect via SSH from your terminal:
 
    ```bash
    ssh your_user@your_vps_ip
