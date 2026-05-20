@@ -19,17 +19,18 @@
         "backend-design",
         "technical-documentation"
     ],
-    "projectType": "project",
+    "projectType": "tutorial",
     "solution": {
         "us": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/openclaw-setup/.learn/solution/README.md",
         "es": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/openclaw-setup/.learn/solution/README.md"
     },
+    "grading": "incremental",
+    "localhostOnly": false,
     "delivery": {
         "instructions": "",
         "formats": [
             "url"
         ],
         "regex": ""
-    },
-    "grading": "ISOLATED"
+    }
 }
