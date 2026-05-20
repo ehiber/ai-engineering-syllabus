@@ -28,6 +28,8 @@ Un blog de cocina quiere una app de descubrimiento de recetas donde los usuarios
 > #### Comportamiento de la búsqueda
 >
 > La búsqueda filtra recetas cuyo `title` coincida con el término usando una regex case-insensitive (`new RegExp(term, 'i')`). Los filtros de cocina y dificultad se acumulan con la búsqueda.
+>
+> 💡 **Sugerencia:** Implementa el filtrado dentro del hook `useRecipes`. Encadena los filtros en orden — primero la búsqueda, luego la cocina, luego la dificultad — para que cada paso reduzca el resultado anterior: `recipes.filter(r => regex.test(r.title)).filter(r => !cuisine || r.cuisine === cuisine).filter(r => !difficulty || r.difficulty === difficulty)`.
 
 ---
 

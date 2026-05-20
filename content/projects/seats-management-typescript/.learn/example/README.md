@@ -81,7 +81,7 @@ Run your program with these four states and print the lot after each:
   R2 [  _   _   _   X   _   _ ]
   R3 [  _   X   _   _   _   _ ]
 
-Free: 16  |  Occupied: 8
+Free: 18  |  Occupied: 6
 
 Reserving R0C0... Reserved R0C0
 Reserving R0C0 again... Space already occupied

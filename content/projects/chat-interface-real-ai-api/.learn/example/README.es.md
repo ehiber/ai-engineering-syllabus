@@ -66,6 +66,8 @@ Una pequeña escuela de cocina quiere un asistente con IA donde los estudiantes 
 
 ## Ejemplo Mínimo de Llamada a la API
 
+> ⚠️ **Advertencia de seguridad:** Las variables con prefijo `NEXT_PUBLIC_` se **incluyen en el JavaScript del navegador** y son visibles para cualquier persona que inspeccione la página. Nunca uses `NEXT_PUBLIC_` para claves API reales en producción. Para este ejercicio en clase es aceptable, pero usa una clave de corta duración y sé consciente del riesgo. En una aplicación real, las llamadas a Groq deben hacerse desde una API route de Next.js (lado servidor) para que la clave nunca llegue al cliente.
+
 ```js
 const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
   method: "POST",

@@ -95,6 +95,8 @@ The `/instruction` endpoint calls Groq with a system prompt that forces the LLM 
 - [ ] IDs must be unique even after deletions (use `max(n["id"] for n in notes) + 1` or a counter)
 - [ ] Return `404` with a message if a note ID is not found
 
+> 💡 **Implementation guidance:** Start with `GET /notes` (return the list) and `POST /notes` (append a new dict). Then tackle `DELETE` (filter out by ID). For `PUT` and `PATCH`, find the note by ID with `next((n for n in notes if n["id"] == note_id), None)` and raise `HTTPException(status_code=404)` if not found. Handle `PUT` by replacing all fields; handle `PATCH` by updating only the provided fields.
+
 ### Instruction endpoint
 
 - [ ] Implement `POST /instruction` that reads the `transcription` field

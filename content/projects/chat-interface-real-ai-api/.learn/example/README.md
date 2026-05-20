@@ -66,6 +66,8 @@ A small cooking school wants an AI-powered assistant where students can type que
 
 ## Minimal API Call Example
 
+> ⚠️ **Security warning:** Variables prefixed with `NEXT_PUBLIC_` are **bundled into the browser JavaScript** and are visible to anyone who inspects your page. Never use `NEXT_PUBLIC_` for real API keys in production. For this classroom exercise it is acceptable, but make sure to use a short-lived key and understand the risk. In a real app, API calls to Groq must be made from a Next.js API route (server-side) so the key never reaches the client.
+
 ```js
 const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
   method: "POST",

@@ -28,6 +28,8 @@ A food blog wants a recipe discovery app where users can search and filter recip
 > #### Search behavior
 >
 > Search filters recipes whose `title` matches the search term using a case-insensitive regex (`new RegExp(term, 'i')`). Cuisine and difficulty filters stack with search.
+>
+> 💡 **Suggestion:** Implement filtering inside your `useRecipes` hook. Chain the filters in order — search first, then cuisine, then difficulty — so each step narrows the previous result: `recipes.filter(r => regex.test(r.title)).filter(r => !cuisine || r.cuisine === cuisine).filter(r => !difficulty || r.difficulty === difficulty)`.
 
 ---
 

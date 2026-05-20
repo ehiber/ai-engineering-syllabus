@@ -81,7 +81,7 @@ Ejecuta tu programa con estos cuatro estados e imprime el aparcamiento después 
   F2 [  _   _   _   X   _   _ ]
   F3 [  _   X   _   _   _   _ ]
 
-Libres: 16  |  Ocupadas: 8
+Libres: 18  |  Ocupadas: 6
 
 Reservando F0C0... Reservada F0C0
 Reservando F0C0 de nuevo... Plaza ya ocupada
