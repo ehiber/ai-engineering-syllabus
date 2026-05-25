@@ -1,0 +1,41 @@
+{
+  "gitpod": true,
+  "title": {
+    "en": "Performance Optimisation: Caching",
+    "es": "Optimización de rendimiento: Caching"
+  },
+  "description": {
+    "en": "Profile your company monorepo, apply justified frontend caching (lazy loading, useMemo) and FastAPI endpoint caching with TTL and invalidation, and document freshness vs. performance tradeoffs in CACHING_REPORT.md.",
+    "es": "Perfiliza tu monorepo, aplica caching justificado en frontend (lazy loading, useMemo) y en endpoints FastAPI con TTL e invalidación, y documenta los intercambios frescura vs. rendimiento en CACHING_REPORT.md."
+  },
+  "status": "draft",
+  "template_url": "https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo",
+  "slug": "ai-eng-application-caching",
+  "difficulty": "intermediate",
+  "duration": 2,
+  "technologies": [
+    "nextjs",
+    "react",
+    "fastapi",
+    "performance",
+    "caching",
+    "technical-documentation"
+  ],
+  "translations": ["es", "en"],
+  "projectType": "project",
+  "telemetry": {
+    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id="
+  },
+  "solution": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/ai-eng-application-caching/.learn/solution/README.md",
+  "preview": "https://raw.githubusercontent.com/4GeeksAcademy/ai-engineering-syllabus/main/content/projects/ai-eng-application-caching/.learn/preview.png",
+  "sharing": [
+    {
+      "en": "I just completed Performance Optimisation: Caching with LearnPack @4GeeksAcademy. Check it out: https://github.com/4GeeksAcademy/ai-eng-application-caching #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #fastapi",
+      "es": "Acabo de completar Optimización de rendimiento: Caching con LearnPack @4GeeksAcademy. Mira el proyecto: https://github.com/4GeeksAcademy/ai-eng-application-caching #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #fastapi"
+    },
+    {
+      "en": "Built and shipped: Performance Optimisation: Caching. Learning by building with @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-eng-application-caching #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #fastapi",
+      "es": "Construido y publicado: Optimización de rendimiento: Caching. Aprendiendo con proyectos reales en @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-eng-application-caching #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #fastapi"
+    }
+  ]
+}

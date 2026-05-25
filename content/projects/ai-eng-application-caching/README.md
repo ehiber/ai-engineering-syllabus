@@ -1,0 +1,107 @@
+# Performance Optimisation: Caching
+
+<!-- hide -->
+
+By [@4GeeksAcademy](https://github.com/4GeeksAcademy) and [other contributors](https://github.com/4GeeksAcademy/caching-optimization/graphs/contributors) at [4Geeks Academy](https://4geeksacademy.com/)
+
+[![build by developers](https://img.shields.io/badge/build_by-Developers-blue)](https://4geeks.com)
+[![4Geeks Academy](https://img.shields.io/twitter/follow/4geeksacademy?style=social&logo=x)](https://x.com/4geeksacademy)
+
+_Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
+
+**Before you start**: 📗 [Read the instructions](https://4geeks.com/lesson/how-to-start-a-project) on how to start a coding project.
+
+<!-- endhide -->
+
+---
+
+## 🎯 Challenge
+
+Your company's platform is growing. What once handled a handful of requests per day is now under real load — more users, more API calls, more complex UI interactions. The tech lead has flagged a recurring pattern in the telemetry: some endpoints are being hit dozens of times per minute with identical queries, and some components are re-rendering far more than they need to.
+
+The mandate is clear: before the next feature sprint, the team must profile the existing application, identify the highest-value caching opportunities, and implement them. This is not about caching everything — it's about making deliberate, justified decisions about what to cache, where to cache it, and for how long.
+
+You will work directly on your transversal project monorepo. The output is not just working code: it's a structured technical report that explains your reasoning. Engineering decisions without documentation are just guesses — the team needs to understand why each choice was made.
+
+### 🧠 Complementary knowledge
+
+**When is caching the right call?**
+Not every piece of data deserves a cache. Before implementing anything, evaluate two axes:
+
+- **Computation cost vs. storage cost**: is recalculating or re-fetching this data more expensive than storing a copy of it? If a query takes 400ms and runs 200 times a minute, caching is almost certainly justified. If it takes 2ms and the data changes every 10 seconds, it probably isn't.
+- **Data freshness vs. performance**: cached data is, by definition, potentially stale. A product listing can tolerate a 60-second TTL. A bank balance cannot. Every caching decision is a tradeoff between speed and consistency — document it explicitly.
+
+**Frontend caching scope**
+On the frontend, two techniques apply directly:
+
+- **Lazy Loading**: deferring the load of components or data until they are actually needed. This reduces the initial bundle size and time-to-interactive. Useful for heavy components that appear below the fold or only in certain flows.
+- **`useMemo`**: memoizing expensive computed values inside a component so they are only recalculated when their dependencies change. Only apply it when profiling shows the computation is genuinely expensive — premature memoization adds complexity without benefit.
+
+**Backend caching levels**
+On the FastAPI backend, the most practical approach at this stage is **in-process cache** (a dictionary or simple cache decorator in memory) or an **external cache** like Redis. The key question per endpoint is: _does this response depend on data that changes frequently, and does it involve meaningful computation?_ Endpoints that aggregate across many rows, call external services, or run heavy filtering are the best candidates.
+
+**TTL discipline**
+Every cached value must have an expiry. No TTL means stale data lives forever. Choose TTLs based on how often the underlying data changes — not on convenience.
+
+---
+
+## 🌱 How to Start the Project
+
+This project is built on top of your existing transversal project monorepo. You do not fork a new repository.
+
+1. Open your monorepo in Codespaces or clone it locally.
+2. Create a new branch: `git checkout -b feature/caching-optimisation`
+3. Make sure both the frontend and backend run correctly before making any changes.
+
+---
+
+## 💻 What You Need to Do
+
+### Frontend Analysis and Optimisation
+
+- [ ] Audit your Next.js application and identify at least **two components or routes** that are good candidates for Lazy Loading. Document your reasoning: why is deferring this component's load justified?
+- [ ] Implement Lazy Loading for those components using `next/dynamic` or `React.lazy`.
+- [ ] Audit your components for expensive computed values. Identify at least **one `useMemo` opportunity** where the computation is non-trivial and the dependency array is well-defined.
+- [ ] Implement the `useMemo` optimisation. Do not apply it to trivial calculations.
+
+### Backend Analysis and Optimisation
+
+- [ ] List all endpoints in your FastAPI application. For each one, assess: (a) how expensive is the operation? (b) how frequently is it called? (c) how often does the underlying data change?
+- [ ] Identify at least **two endpoints** that meet the cost + frequency + stability criteria for caching.
+- [ ] Implement caching for those endpoints. You may use an in-memory dictionary with TTL logic, `functools.lru_cache` where applicable, or a Redis-based cache if your stack supports it.
+- [ ] Implement cache invalidation: if the underlying data changes (e.g., a write operation), the relevant cached values must be cleared or marked stale.
+
+> ⚠️ **IMPORTANT:** Do not cache endpoints that return personalised, session-specific, or sensitive data without scoping the cache key to the authenticated user. A shared cache key for private data is a data leak, not a performance gain.
+
+### Technical Report
+
+- [ ] Write a `CACHING_REPORT.md` (or equivalent) in your monorepo with the following sections:
+  - **Frontend decisions**: which components were lazy-loaded and why; which values were memoized and what the measured or estimated benefit is.
+  - **Backend decisions**: for each cached endpoint, document the operation cost, call frequency estimate, TTL chosen, and invalidation strategy.
+  - **Tradeoffs acknowledged**: at least one explicit discussion of a data freshness tradeoff — where you chose a specific TTL and why that level of potential staleness is acceptable for this use case.
+  - **What was not cached and why**: identify at least one endpoint or component you considered but decided against caching, with justification.
+
+---
+
+## ✅ What We Will Evaluate
+
+- [ ] At least two components or routes implement Lazy Loading with documented justification.
+- [ ] At least one `useMemo` is applied to a non-trivial computed value with a correct dependency array.
+- [ ] At least two backend endpoints are cached with TTL-based expiry.
+- [ ] Cache invalidation is implemented: cached values are cleared when the underlying data changes.
+- [ ] No private or session-specific data is stored in a shared cache key.
+- [ ] `CACHING_REPORT.md` is present and addresses all required sections.
+- [ ] Decisions in the report are specific and justified — not generic ("we cached this because it's slow").
+- [ ] At least one tradeoff (freshness vs. performance) is explicitly discussed.
+
+> Note: The evaluation focuses on decision quality and implementation correctness, not on the number of endpoints or components cached. Fewer well-justified decisions are preferred over many unjustified ones.
+
+---
+
+## 📦 How to Submit
+
+Push your branch to GitHub and open a Pull Request to `main` in your transversal project repository. Share the PR link according to your instructor's instructions.
+
+---
+
+This and many other projects are built by students as part of the [Career Programs](https://4geeksacademy.com/compare-programs) at [4Geeks Academy](https://4geeksacademy.com). By [@4GeeksAcademy](https://github.com/4GeeksAcademy) and [other contributors](https://github.com/4GeeksAcademy/caching-optimization/graphs/contributors). Find out more about [AI Engineering](https://4geeksacademy.com/en/coding-bootcamps/ai-engineering), [Data Science & Machine Learning](https://4geeksacademy.com/en/coding-bootcamps/data-science-ml), [Cybersecurity](https://4geeksacademy.com/en/coding-bootcamps/cybersecurity) and [Full-Stack Software Developer with AI](https://4geeksacademy.com/en/coding-bootcamps/full-stack-developer).
