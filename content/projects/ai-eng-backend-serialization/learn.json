@@ -1,0 +1,40 @@
+{
+  "gitpod": true,
+  "title": {
+    "en": "Backend Serialization Audit",
+    "es": "Auditoría de Serialización del Backend"
+  },
+  "description": {
+    "en": "Audit every FastAPI endpoint in your company monorepo backend: classify serialization state, document findings in docs/serialization-audit.md, add explicit Pydantic response_model and separate input schemas, and verify via tests and /docs.",
+    "es": "Audita cada endpoint FastAPI del backend en tu monorepo: clasifica el estado de serialización, documenta en docs/serialization-audit.md, añade response_model Pydantic explícitos y esquemas de entrada separados, y verifica con tests y /docs."
+  },
+  "status": "draft",
+  "template_url": "https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo",
+  "slug": "ai-eng-backend-serialization",
+  "difficulty": "intermediate",
+  "duration": 2,
+  "technologies": [
+    "fastapi",
+    "pydantic",
+    "python",
+    "backend-design",
+    "technical-documentation"
+  ],
+  "translations": ["es", "en"],
+  "projectType": "project",
+  "telemetry": {
+    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id="
+  },
+  "solution": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/ai-eng-backend-serialization/.learn/solution/README.md",
+  "preview": "https://raw.githubusercontent.com/4GeeksAcademy/ai-engineering-syllabus/main/content/projects/ai-eng-backend-serialization/.learn/preview.png",
+  "sharing": [
+    {
+      "en": "I just completed Backend Serialization Audit with LearnPack @4GeeksAcademy. Check it out: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-backend-serialization #AIEngineering #LearnPack #4GeeksAcademy #fastapi #pydantic #python",
+      "es": "Acabo de completar Auditoría de Serialización del Backend con LearnPack @4GeeksAcademy. Mira el proyecto: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-backend-serialization #AIEngineering #LearnPack #4GeeksAcademy #fastapi #pydantic #python"
+    },
+    {
+      "en": "Built and shipped: Backend Serialization Audit. Learning by building with @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-backend-serialization #AIEngineering #LearnPack #4GeeksAcademy #fastapi #pydantic #python",
+      "es": "Construido y publicado: Auditoría de Serialización del Backend. Aprendiendo con proyectos reales en @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-backend-serialization #AIEngineering #LearnPack #4GeeksAcademy #fastapi #pydantic #python"
+    }
+  ]
+}
