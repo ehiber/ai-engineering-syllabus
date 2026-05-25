@@ -25,6 +25,12 @@ This orchestrator must cover:
 
 If `source_readme_es_path` is missing, infer translation direction from the source file name and generate the counterpart README.
 
+## What is not a classroom example brief
+
+Do **not** ask the user whether to include narrative blocks inside the student README (e.g. CTO briefs, quoted requirements, minimum deliverables in the challenge section). Those belong in `README.md` / `README.es.md` as provided.
+
+A **classroom example brief** (Spanish curriculum label: _enunciado de ejemplo_) means only the instructor files under `.learn/example/` (Phase 5 + `classroom-example-brief`). Ask about that once before scaffolding if `--classroom-example ask`, or respect `yes` / `no` flags.
+
 ## Workflow
 
 ### Phase 0 - Prepare target project folder
@@ -125,7 +131,7 @@ Safety rule:
 
 ### Phase 5 - Classroom example brief for instructors (post-generation)
 
-After Phases 0–4 complete, the orchestrator script asks whether the project needs an **instructor classroom example brief** under `.learn/example/` (separate from the student README and from `.learn/solution/`).
+After Phases 0–4 complete, ask whether the project needs an **instructor classroom example brief** under `.learn/example/` (separate from the student README, from CTO/stakeholder quotes in the README, and from `.learn/solution/`).
 
 - Skill: `classroom-example-brief/SKILL.md`
 - Outputs when accepted: `.learn/example/README.md` and `.learn/example/README.es.md`
@@ -135,12 +141,12 @@ After Phases 0–4 complete, the orchestrator script asks whether the project ne
 
 The script `orchestrate_project_from_readme.py` runs this step **after** scaffolding finishes:
 
-| Mode | Behavior |
-|------|----------|
-| `--classroom-example ask` (default) | Interactive `[y/N]` prompt when stdin is a TTY |
-| `--classroom-example yes` | Scaffolds `.learn/example/INSTRUCTIONS.md` and reports `classroom_example=yes`; agent must still run `classroom-example-brief` to write the briefs |
-| `--classroom-example no` | Skips; reports `classroom_example=no` |
-| `ask` + non-interactive (agent/CI) | Prints `classroom_example=ask_required`; agent must ask the user in chat, then re-run with `yes` or `no`, or apply the skill directly if `yes` |
+| Mode                                | Behavior                                                                                                                                           |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--classroom-example ask` (default) | Interactive `[y/N]` prompt when stdin is a TTY                                                                                                     |
+| `--classroom-example yes`           | Scaffolds `.learn/example/INSTRUCTIONS.md` and reports `classroom_example=yes`; agent must still run `classroom-example-brief` to write the briefs |
+| `--classroom-example no`            | Skips; reports `classroom_example=no`                                                                                                              |
+| `ask` + non-interactive (agent/CI)  | Prints `classroom_example=ask_required`; agent must ask the user in chat, then re-run with `yes` or `no`, or apply the skill directly if `yes`     |
 
 **Report requirement:** Final orchestration report must state `classroom_example: yes | no | ask_required`.
 

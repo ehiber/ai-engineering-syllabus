@@ -13,7 +13,9 @@ description: >-
 
 ## Purpose
 
-Produce **instructor-facing** enunciados that let a teacher implement a **small, coherent reference solution** in class. The example must:
+Produce **instructor-facing** example briefs that let a teacher implement a **small, coherent reference solution** in class.
+
+**Terminology:** A _classroom example brief_ (Spanish curriculum label: _enunciado de ejemplo_) means **only** the files under `.learn/example/`. Stakeholder quotes in the student README (CTO briefs, minimum deliverables, quoted requirements in `## 🎯 Your challenge`) are **official project content** — never treat them as optional example statements to include or omit. Each classroom brief must:
 
 - Teach the **same technical concepts, patterns, and stack** as the official project.
 - Use a **different domain and narrative** than the student README (no clone of the real use case).
