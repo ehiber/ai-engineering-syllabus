@@ -1,0 +1,40 @@
+{
+  "gitpod": true,
+  "title": {
+    "en": "Frontend Performance Audit",
+    "es": "Auditoría de Rendimiento Frontend"
+  },
+  "description": {
+    "en": "Audit corporate site and backoffice in your company monorepo with Lighthouse (before/after), document root causes in AUDIT.md, apply targeted fixes and refactors guided by agent skills, and prove impact in REPORT.md with committed screenshots.",
+    "es": "Audita el sitio corporativo y el backoffice en tu monorepo con Lighthouse (antes/después), documenta causas raíz en AUDIT.md, aplica correcciones y refactorizaciones guiadas por skills de agente, y demuestra el impacto en REPORT.md con capturas en el repositorio."
+  },
+  "status": "draft",
+  "template_url": "https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo",
+  "slug": "ai-eng-frontend-performance-audit",
+  "difficulty": "intermediate",
+  "duration": 2,
+  "technologies": [
+    "nextjs",
+    "react",
+    "lighthouse",
+    "performance",
+    "technical-documentation"
+  ],
+  "translations": ["es", "en"],
+  "projectType": "project",
+  "telemetry": {
+    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id="
+  },
+  "solution": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/ai-eng-frontend-performance-audit/.learn/solution/README.md",
+  "preview": "https://raw.githubusercontent.com/4GeeksAcademy/ai-engineering-syllabus/main/content/projects/ai-eng-frontend-performance-audit/.learn/preview.png",
+  "sharing": [
+    {
+      "en": "I just completed Frontend Performance Audit with LearnPack @4GeeksAcademy. Check it out: https://github.com/4GeeksAcademy/ai-eng-frontend-performance-audit #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #lighthouse",
+      "es": "Acabo de completar Auditoría de Rendimiento Frontend con LearnPack @4GeeksAcademy. Mira el proyecto: https://github.com/4GeeksAcademy/ai-eng-frontend-performance-audit #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #lighthouse"
+    },
+    {
+      "en": "Built and shipped: Frontend Performance Audit. Learning by building with @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-eng-frontend-performance-audit #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #lighthouse",
+      "es": "Construido y publicado: Auditoría de Rendimiento Frontend. Aprendiendo con proyectos reales en @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-eng-frontend-performance-audit #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #lighthouse"
+    }
+  ]
+}
