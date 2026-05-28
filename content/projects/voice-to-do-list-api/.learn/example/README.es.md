@@ -12,16 +12,17 @@ _These instructions are also available in [English](./README.md)._
 
 Este ejemplo está acotado para una sesión en vivo en el aula. Mantiene el mismo stack y patrones centrales que el proyecto oficial del estudiante en esta carpeta pero omite requisitos secundarios; ver la nota para instructores arriba. Los estudiantes siguen el enunciado completo en el `README.md` de la raíz del proyecto.
 
-
 Una periodista usa una aplicación de voz para capturar notas rápidas mientras trabaja en el campo. El frontend del navegador ya graba su voz, la transcribe con la Web Speech API y envía el texto a un backend. Tu trabajo es construir ese backend.
 
 Los usuarios dicen cosas como:
+
 - _"Guarda que la reunión del consejo municipal es el viernes a las 7 de la tarde"_
 - _"Muéstrame todas mis notas"_
 - _"Elimina la nota 3"_
 - _"Actualiza la nota 2 para decir que la reunión fue aplazada"_
 
 **Qué vas a aprender:**
+
 - Cómo construir una API RESTful con FastAPI y almacenamiento en memoria
 - Cómo implementar los cinco métodos HTTP (GET, POST, PUT, PATCH, DELETE) para un recurso
 - Cómo llamar a la API de Groq desde un endpoint de FastAPI
@@ -50,18 +51,18 @@ notes: list[dict] = []
 
 ### Endpoints de notas
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `/notes` | Devuelve todas las notas como un array JSON |
-| `POST` | `/notes` | Crea una nueva nota (`content` obligatorio, `archived` por defecto `False`) |
-| `PUT` | `/notes/{note_id}` | Reemplaza la nota completa (nuevo `content` obligatorio) |
-| `PATCH` | `/notes/{note_id}` | Actualización parcial: cambiar `content` y/o establecer `archived: true` |
-| `DELETE` | `/notes/{note_id}` | Elimina la nota por ID; devuelve un mensaje de confirmación |
+| Método   | Ruta               | Descripción                                                                 |
+| -------- | ------------------ | --------------------------------------------------------------------------- |
+| `GET`    | `/notes`           | Devuelve todas las notas como un array JSON                                 |
+| `POST`   | `/notes`           | Crea una nueva nota (`content` obligatorio, `archived` por defecto `False`) |
+| `PUT`    | `/notes/{note_id}` | Reemplaza la nota completa (nuevo `content` obligatorio)                    |
+| `PATCH`  | `/notes/{note_id}` | Actualización parcial: cambiar `content` y/o establecer `archived: true`    |
+| `DELETE` | `/notes/{note_id}` | Elimina la nota por ID; devuelve un mensaje de confirmación                 |
 
 ### Endpoint de instrucción
 
-| Método | Ruta | Descripción |
-|---|---|---|
+| Método | Ruta           | Descripción                                                                          |
+| ------ | -------------- | ------------------------------------------------------------------------------------ |
 | `POST` | `/instruction` | Recibe `{ "transcription": "..." }`, llama a Groq y devuelve el JSON de enrutamiento |
 
 El endpoint `/instruction` llama a Groq con un system prompt que fuerza al LLM a responder **únicamente** con:
@@ -109,28 +110,32 @@ El endpoint `/instruction` llama a Groq con un system prompt que fuerza al LLM a
 
 - [ ] Prueba estos comandos hablados manualmente (usando Postman, curl o el frontend si está disponible):
 
-  | Frase hablada | Enrutamiento esperado del LLM |
-  |---|---|
-  | "Guarda que necesito llamar a la oficina del alcalde" | `POST /notes` |
-  | "Muéstrame todas mis notas" | `GET /notes` |
-  | "Archiva la nota 2" | `PATCH /notes/2` con `archived: true` |
-  | "Elimina la nota 1" | `DELETE /notes/1` |
+  | Frase hablada                                         | Enrutamiento esperado del LLM         |
+  | ----------------------------------------------------- | ------------------------------------- |
+  | "Guarda que necesito llamar a la oficina del alcalde" | `POST /notes`                         |
+  | "Muéstrame todas mis notas"                           | `GET /notes`                          |
+  | "Archiva la nota 2"                                   | `PATCH /notes/2` con `archived: true` |
+  | "Elimina la nota 1"                                   | `DELETE /notes/1`                     |
 
 ---
 
 ## Plantilla de System Prompt (punto de partida)
 
-```
+````markdown
 Eres un extractor de intenciones para una API de notas de voz.
 Dada una transcripción hablada, responde ÚNICAMENTE con un objeto JSON en este formato exacto:
+
+```json
 {
   "endpoint": "<ruta>",
   "method": "<método HTTP en mayúsculas>",
   "params": { ... }
 }
-Endpoints disponibles: GET /notes, POST /notes, PUT /notes/{id}, PATCH /notes/{id}, DELETE /notes/{id}.
-Nunca devuelvas explicaciones. Nunca devuelvas texto libre. Solo JSON.
 ```
+
+Endpoints disponibles: `GET /notes`, `POST /notes`, `PUT /notes/{id}`, `PATCH /notes/{id}`, `DELETE /notes/{id}`.
+Nunca devuelvas explicaciones. Nunca devuelvas texto libre. Solo JSON.
+````
 
 ---
 

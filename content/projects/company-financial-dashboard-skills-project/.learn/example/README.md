@@ -10,31 +10,26 @@ _Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
 
 This example is scoped for one live classroom session. It keeps the same stack and core patterns as the official student project in this folder but drops secondary requirements; see the instructor note above. Students still follow the full brief in the project root `README.md`.
 
-
 The library catalog app is working, but your tech lead has flagged two areas before the branch can be merged: accessibility and deployment best practices. They have shared two agent skills to guide your AI assistant. After applying them, you will explore the skills ecosystem and write one custom skill specific to the library catalog.
 
 ---
 
 ## Concepts Covered
 
-| Concept | Where it applies |
-|---|---|
-| Agent skills | Loading structured instruction sets into a coding agent |
-| `accessibility` skill | Auditing and fixing aria labels, alt text, keyboard navigation |
-| `vercel-react-best-practices` skill | `next/image`, metadata API, build passing without warnings |
-| `npx skills find` | Discovering community skills by topic |
-| Custom skill authoring | Writing a project-specific skill with clear objective and acceptance criteria |
-| Memory bank update | Reflecting the session's changes in `memory-bank/status.md` |
+| Concept                             | Where it applies                                                              |
+| ----------------------------------- | ----------------------------------------------------------------------------- |
+| Agent skills                        | Loading structured instruction sets into a coding agent                       |
+| `accessibility` skill               | Auditing and fixing aria labels, alt text, keyboard navigation                |
+| `vercel-react-best-practices` skill | `next/image`, metadata API, build passing without warnings                    |
+| `npx skills find`                   | Discovering community skills by topic                                         |
+| Custom skill authoring              | Writing a project-specific skill with clear objective and acceptance criteria |
+| Memory bank update                  | Reflecting the session's changes in `memory-bank/status.md`                   |
 
 ---
 
 ## Starting Point
 
-Continue on the same repository from the previous session (the library catalog fork). If you do not have it:
-
-```
-https://github.com/4GeeksAcademy/ai-eng-library-catalog-context-example
-```
+Continue from the local example project used in the previous session.
 
 Create a new branch before starting:
 
@@ -65,7 +60,7 @@ git checkout -b feature/agent-skills
 - [ ] Replace any `<img>` tags rendering book covers with `next/image`
 - [ ] Ensure the catalog page and book detail page have correct `<title>` and `<meta description>` via the Next.js metadata API
 - [ ] Remove any anti-patterns flagged by the skill
-- [ ] Confirm the build passes: `npm run build`
+- [ ] Confirm the build passes: `pnpm build`
 
 ### 4. Explore the ecosystem
 
@@ -82,12 +77,12 @@ Identify something specific to this library catalog not covered by existing skil
 
 Write a skill file at `.skills/library-catalog-<topic>.md` with:
 
-| Section | What to include |
-|---|---|
-| **Objective** | One sentence: what this skill enforces |
-| **Inputs** | What files or components it applies to |
-| **Expected output** | What a passing implementation looks like |
-| **Acceptance criteria** | 2–3 checkable conditions |
+| Section                 | What to include                          |
+| ----------------------- | ---------------------------------------- |
+| **Objective**           | One sentence: what this skill enforces   |
+| **Inputs**              | What files or components it applies to   |
+| **Expected output**     | What a passing implementation looks like |
+| **Acceptance criteria** | 2–3 checkable conditions                 |
 
 - [ ] Load the skill into the agent and verify the guidance is specific and useful
 

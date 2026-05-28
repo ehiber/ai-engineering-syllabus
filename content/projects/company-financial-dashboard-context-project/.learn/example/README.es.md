@@ -10,32 +10,25 @@ _These instructions are also available in [English](./README.md)._
 
 Este ejemplo está acotado para una sesión en vivo en el aula. Mantiene el mismo stack y patrones centrales que el proyecto oficial del estudiante en esta carpeta pero omite requisitos secundarios; ver la nota para instructores arriba. Los estudiantes siguen el enunciado completo en el `README.md` de la raíz del proyecto.
 
-
 Acabas de unirte a un pequeño equipo que mantiene una app de catálogo de biblioteca comunitaria. Hay un frontend en React y un backend en FastAPI, pero la entrega fue precipitada: no hay docs, no hay estándares de código escritos y no hay notas sobre qué está terminado o roto. Tu trabajo es usar tu asistente de IA para entender lo que existe, definir reglas para que sea mantenible y dejar un memory bank en el que cualquier colaborador futuro pueda apoyarse.
 
 ---
 
 ## Conceptos Cubiertos
 
-| Concepto | Dónde se aplica |
-|---|---|
-| Exploración de código con IA | Fase 1: generar y validar un resumen del proyecto |
-| Análisis de prácticas de ingeniería | Fase 2: identificar patrones buenos y malos |
-| Reglas de repositorio (`.agents/rules`) | Fase 3: escribir archivos de gobernanza accionables |
-| Documentación del memory bank | Fase 4: descripción del producto, stack tecnológico, estado actual |
-| Disciplina de commits | Un commit por fase, sin mega-commits agrupados |
+| Concepto                                | Dónde se aplica                                                    |
+| --------------------------------------- | ------------------------------------------------------------------ |
+| Exploración de código con IA            | Fase 1: generar y validar un resumen del proyecto                  |
+| Análisis de prácticas de ingeniería     | Fase 2: identificar patrones buenos y malos                        |
+| Reglas de repositorio (`.agents/rules`) | Fase 3: escribir archivos de gobernanza accionables                |
+| Documentación del memory bank           | Fase 4: descripción del producto, stack tecnológico, estado actual |
+| Disciplina de commits                   | Un commit por fase, sin mega-commits agrupados                     |
 
 ---
 
-## Repositorio de Partida
+## Punto de Partida
 
-Usa este repositorio como punto de partida (tu instructor compartirá el enlace real):
-
-```
-https://github.com/4GeeksAcademy/ai-eng-library-catalog-context-example
-```
-
-Estructura esperada tras clonar:
+Usa una carpeta local de proyecto de ejemplo con esta estructura mínima:
 
 ```
 library-catalog/
@@ -51,9 +44,8 @@ library-catalog/
 
 ### Fase 1 — Entender la entrega
 
-- [ ] Haz fork y clona el repositorio
 - [ ] Ejecuta `docker compose up` y verifica que la app carga en `http://localhost:5173` y la documentación de la API en `http://localhost:8000/docs`
-- [ ] Pregunta a tu asistente de IA: *"Resume este proyecto: ¿qué hace, cómo está estructurado y cuál es el stack tecnológico?"*
+- [ ] Pregunta a tu asistente de IA: _"Resume este proyecto: ¿qué hace, cómo está estructurado y cuál es el stack tecnológico?"_
 - [ ] Lee el resumen generado y compruébalo contra lo que realmente ves en el código — corrige cualquier inexactitud
 - [ ] Commit: `"Fase 1: resumen del proyecto con IA y validación"`
 
@@ -64,11 +56,11 @@ library-catalog/
   - Al menos **3 prácticas arriesgadas o malas** (p. ej., falta de gestión de errores, valores hardcodeados, sin tests)
 - [ ] Agrupa los hallazgos por categoría:
 
-| Categoría | Hallazgo | Buena / Mala |
-|---|---|---|
-| Gestión de errores | Sin try/catch en las llamadas fetch | Mala |
-| Nomenclatura | Los componentes usan PascalCase de forma consistente | Buena |
-| ... | ... | ... |
+| Categoría          | Hallazgo                                             | Buena / Mala |
+| ------------------ | ---------------------------------------------------- | ------------ |
+| Gestión de errores | Sin try/catch en las llamadas fetch                  | Mala         |
+| Nomenclatura       | Los componentes usan PascalCase de forma consistente | Buena        |
+| ...                | ...                                                  | ...          |
 
 - [ ] Commit: `"Fase 2: análisis de prácticas de ingeniería"`
 

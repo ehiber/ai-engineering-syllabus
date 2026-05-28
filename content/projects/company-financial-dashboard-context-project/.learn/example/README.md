@@ -10,32 +10,25 @@ _Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
 
 This example is scoped for one live classroom session. It keeps the same stack and core patterns as the official student project in this folder but drops secondary requirements; see the instructor note above. Students still follow the full brief in the project root `README.md`.
 
-
 You just joined a small team maintaining a community library catalog app. There is a React frontend and a FastAPI backend, but the handover was rushed: there are no docs, no coding standards written down, and no notes about what is finished or broken. Your job is to use your AI coding assistant to understand what exists, define rules to keep it maintainable, and leave behind a memory bank that any future contributor can rely on.
 
 ---
 
 ## Concepts Covered
 
-| Concept | Where it applies |
-|---|---|
-| AI-assisted codebase exploration | Phase 1: generating and validating a project summary |
-| Engineering practice analysis | Phase 2: identifying good and bad patterns |
-| Repository rules (`.agents/rules`) | Phase 3: writing actionable governance files |
-| Memory bank documentation | Phase 4: product overview, tech stack, current status |
-| Commit discipline | One commit per phase, no bundled mega-commits |
+| Concept                            | Where it applies                                      |
+| ---------------------------------- | ----------------------------------------------------- |
+| AI-assisted codebase exploration   | Phase 1: generating and validating a project summary  |
+| Engineering practice analysis      | Phase 2: identifying good and bad patterns            |
+| Repository rules (`.agents/rules`) | Phase 3: writing actionable governance files          |
+| Memory bank documentation          | Phase 4: product overview, tech stack, current status |
+| Commit discipline                  | One commit per phase, no bundled mega-commits         |
 
 ---
 
-## Starting Repository
+## Starting Point
 
-Use this fictional repository as your starting point (your instructor will share the real link):
-
-```
-https://github.com/4GeeksAcademy/ai-eng-library-catalog-context-example
-```
-
-Expected structure after cloning:
+Use a local example project folder with this minimal structure:
 
 ```
 library-catalog/
@@ -51,9 +44,8 @@ library-catalog/
 
 ### Phase 1 — Understand the handover
 
-- [ ] Fork and clone the repository
 - [ ] Run `docker compose up` and verify the app loads at `http://localhost:5173` and API docs at `http://localhost:8000/docs`
-- [ ] Ask your AI assistant: *"Summarize this project: what does it do, how is it structured, and what is the tech stack?"*
+- [ ] Ask your AI assistant: _"Summarize this project: what does it do, how is it structured, and what is the tech stack?"_
 - [ ] Read the generated summary and check it against what you actually see in the code — correct any inaccuracies
 - [ ] Commit: `"Phase 1: AI project summary and validation"`
 
@@ -64,11 +56,11 @@ library-catalog/
   - At least **3 risky or bad practices** (e.g., missing error handling, hardcoded values, no tests)
 - [ ] Group findings by category:
 
-| Category | Finding | Good / Bad |
-|---|---|---|
-| Error handling | No try/catch on fetch calls | Bad |
-| Naming | Components use PascalCase consistently | Good |
-| ... | ... | ... |
+| Category       | Finding                                | Good / Bad |
+| -------------- | -------------------------------------- | ---------- |
+| Error handling | No try/catch on fetch calls            | Bad        |
+| Naming         | Components use PascalCase consistently | Good       |
+| ...            | ...                                    | ...        |
 
 - [ ] Commit: `"Phase 2: engineering practice analysis"`
 

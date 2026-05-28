@@ -10,7 +10,6 @@ _Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
 
 This example is scoped for one live classroom session. It keeps the same stack and core patterns as the official student project in this folder but drops secondary requirements; see the instructor note above. Students still follow the full brief in the project root `README.md`.
 
-
 The library catalog is live. The librarians using it want two new features. Before anyone writes a React component or makes an API call, your tech lead says: **"We spec first. Then we build."**
 
 Your job is to write precise specifications for both features. Check the API documentation at `http://localhost:8000/docs` to understand the real response shapes before writing any types. Your specs should be clear enough that any developer — or AI agent — can implement the feature without asking questions.
@@ -19,19 +18,19 @@ Your job is to write precise specifications for both features. Check the API doc
 
 ## Concepts Covered
 
-| Concept | Where it applies |
-|---|---|
-| TypeScript interfaces | `api-types.ts` — response shapes from real API endpoints |
-| TypeScript query param types | `param-types.ts` — request parameters with JSDoc |
-| Component specification | `components.md` — naming, props, conditional rendering, empty states |
-| Data contract documentation | `frontend/specs/README.md` — endpoints, types, edge cases |
-| Spec-driven development | Writing before building so the implementation is unambiguous |
+| Concept                      | Where it applies                                                     |
+| ---------------------------- | -------------------------------------------------------------------- |
+| TypeScript interfaces        | `api-types.ts` — response shapes from real API endpoints             |
+| TypeScript query param types | `param-types.ts` — request parameters with JSDoc                     |
+| Component specification      | `components.md` — naming, props, conditional rendering, empty states |
+| Data contract documentation  | `frontend/specs/README.md` — endpoints, types, edge cases            |
+| Spec-driven development      | Writing before building so the implementation is unambiguous         |
 
 ---
 
 ## Starting Point
 
-Continue on the same library catalog repository. Create a new branch:
+Continue in the same local library catalog example project. Create a new branch:
 
 ```bash
 git checkout -b feature/frontend-specs
@@ -70,6 +69,7 @@ Start the backend and read the API docs at `http://localhost:8000/docs` before w
 - [ ] `GenresSummaryResponse` — the full genre breakdown response
 
 Rules:
+
 - No `any`, no `object`
 - Every property must have a JSDoc comment explaining its meaning and format
 
@@ -83,11 +83,13 @@ Rules:
 For each feature, document:
 
 **Feature 1 — Title search filter**
+
 - Component name and where it lives in the page
 - Props (if any) and their types
 - What renders when the input is empty vs. when there are no results
 
 **Feature 2 — Genre breakdown panel**
+
 - Component name, props, and layout
 - What renders when fewer than 3 genres are available
 - How the panel reacts when the title filter changes
@@ -102,6 +104,7 @@ For each feature, document:
 - At least **2 edge cases** and what the UI must show in each case
 
 Example edge cases to consider:
+
 - What if `title` contains special characters like `&` or `/`?
 - What if the genres endpoint returns an empty array?
 - What if the book list has only 1 genre?

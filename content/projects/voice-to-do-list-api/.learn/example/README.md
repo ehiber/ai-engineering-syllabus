@@ -12,16 +12,17 @@ _Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
 
 This example is scoped for one live classroom session. It keeps the same stack and core patterns as the official student project in this folder but drops secondary requirements; see the instructor note above. Students still follow the full brief in the project root `README.md`.
 
-
 A journalist uses a voice-first app to capture quick notes while reporting in the field. The browser frontend already records their voice, transcribes it with the Web Speech API, and sends the text to a backend. Your job is to build that backend.
 
 Users speak things like:
+
 - _"Save that the city council meeting is at 7 pm on Friday"_
 - _"Show me all my notes"_
 - _"Delete note 3"_
 - _"Update note 2 to say the meeting was postponed"_
 
 **What you are learning:**
+
 - How to build a RESTful API with FastAPI and in-memory storage
 - How to implement all five HTTP methods (GET, POST, PUT, PATCH, DELETE) for a resource
 - How to call the Groq API from a FastAPI endpoint
@@ -50,18 +51,18 @@ notes: list[dict] = []
 
 ### Notes endpoints
 
-| Method | Path | Description |
-|---|---|---|
-| `GET` | `/notes` | Return all notes as a JSON array |
-| `POST` | `/notes` | Create a new note (`content` required, `archived` defaults to `False`) |
-| `PUT` | `/notes/{note_id}` | Replace the note entirely (new `content` required) |
-| `PATCH` | `/notes/{note_id}` | Partially update: change `content` and/or set `archived: true` |
-| `DELETE` | `/notes/{note_id}` | Delete the note by ID; return a confirmation message |
+| Method   | Path               | Description                                                            |
+| -------- | ------------------ | ---------------------------------------------------------------------- |
+| `GET`    | `/notes`           | Return all notes as a JSON array                                       |
+| `POST`   | `/notes`           | Create a new note (`content` required, `archived` defaults to `False`) |
+| `PUT`    | `/notes/{note_id}` | Replace the note entirely (new `content` required)                     |
+| `PATCH`  | `/notes/{note_id}` | Partially update: change `content` and/or set `archived: true`         |
+| `DELETE` | `/notes/{note_id}` | Delete the note by ID; return a confirmation message                   |
 
 ### Instruction endpoint
 
-| Method | Path | Description |
-|---|---|---|
+| Method | Path           | Description                                                             |
+| ------ | -------------- | ----------------------------------------------------------------------- |
 | `POST` | `/instruction` | Receives `{ "transcription": "..." }`, calls Groq, returns routing JSON |
 
 The `/instruction` endpoint calls Groq with a system prompt that forces the LLM to respond **only** with:
@@ -109,28 +110,32 @@ The `/instruction` endpoint calls Groq with a system prompt that forces the LLM 
 
 - [ ] Test these spoken commands manually (using Postman, curl, or the frontend if available):
 
-  | Spoken phrase | Expected LLM routing |
-  |---|---|
-  | "Save that I need to call the mayor's office" | `POST /notes` |
-  | "Show all my notes" | `GET /notes` |
-  | "Archive note 2" | `PATCH /notes/2` with `archived: true` |
-  | "Delete note 1" | `DELETE /notes/1` |
+  | Spoken phrase                                 | Expected LLM routing                   |
+  | --------------------------------------------- | -------------------------------------- |
+  | "Save that I need to call the mayor's office" | `POST /notes`                          |
+  | "Show all my notes"                           | `GET /notes`                           |
+  | "Archive note 2"                              | `PATCH /notes/2` with `archived: true` |
+  | "Delete note 1"                               | `DELETE /notes/1`                      |
 
 ---
 
 ## System Prompt Template (starting point)
 
-```
+````markdown
 You are an intent extractor for a voice notes API.
 Given a spoken transcription, respond ONLY with a JSON object in this exact format:
+
+```json
 {
   "endpoint": "<path>",
   "method": "<HTTP method in uppercase>",
   "params": { ... }
 }
-Available endpoints: GET /notes, POST /notes, PUT /notes/{id}, PATCH /notes/{id}, DELETE /notes/{id}.
-Never return explanations. Never return free text. Only JSON.
 ```
+
+Available endpoints: `GET /notes`, `POST /notes`, `PUT /notes/{id}`, `PATCH /notes/{id}`, `DELETE /notes/{id}`.
+Never return explanations. Never return free text. Only JSON.
+````
 
 ---
 

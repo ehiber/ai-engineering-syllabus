@@ -10,31 +10,26 @@ _These instructions are also available in [English](./README.md)._
 
 Este ejemplo está acotado para una sesión en vivo en el aula. Mantiene el mismo stack y patrones centrales que el proyecto oficial del estudiante en esta carpeta pero omite requisitos secundarios; ver la nota para instructores arriba. Los estudiantes siguen el enunciado completo en el `README.md` de la raíz del proyecto.
 
-
 La app del catálogo de biblioteca está funcionando, pero tu tech lead ha señalado dos áreas antes de que la rama pueda fusionarse: accesibilidad y buenas prácticas de despliegue. Han compartido dos agent skills para guiar a tu asistente de IA. Después de aplicarlas, explorarás el ecosistema de skills y escribirás una skill personalizada específica para el catálogo.
 
 ---
 
 ## Conceptos Cubiertos
 
-| Concepto | Dónde se aplica |
-|---|---|
-| Agent skills | Cargar conjuntos de instrucciones estructurados en un agente de código |
-| Skill `accessibility` | Auditar y corregir aria labels, alt text, navegación por teclado |
-| Skill `vercel-react-best-practices` | `next/image`, API de metadata, build sin advertencias |
-| `npx skills find` | Descubrir skills de la comunidad por tema |
-| Creación de skill personalizada | Escribir una skill específica del proyecto con objetivo claro y criterios de aceptación |
-| Actualización del memory bank | Reflejar los cambios de la sesión en `memory-bank/status.md` |
+| Concepto                            | Dónde se aplica                                                                         |
+| ----------------------------------- | --------------------------------------------------------------------------------------- |
+| Agent skills                        | Cargar conjuntos de instrucciones estructurados en un agente de código                  |
+| Skill `accessibility`               | Auditar y corregir aria labels, alt text, navegación por teclado                        |
+| Skill `vercel-react-best-practices` | `next/image`, API de metadata, build sin advertencias                                   |
+| `npx skills find`                   | Descubrir skills de la comunidad por tema                                               |
+| Creación de skill personalizada     | Escribir una skill específica del proyecto con objetivo claro y criterios de aceptación |
+| Actualización del memory bank       | Reflejar los cambios de la sesión en `memory-bank/status.md`                            |
 
 ---
 
 ## Punto de Partida
 
-Continúa en el mismo repositorio de la sesión anterior (el fork del catálogo de biblioteca). Si no lo tienes:
-
-```
-https://github.com/4GeeksAcademy/ai-eng-library-catalog-context-example
-```
+Continúa desde el proyecto de ejemplo local usado en la sesión anterior.
 
 Crea una nueva rama antes de empezar:
 
@@ -65,7 +60,7 @@ git checkout -b feature/agent-skills
 - [ ] Sustituye las etiquetas `<img>` que muestran portadas de libros por `next/image`
 - [ ] Asegúrate de que la página del catálogo y la página de detalle del libro tienen `<title>` y `<meta description>` correctos mediante la API de metadata de Next.js
 - [ ] Elimina los anti-patrones detectados por la skill
-- [ ] Confirma que el build pasa: `npm run build`
+- [ ] Confirma que el build pasa: `pnpm build`
 
 ### 4. Explorar el ecosistema
 
@@ -82,12 +77,12 @@ Identifica algo específico de este catálogo de biblioteca que no esté cubiert
 
 Escribe un archivo de skill en `.skills/library-catalog-<tema>.md` con:
 
-| Sección | Qué incluir |
-|---|---|
-| **Objetivo** | Una frase: qué enforcea esta skill |
-| **Inputs** | A qué archivos o componentes se aplica |
-| **Salida esperada** | Cómo es una implementación que cumple los criterios |
-| **Criterios de aceptación** | 2–3 condiciones verificables |
+| Sección                     | Qué incluir                                         |
+| --------------------------- | --------------------------------------------------- |
+| **Objetivo**                | Una frase: qué enforcea esta skill                  |
+| **Inputs**                  | A qué archivos o componentes se aplica              |
+| **Salida esperada**         | Cómo es una implementación que cumple los criterios |
+| **Criterios de aceptación** | 2–3 condiciones verificables                        |
 
 - [ ] Carga la skill en el agente y verifica que la orientación es específica y útil
 
