@@ -33,15 +33,37 @@ Work on branch `feature/serialization-audit`; PR title `feat: serialization audi
 
 ## Endpoint inventory
 
-| Method | Path            | Purpose            | Before | After |
-| ------ | --------------- | ------------------ | ------ | ----- |
-| GET    | /api/users      | List users (admin) | ❌     | ✅    |
-| GET    | /api/users/{id} | User profile       | ⚠️     | ✅    |
-| POST   | /api/users      | Create user        | ❌     | ✅    |
+| Method | Path                       | Purpose            | Before | After |
+| ------ | -------------------------- | ------------------ | ------ | ----- |
+| POST   | /api/auth/register         | Register user      | ❌     | ✅    |
+| POST   | /api/auth/login            | Login              | ❌     | ✅    |
+| POST   | /api/auth/restore-password | Password restore   | ⚠️     | ✅    |
+| GET    | /api/users                 | List users (admin) | ❌     | ✅    |
+| GET    | /api/users/{id}            | User profile       | ⚠️     | ✅    |
+| POST   | /api/users                 | Create user        | ❌     | ✅    |
+
+Audit auth routes first — they are the most common source of credential leakage.
 
 Legend: ✅ serialized · ⚠️ partial · ❌ raw ORM / untyped dict
 
 ## Findings (before implementation)
+
+### POST /api/auth/register — ❌ Not serialized
+
+- **Today:** Echoes full User ORM including `hashed_password` and `email`.
+- **Target input:** `UserRegister` (`email`, `password`, `display_name`).
+- **Target output:** `AuthSuccess` with `access_token`, `token_type` only — no password, no email.
+
+### POST /api/auth/login — ❌ Not serialized
+
+- **Today:** Returns user dict with `hashed_password`.
+- **Target input:** `UserLogin` (`email`, `password`).
+- **Target output:** `TokenResponse` — never echo credentials or email back.
+
+### POST /api/auth/restore-password — ⚠️ Partially serialized
+
+- **Today:** Response confirms `{ "email": "..." }` — aids account enumeration.
+- **Target output:** Generic `{ "message": "If the account exists, instructions were sent." }` — no email in body.
 
 ### GET /api/users — ❌ Not serialized
 
@@ -159,6 +181,7 @@ class UserPublic(BaseModel):
 
 ## Key implementation decisions
 
+- **Auth routes first** — register, login, and password restore must never return password fields (plain or hashed) or email in the response body.
 - **ORM stays internal** — routes return Pydantic models or ORM instances only when `response_model` + `from_attributes` explicitly map safe fields.
 - **Input ≠ output** — `UserCreate` accepts `password`; `UserPublic` never does.
 - **Relationships are explicit** — document in audit whether each endpoint returns ID only, nested object, or flat summary.
