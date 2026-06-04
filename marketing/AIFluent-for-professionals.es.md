@@ -129,7 +129,7 @@ El programa cierra con un entregable real: una automatización funcional que man
 
 **Opción 1 — Pago de contado:** Paga $810 hoy y ahorra un 10%. Un solo pago, sin complicaciones.
 
-**Opción 2 — 4 cuotas:** Paga $225 hoy y $225 mensuales por los próximos 3 meses. Total: $900. Sin intereses ni recargos.
+**Opción 2 — 4 cuotas:** Paga $225 hoy y $225 mensuales por las próximas 3 semanas. Total: $900. Sin intereses ni recargos.
 
 ---
 
