@@ -25,6 +25,8 @@ La persona gerente del cine explicó la situación en la reunión de arranque de
 
 Tu líder de equipo quiere que construyas un prototipo de línea de comandos en TypeScript antes de invertir en una interfaz web completa. El cine no necesita todavía funcionalidades avanzadas, solo una base sólida que maneje correctamente la lógica central. Si funciona bien, más adelante ampliarán el sistema con reservas en línea y mapas visuales de selección de asientos.
 
+![cinema diagram](https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/assets/cover/images/cinema_matrix.png?raw=true)
+
 ### ¿Qué hace que un buen sistema de reservas de asientos?
 
 El reto clave es la **representación de datos**. Tienes que modelar la sala como una estructura bidimensional en la que cada posición represente un asiento con dos estados posibles: ocupado o disponible. Piensa en ello como una cuadrícula o matriz donde cada asiento tiene un número de fila y un número de columna.
