@@ -17,6 +17,8 @@ _These instructions are also available in [English](./README.md)._
 
 ## 🎯 Tu reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 Acabas de completar el cuarto hito: el sitio corporativo de tu empresa ya está desplegado, estructurado y gestionado con agentes de IA. Ahora el equipo de ingeniería tiene que dar el siguiente paso: construir el backend.
 
 Antes de escribir una sola línea de código, tu CTO quiere asegurarse de que el equipo tenga claridad arquitectónica. Nadie va a comenzar a programar sin un criterio compartido sobre cómo organizar el proyecto. Por eso, te ha pedido a ti que redactes el primer borrador del documento de arquitectura.

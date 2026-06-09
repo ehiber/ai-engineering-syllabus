@@ -17,6 +17,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 Tu Reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 La API de tu empresa está creciendo. Has construido endpoints que sirven datos al frontend, consultan la base de datos y procesan registros — pero en este momento, cualquier persona que conozca una URL puede llamarlos. Antes de que la plataforma pase a su siguiente fase, la CTO ha sido clara: **ninguna ruta que modifique o exponga datos sensibles debe ser accesible sin una sesión válida.**
 
 Tu tech lead acaba de dejarte un ticket en la cola:

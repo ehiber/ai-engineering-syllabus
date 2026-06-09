@@ -17,6 +17,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 Tu reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 Llevas varios hitos construyendo la plataforma de tu empresa: un sitio web corporativo, un frontend en Next.js, un backend en Python/FastAPI y scripts que procesan datos reales. El repositorio crece — y con él, la superficie donde las cosas pueden fallar.
 
 Tu tech lead ha abierto un ticket de revisión de código con un mensaje claro: el sistema no tiene una estrategia coherente de gestión de errores. Las llamadas a la API pueden fallar en silencio, faltan estados de carga, los usuarios ven mensajes técnicos crudos (o simplemente nada), y los scripts de fondo se rompen sin dejar rastro útil. Antes de que el siguiente hito introduzca más complejidad, el equipo necesita corregir esto.

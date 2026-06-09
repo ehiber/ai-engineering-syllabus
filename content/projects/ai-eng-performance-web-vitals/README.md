@@ -17,6 +17,8 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 ## 🎯 Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 Your company's corporate site and backoffice are live. The team is proud of the features — but the CTO just dropped a message in the dev channel: the team should look for performance improvements — both to support better SEO on the corporate site and to make sure the backoffice performs well for the people using it daily. Before the next milestone, you need to audit both frontends, identify what's dragging down performance, apply the necessary fixes, and document everything with the rigour you'd expect in a professional codebase.
 
 This is not about making things pretty. It's about making them fast, measurable, and maintainable.

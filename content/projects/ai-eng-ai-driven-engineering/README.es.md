@@ -17,6 +17,8 @@ _These instructions are also available in [English](./README.md)._
 
 ## 🎯 El Desafío
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 Ya tienes tres hitos construidos: la web pública, la lógica de negocio en TypeScript y los primeros componentes generados con IA. Tienes piezas. Lo que aún no tienes es el sistema que las une y que va a crecer con ellas.
 
 A partir de este hito, el monorepo deja de ser un repositorio de proyectos separados y se convierte en el núcleo técnico de tu empresa. Todo lo que construyas de aquí en adelante — APIs, agentes, automatizaciones — vivirá en este mismo espacio. Por eso, antes de añadir más código, hay que construir la infraestructura que hará que ese código sea coherente, mantenible y AI-ready.

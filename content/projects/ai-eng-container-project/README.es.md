@@ -15,6 +15,8 @@ _These instructions are also available in [English](./README.md)._
 
 ## 🎯 El reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 El monorepo ya está en marcha: el equipo ha construido los frontends en Next.js, el servicio API en FastAPI y los scripts de soporte. Todo funciona en tu máquina. El problema es que sólo funciona en tu máquina.
 
 El equipo de infraestructura ha elevado una RFP interna al squad: cada vez que un nuevo desarrollador se incorpora, la puesta en marcha tarda horas entre conflictos de versiones de Node y Python, dependencias globales instaladas de formas distintas y pasos de configuración que nadie ha documentado del todo. El objetivo de este proyecto es resolver eso de raíz: **el entorno de desarrollo debe definirse en código, versionarse junto al proyecto y ejecutarse de forma idéntica en cualquier máquina del equipo sin configuración manual**.

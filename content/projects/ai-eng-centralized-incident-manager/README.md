@@ -17,6 +17,8 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 ## 🎯 Your challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 The CSV file analyser you built in the previous project proved that the validation and metrics logic works. But the support team no longer wants to export files for analysis: they want to log incidents directly from the browser, in real time, from anywhere in the company.
 
 Your tech lead has decided to take the next step: integrate a centralised incident manager into the platform that has been under construction since Milestone 5. Anyone in the company — whether at an operational branch, at headquarters, or managing a customer-reported issue — will be able to log it through a form, query it, and track it from the same panel.

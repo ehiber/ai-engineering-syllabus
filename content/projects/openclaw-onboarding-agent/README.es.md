@@ -17,6 +17,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 El Reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 Ya has construido un workspace personal en OpenClaw y has desarrollado skills que permiten a tu agente interactuar con sistemas externos. Este proyecto da el siguiente paso: tu empresa necesita que el agente no solo ejecute tareas aisladas, sino que **recuerde el estado de un proceso a lo largo del tiempo** y actúe sobre ese estado de forma autónoma, incluso entre reinicios.
 
 El equipo de Personas ha enviado un RFP interno: necesitan un agente que gestione de extremo a extremo el proceso de incorporación de nuevas personas a la empresa. El proceso abarca dos canales de comunicación — correo electrónico y Telegram —, un paso de verificación de identidad y un seguimiento diario del progreso de cada incorporación activa.

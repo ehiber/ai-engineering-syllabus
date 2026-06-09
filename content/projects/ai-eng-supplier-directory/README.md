@@ -17,6 +17,8 @@ _Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
 
 ## 🎯 Your challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 You already have FastAPI endpoints working and know how to structure an API. Your company's platform keeps growing — and with it, the need to eliminate the failure points that slow the team down. One of the most visible: critical business data still lives in spreadsheets that each person keeps on their own machine, updates independently, and shares by email. The result is always the same — out-of-sync versions, decisions made from different data, and time wasted trying to figure out which file is the right one. It is time to replace that with a database with a single source of truth, accessible to everyone through the API — no SQL yet, but with real structure from day one.
 
 Your company's procurement team currently manages its supplier directory in a spreadsheet. Key information — what each supplier provides, which country they operate in, their current rate, and whether they are active or suspended — is updated manually, inconsistently, and with no traceability. When the price of an ingredient or component rises, the team finds out late. When a new supplier needs to be added, nobody knows where to register them officially.

@@ -15,6 +15,8 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 ## 🎯 The Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 You already have your company's public website running with forms and basic validations. Now your tech team needs you to build the first internal functionalities that will make the business operate more efficiently.
 
 Your manager has assigned you to implement a set of data processing utilities that the team needs for day-to-day operations. This is not a complete interface yet — that will come later — but rather the foundational functions that will allow you to manage, filter, sort, and transform critical business information. Think of this as the logic layer that other systems will use down the line.

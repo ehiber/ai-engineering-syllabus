@@ -17,6 +17,8 @@ _These instructions are [available in Spanish](./README.es.md)._
 
 ## 🎯 The Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 Your company's People & Talent department is in the middle of an active recruitment campaign. The open position received over 100 applications in less than two weeks, and the team is overwhelmed: they're tracking candidates in a shared spreadsheet, writing interview notes in separate documents, and updating statuses manually over email threads. The process is falling apart.
 
 The Technology team has already built and exposed a REST API to manage the candidate pipeline. Your job is to build the frontend that the People team will use starting Monday. The system must let them see all candidates at a glance, filter them by status and stage, and access each candidate's full detail without losing context.

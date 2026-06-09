@@ -17,6 +17,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 Tu reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 El departamento de atención postventa de tu empresa gestiona las incidencias de sus clientes: quejas, solicitudes, fallos operativos. Acaban de preparar un fichero CSV con **100 registros** extraídos de su sistema — la primera muestra de un volumen real de datos que podría alcanzar el millón de líneas.
 
 El problema es que **ese fichero no puede enviarse a una herramienta de IA**. Contiene información sensible de clientes: identificadores personales, correos electrónicos, datos de contacto. El análisis tiene que ocurrir internamente.

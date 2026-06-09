@@ -17,6 +17,8 @@ _Estas instrucciones también estan disponibles en [español](./README.es.md)._
 
 ## 🎯 Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 You just completed the fourth milestone: your company's corporate site is deployed, structured, and managed with AI agents. Now the engineering team needs to take the next step - building the backend.
 
 Before anyone writes a single line of code, your CTO wants the team to have shared architectural clarity. No one is starting to program without a common understanding of how the project should be organized. That's why they've asked you to draft the first version of the architecture document.

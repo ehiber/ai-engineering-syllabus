@@ -17,6 +17,8 @@ _Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
 
 ## 🎯 Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 Your company's platform is growing. What once handled a handful of requests per day is now under real load — more users, more API calls, more complex UI interactions. The tech lead has flagged a recurring pattern in the telemetry: some endpoints are being hit dozens of times per minute with identical queries, and some components are re-rendering far more than they need to.
 
 The mandate is clear: before the next feature sprint, the team must profile the existing application, identify the highest-value caching opportunities, and implement them. This is not about caching everything — it's about making deliberate, justified decisions about what to cache, where to cache it, and for how long.

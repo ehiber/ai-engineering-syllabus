@@ -15,6 +15,8 @@ _Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
 
 ## 🎯 The Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 The monorepo is up and running: the team has built the Next.js frontends, the FastAPI service, and the supporting scripts. Everything works on your machine. The problem is that it only works on your machine.
 
 The infrastructure team has raised an internal RFP to the squad: every time a new developer joins, onboarding takes hours because of Node and Python version conflicts, globally installed dependencies, and configuration steps nobody has fully documented. The goal of this project is to solve that at the root: **the development environment must be defined as code, versioned alongside the project, and run identically on any team member's machine without manual configuration**.

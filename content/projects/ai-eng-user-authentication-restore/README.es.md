@@ -17,6 +17,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 Tu Reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 El sistema de autenticación está funcionando. Los usuarios pueden registrarse, iniciar sesión, gestionar su perfil y cambiar su contraseña — siempre que la recuerden.
 
 ¿Pero qué ocurre cuando no la recuerdan?

@@ -17,6 +17,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 Tu reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 Tienes una idea para un MVP y quieres empezar a construirlo bien desde el principio — no parcheando cosas después, sino estableciendo una base sólida y desplegable desde el primer día.
 
 El objetivo de este proyecto no es construir un producto completo. Es configurar la infraestructura que hace posible construirlo: un entorno contenedorizado donde un frontend, un backend y una base de datos funcionen juntos a través de Docker Compose, de manera consistente, en cualquier máquina.

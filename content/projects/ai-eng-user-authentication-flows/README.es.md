@@ -17,6 +17,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 Tu Reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 En la entrega anterior aseguraste la API. Las rutas protegidas ahora devuelven `401` a cualquiera que no tenga una sesión válida — incluyendo tu propio frontend. Es momento de cerrar ese ciclo.
 
 Tu tech lead ha abierto el siguiente ticket:

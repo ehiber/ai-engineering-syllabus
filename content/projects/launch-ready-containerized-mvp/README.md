@@ -17,6 +17,8 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 ## 🎯 Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 You have an idea for an MVP and you want to start building it the right way — not patching things together later, but setting up a solid, deployable foundation from the very first day.
 
 The goal of this project is not to build a full product. It's to set up the infrastructure that makes building one possible: a containerized environment where a frontend, a backend, and a database run together through Docker Compose, consistently, on any machine.

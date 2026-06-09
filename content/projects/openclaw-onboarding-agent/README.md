@@ -17,6 +17,8 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 ## 🎯 The Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 You have already built a personal workspace in OpenClaw and developed skills that allow your agent to interact with external systems. This project takes the next step: your company needs the agent not just to execute isolated tasks, but to **remember the state of a process over time** and act on that state autonomously, even across restarts.
 
 The People team has submitted an internal RFP: they need an agent that manages the employee onboarding process end to end. The process spans multiple communication channels, an identity verification step, and daily tracking of every active onboarding case.

@@ -17,6 +17,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 El Desafío
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 Tu empresa lleva años operando exitosamente de forma tradicional, pero el mundo ha cambiado. Los clientes buscan información en línea antes de tomar decisiones. Los competidores ya tienen presencia digital. Y tu empresa, a pesar de su experiencia y calidad, sigue siendo invisible en internet.
 
 La dirección ha decidido iniciar la transformación digital. Tu tarea es construir el primer punto de contacto digital de la empresa: un sitio web público profesional que presente lo que hacen y capture información de personas interesadas a través de un formulario de aplicación o registro.

@@ -17,6 +17,8 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 ## 🎯 Your Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 Your company's API is growing. You've built endpoints that serve data to the frontend, query the database, and process records — but right now, anyone who knows a URL can call any of them. Before the platform goes into its next phase, the CTO has made it clear: **no route that modifies or exposes sensitive data should be reachable without a valid session.**
 
 Your tech lead has just dropped a ticket in your queue:

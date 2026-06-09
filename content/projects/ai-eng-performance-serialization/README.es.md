@@ -17,6 +17,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 Tu reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 El backend que lleva semanas construyéndose está a punto de recibir usuarios reales. Antes de eso, tu CTO ha identificado un problema crítico: varios endpoints de la API devuelven objetos de base de datos sin ningún control de forma, sin filtrado de campos y sin protección frente a la exposición de campos internos del modelo. En un entorno de demo con poco tráfico, esto es invisible. A escala, genera cuellos de botella de rendimiento, riesgos de seguridad y contratos frágiles con el cliente.
 
 Tu tarea es liderar una auditoría de serialización del backend. El objetivo no es reescribir nada desde cero, sino inspeccionar cada endpoint existente con criterio técnico y llevar la API a estándares de producción.

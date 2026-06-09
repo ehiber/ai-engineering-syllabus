@@ -17,6 +17,8 @@ _Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
 
 ## 🎯 The Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 You have three milestones behind you: the public website, the business logic in TypeScript, and the first AI-generated components. You have pieces. What you don't have yet is the system that connects them and will grow alongside them.
 
 From this milestone on, the monorepo stops being a collection of separate projects and becomes the technical core of your company. Everything you build from here — APIs, agents, automations — will live in this same space. That's why, before adding more code, you need to build the infrastructure that will make that code coherent, maintainable, and AI-ready.

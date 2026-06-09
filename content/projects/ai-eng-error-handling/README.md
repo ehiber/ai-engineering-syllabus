@@ -17,6 +17,8 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 ## 🎯 Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 You've been building the company's platform for several milestones: a corporate website, a Next.js frontend, a Python/FastAPI backend, and scripts that process real data. The codebase is growing — and so is the surface area for things to go wrong.
 
 Your tech lead has opened a code review ticket with a clear message: the system currently has no coherent error handling strategy. API calls can silently fail, loading states are missing, users see raw technical messages (or nothing at all), and background scripts crash without useful output. Before the next milestone introduces more complexity, the team needs to fix this.

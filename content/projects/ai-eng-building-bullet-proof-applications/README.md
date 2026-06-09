@@ -17,6 +17,8 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 ## 🎯 Your Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 Your company's authentication API is live, handling real users and real sessions. Last week, a teammate pushed a small refactor that broke token expiration logic — no tests caught it, and users reported being locked out for two hours before someone noticed. Your CTO's response was brief and direct: _"We need a test suite. Untested code is not production code."_
 
 Your task is to add a comprehensive battery of unit tests to the authentication API you built in the previous milestone. You'll work at the function and endpoint logic level — not testing serialisation or HTTP plumbing, but the actual business logic: does the token get generated correctly? Does an expired token get rejected? What happens when the password field is empty?

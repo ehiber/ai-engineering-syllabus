@@ -17,6 +17,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 Tu reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 La API de autenticación de tu empresa está en producción, gestionando usuarios y sesiones reales. La semana pasada, un compañero subió un pequeño refactor que rompió la lógica de expiración de tokens — ninguna prueba lo detectó, y los usuarios reportaron estar bloqueados durante dos horas antes de que alguien se diera cuenta. La respuesta del CTO fue breve y directa: _"Necesitamos una batería de pruebas. El código sin tests no es código de producción."_
 
 Tu tarea es añadir una batería completa de pruebas unitarias a la API de autenticación que construiste en el hito anterior. Trabajarás al nivel de la lógica de funciones y endpoints — no probando la serialización HTTP ni las tuberías del framework, sino la lógica de negocio real: ¿se genera correctamente el token? ¿Se rechaza un token expirado? ¿Qué ocurre cuando el campo de contraseña está vacío?

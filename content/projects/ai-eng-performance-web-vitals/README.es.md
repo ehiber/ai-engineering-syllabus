@@ -17,6 +17,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 Tu reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 El sitio corporativo y el backoffice de tu empresa están en producción. El equipo está satisfecho con las funcionalidades, pero el CTO acaba de dejar un mensaje en el canal de desarrollo: el equipo debería buscar mejoras de rendimiento — tanto para apoyar un mejor SEO en el sitio corporativo como para asegurar que el backoffice funcione bien para las personas que lo usan a diario. Antes del siguiente hito, necesitas auditar ambos frontends, identificar qué está arrastrando el rendimiento, aplicar las correcciones necesarias y documentar todo con el rigor que se espera en un codebase profesional.
 
 Esto no se trata de hacer las cosas más bonitas. Se trata de hacerlas rápidas, medibles y mantenibles.

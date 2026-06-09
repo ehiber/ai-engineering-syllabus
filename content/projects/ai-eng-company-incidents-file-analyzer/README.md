@@ -17,6 +17,8 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 ## 🎯 Your challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 Your company's after-sales support department manages customer incidents: complaints, requests, operational failures. They've just prepared a CSV file with **100 records** extracted from their system — the first sample of a real data volume that could reach one million rows.
 
 The problem is that **this file cannot be sent to an AI tool**. It contains sensitive customer information: personal identifiers, email addresses, contact details. The analysis must happen internally.

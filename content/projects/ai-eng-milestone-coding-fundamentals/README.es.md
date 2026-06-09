@@ -15,6 +15,8 @@ _These instructions are [available in English](./README.md)._
 
 ## 🎯 El Desafío
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 Ya tienes la web pública de tu empresa funcionando con formularios y validaciones básicas. Ahora tu equipo técnico necesita que construyas las primeras funcionalidades internas que harán que el negocio opere de forma más eficiente.
 
 Tu gerente te ha asignado implementar un conjunto de utilidades de procesamiento de datos que el equipo necesita para el día a día. No se trata de una interfaz completa todavía — eso vendrá después — sino de las funciones base que permitirán gestionar, filtrar, ordenar y transformar la información crítica del negocio. Piensa en esto como la capa lógica que otros sistemas utilizarán más adelante.

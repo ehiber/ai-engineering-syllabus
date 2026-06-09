@@ -17,6 +17,8 @@ _These instructions are also available in [English](./README.md)._
 
 ## 🎯 Tu reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 La plataforma de tu empresa está creciendo. Lo que antes gestionaba un puñado de peticiones al día ahora soporta carga real: más usuarios, más llamadas a la API, interacciones de UI más complejas. El tech lead ha detectado un patrón recurrente en la telemetría: algunos endpoints reciben decenas de peticiones por minuto con consultas idénticas, y algunos componentes se están re-renderizando mucho más de lo necesario.
 
 El encargo es claro: antes del próximo sprint de funcionalidades, el equipo debe analizar la aplicación existente, identificar las oportunidades de caching con mayor impacto y aplicarlas. No se trata de cachear todo — sino de tomar decisiones deliberadas y justificadas sobre qué cachear, dónde hacerlo y durante cuánto tiempo.

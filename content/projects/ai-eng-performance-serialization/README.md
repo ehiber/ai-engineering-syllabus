@@ -17,6 +17,8 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 ## 🎯 Your Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 The backend your company has been building throughout the course is about to face real users. Before that happens, your CTO has flagged a critical concern: several API endpoints are returning raw database objects with no shape control, no field filtering, and no protection against exposing internal model fields. In a low-traffic demo environment this is invisible — at scale, it creates performance bottlenecks, security risks, and brittle client contracts.
 
 You've been assigned to lead a backend serialization audit. The goal is not to rewrite anything from scratch, but to inspect every existing endpoint with a trained eye and bring the API up to production standards.

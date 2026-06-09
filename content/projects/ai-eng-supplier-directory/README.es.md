@@ -17,6 +17,8 @@ _These instructions are also available in [English](./README.md)._
 
 ## 🎯 Tu reto
 
+> 📌 Estás construyendo sobre **tu copia** del **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** de la empresa seleccionada al inicio del curso — no en un repositorio nuevo.
+
 Ya tienes endpoints FastAPI funcionando y sabes cómo estructurar una API. La plataforma de tu empresa sigue creciendo — y con ella, la necesidad de eliminar los puntos de fallo que frenan al equipo. Uno de los más evidentes: los datos críticos del negocio siguen viviendo en hojas de cálculo que cada persona tiene en su ordenador, actualiza por su cuenta y comparte por email. El resultado es siempre el mismo — versiones desincronizadas, decisiones tomadas con datos distintos y tiempo perdido intentando saber cuál es el fichero correcto. Es el momento de sustituir eso por una base de datos con una única fuente de verdad, accesible a todos desde la API — sin SQL todavía, pero con estructura real desde el primer día.
 
 El área de compras de tu empresa gestiona actualmente su directorio de proveedores en una hoja de cálculo. La información clave —qué suministra cada proveedor, en qué país opera, cuál es su tarifa vigente y si está activo o suspendido— se actualiza de forma manual, inconsistente y sin trazabilidad. Cuando el precio de un ingrediente o componente sube, el equipo se entera tarde. Cuando hay que incorporar un proveedor nuevo, nadie sabe dónde registrarlo oficialmente.

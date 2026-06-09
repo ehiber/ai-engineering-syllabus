@@ -17,6 +17,8 @@ _Estas instrucciones están [disponibles en español](./README.es.md)._
 
 ## 🎯 The Challenge
 
+> 📌 You are building on **your own fork** of the company's **[monorepo](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo)** selected at the beginning of the course — not on a new repository.
+
 Your company has been successfully operating in a traditional way for years, but the world has changed. Customers search for information online before making decisions. Competitors already have a digital presence. And your company, despite its experience and quality, remains invisible on the internet.
 
 Management has decided to begin the digital transformation. Your task is to build the company's first digital touchpoint: a professional public website that presents what they do and captures information from interested people through an application or sign-up form.
