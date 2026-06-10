@@ -75,7 +75,7 @@ Una vez validada la lógica del script, extrae esa misma lógica a servicios reu
 - [ ] Crea un endpoint `GET /api/incidents/results/export` que devuelva el último análisis en formato CSV descargable.
 - [ ] Los errores (fichero vacío, formato incorrecto) deben devolver respuestas HTTP apropiadas con mensaje descriptivo.
 
-**Frontend (`/uis/web`)**
+**Frontend (`/uis/backoffice`)**
 
 - [ ] Crea una página de análisis de incidencias accesible desde el menú de la aplicación.
 - [ ] Incluye un componente de carga de fichero (drag & drop o selector) que envíe el CSV al endpoint de la API.

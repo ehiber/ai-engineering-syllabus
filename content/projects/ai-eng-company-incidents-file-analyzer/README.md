@@ -75,7 +75,7 @@ Once the script logic is validated, extract that same logic into reusable servic
 - [ ] Create a `GET /api/incidents/results/export` endpoint that returns the last analysis as a downloadable CSV.
 - [ ] Errors (empty file, incorrect format) must return appropriate HTTP responses with a descriptive message.
 
-**Frontend (`/uis/web`)**
+**Frontend (`/uis/backoffice`)**
 
 - [ ] Create an incident analysis page accessible from the application menu.
 - [ ] Include a file upload component (drag & drop or file selector) that sends the CSV to the API endpoint.
