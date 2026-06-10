@@ -45,7 +45,7 @@ Your tech lead has decided to build a supplier management API using **FastAPI + 
 
 2. Read your **CONTEXT-company.md** file before writing any code. It defines the supplier model fields, valid categories, allowed statuses, and the data the seeder must load.
 
-3. Work inside the `/services/api` (backend) and `/uis/application` (frontend) folders of the monorepo.
+3. Work inside the `/services/api` (backend) and `/uis/backoffice` (frontend) folders of the monorepo.
 
 There is no starter code. The project starts from scratch.
 
@@ -78,7 +78,7 @@ There is no starter code. The project starts from scratch.
 
 ⚠️ **IMPORTANT:** Field names, valid categories, and allowed statuses in your implementation must match exactly what is specified in your CONTEXT.md. A generic implementation that ignores your company's context will not be accepted.
 
-### Frontend (`/uis/application`)
+### Frontend (`/uis/backoffice`)
 
 - [ ] Create a supplier directory page accessible from the application menu.
 - [ ] Display the full list of suppliers in a table or list with their main fields: name, country, categories, current rate, and status.
@@ -128,7 +128,7 @@ There is no starter code. The project starts from scratch.
 
 - [ ] TinyDB persists correctly: data is still there after restarting the server.
 - [ ] HTTP errors are consistent: `404` when not found, `422` when input is invalid, `200`/`201` when the operation succeeds.
-- [ ] Code is organised according to the monorepo folder structure (`services/` for the backend, `uis/application` for the frontend).
+- [ ] Code is organised according to the monorepo folder structure (`services/` for the backend, `uis/backoffice` for the frontend).
 
 ---
 

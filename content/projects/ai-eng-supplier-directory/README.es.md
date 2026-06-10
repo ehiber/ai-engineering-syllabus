@@ -45,7 +45,7 @@ Tu tech lead ha decidido construir una API de gestión de proveedores usando **F
 
 2. Lee tu archivo **CONTEXT-company.md** antes de escribir código. Define los campos del modelo de proveedor, las categorías válidas, los estados permitidos y los datos que debe cargar el seeder.
 
-3. Trabaja dentro de las carpetas `/services/api` (backend) y `/uis/application` (frontend) del monorepo.
+3. Trabaja dentro de las carpetas `/services/api` (backend) y `/uis/backoffice` (frontend) del monorepo.
 
 No hay código de inicio. El proyecto parte desde cero.
 
@@ -78,7 +78,7 @@ No hay código de inicio. El proyecto parte desde cero.
 
 ⚠️ **IMPORTANTE:** Los nombres de campos, categorías válidas y estados permitidos en tu implementación deben coincidir exactamente con lo especificado en tu CONTEXT.md. Una implementación genérica que ignore el contexto de tu empresa no será aceptada.
 
-### Frontend (`/uis/application`)
+### Frontend (`/uis/backoffice`)
 
 - [ ] Crea una página de directorio de proveedores accesible desde el menú de la aplicación.
 - [ ] Muestra el listado completo de proveedores en una tabla o lista con sus campos principales: nombre, país, categorías, tarifa vigente y estado.
@@ -128,7 +128,7 @@ No hay código de inicio. El proyecto parte desde cero.
 
 - [ ] La base de datos TinyDB persiste correctamente: los datos siguen ahí después de reiniciar el servidor.
 - [ ] Los errores HTTP son coherentes: `404` cuando no se encuentra, `422` cuando la entrada es inválida, `200`/`201` cuando la operación es exitosa.
-- [ ] El código está organizado según la estructura de carpetas del monorepo (`services/` para el backend, `uis/application` para el frontend).
+- [ ] El código está organizado según la estructura de carpetas del monorepo (`services/` para el backend, `uis/backoffice` para el frontend).
 
 ---
 

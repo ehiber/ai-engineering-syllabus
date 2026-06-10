@@ -13,7 +13,7 @@ Use this document as an implementation guide, not only as a checklist.
 The expected implementation is split into two clear modules:
 
 - `services/api`: FastAPI + Pydantic + TinyDB for persistence and domain validation.
-- `uis/application`: UI that consumes the API, supports filtering, creation, and inline updates.
+- `uis/backoffice`: UI that consumes the API, supports filtering, creation, and inline updates.
 
 Key principle: all supplier rules from `CONTEXT-company.md` are source of truth.  
 Do not hardcode generic values that do not match the assigned context.
@@ -93,7 +93,7 @@ The API should keep consistent semantics:
 
 ---
 
-## 3) Frontend Requirements (`uis/application`)
+## 3) Frontend Requirements (`uis/backoffice`)
 
 ### 3.1 Supplier directory page
 

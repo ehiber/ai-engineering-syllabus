@@ -57,7 +57,7 @@ Work happens inside the monorepo with this expected structure:
 
 - Frontend projects under `/uis`
 - Public website in `./uis/website`
-- Internal company application in `./uis/application`
+- Internal company application in `./uis/backoffice`
 - APIs under `/services`
 
 ### Public site (`./uis/website`)
@@ -66,16 +66,16 @@ Work happens inside the monorepo with this expected structure:
 - Implemented with **reusable React components** and sound **TypeScript** typing (no large copy-paste blocks of JSX across pages).
 - Visual identity remains consistent with Milestone 1 (colors, typography, spacing—not necessarily pixel-perfect, but clearly the same brand).
 
-### Internal app (`./uis/application`)
+### Internal app (`./uis/backoffice`)
 
-- `./uis/application` exists and renders without runtime errors.
+- `./uis/backoffice` exists and renders without runtime errors.
 - **Dedicated layout** for the internal app, separate from the public marketing layout in `./uis/website`.
-- Entry view on `/` in `./uis/application`: welcome screen or empty dashboard shell—enough structure that the next milestone can add features without restructuring.
+- Entry view on `/` in `./uis/backoffice`: welcome screen or empty dashboard shell—enough structure that the next milestone can add features without restructuring.
 
 ### Milestone 2 TypeScript integration
 
 - Business logic from Milestone 2 is **imported** from its **original package/path** in the monorepo (no duplicated copy-paste of the same module into the Next.js tree).
-- Output of that logic is **visible in the UI** inside `./uis/application` (not only `console.log`).
+- Output of that logic is **visible in the UI** inside `./uis/backoffice` (not only `console.log`).
 
 ### API location
 
@@ -101,8 +101,8 @@ Use this checklist against student submissions:
 
 - [ ] `./uis/website` starts without errors using the documented dev command.
 - [ ] `/` in `./uis/website` shows the complete Milestone 1 corporate site as React/TS components.
-- [ ] `./uis/application` loads with its own layout and a clear entry view.
-- [ ] Milestone 2 logic is consumed via **import from original location**; UI in `./uis/application` shows a meaningful result.
+- [ ] `./uis/backoffice` loads with its own layout and a clear entry view.
+- [ ] Milestone 2 logic is consumed via **import from original location**; UI in `./uis/backoffice` shows a meaningful result.
 - [ ] API services are located under `/services`.
 - [ ] No unjustified duplication of business logic source files.
 
