@@ -21,7 +21,7 @@ _Estas instrucciones están [disponibles en inglés](./README.md)._
 
 El departamento de People & Talent de tu empresa está en medio de una campaña de selección activa. La posición abierta ha recibido más de 100 candidaturas en menos de dos semanas y el equipo está desbordado: llevan el seguimiento de los candidatos en una hoja de cálculo compartida, escriben las notas de las entrevistas en documentos separados y actualizan los estados manualmente por hilos de correo. El proceso se está desmoronando.
 
-El equipo de Tecnología ya ha construido y expuesto una API REST para gestionar el pipeline de candidaturas. Tu trabajo es construir el frontend que el equipo de People empezará a usar el lunes. El sistema debe permitir ver todas las candidaturas de un vistazo, filtrarlas por estado y por etapa, y acceder al detalle de cada una sin perder el contexto del listado.
+El equipo de Tecnología ya ha construido y expuesto una API REST para gestionar el pipeline de candidaturas. Ha propuesto ubicar la interfaz en la carpeta `/uis`, como proyecto aparte (`talent-pipeline-tracker`), porque se trata de una herramienta auxiliar para People & Talent y no de una solución del sistema central. Tu trabajo es construir ese frontend — el que el equipo de People empezará a usar el lunes. Debe permitir ver todas las candidaturas de un vistazo, filtrarlas por estado y por etapa, y acceder al detalle de cada una sin perder el contexto del listado.
 
 La responsable de People ha compartido lo que necesitan con urgencia:
 
@@ -50,26 +50,26 @@ Este hito forma parte del monorepo del curso. No necesitas clonar ningún reposi
 /uis/talent-pipeline-tracker/
 ```
 
-3. Inicializa un proyecto Next.js con TypeScript dentro de esa carpeta:
+1. Inicializa un proyecto Next.js con TypeScript dentro de esa carpeta:
 
 ```bash
 cd uis/talent-pipeline-tracker
 npx create-next-app@latest . --typescript --app --tailwind --eslint
 ```
 
-4. Crea un archivo `.env.local` en la raíz de tu app con la URL base de la API:
+1. Crea un archivo `.env.local` en la raíz de tu app con la URL base de la API:
 
 ```
 NEXT_PUBLIC_API_URL=https://playground.4geeks.com/tracker/api/v1
 ```
 
-5. Instala las dependencias:
+1. Instala las dependencias:
 
 ```bash
 npm install
 ```
 
-6. Arranca el servidor de desarrollo:
+1. Arranca el servidor de desarrollo:
 
 ```bash
 npm run dev

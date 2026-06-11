@@ -21,7 +21,7 @@ _These instructions are [available in Spanish](./README.es.md)._
 
 Your company's People & Talent department is in the middle of an active recruitment campaign. The open position received over 100 applications in less than two weeks, and the team is overwhelmed: they're tracking candidates in a shared spreadsheet, writing interview notes in separate documents, and updating statuses manually over email threads. The process is falling apart.
 
-The Technology team has already built and exposed a REST API to manage the candidate pipeline. Your job is to build the frontend that the People team will use starting Monday. The system must let them see all candidates at a glance, filter them by status and stage, and access each candidate's full detail without losing context.
+The Technology team has already built and exposed a REST API to manage the candidate pipeline. They have proposed locating the interface in the `/uis` folder, as a separate project (`talent-pipeline-tracker`), since this is an auxiliary tool for People & Talent and not a core system solution. Your job is to build that frontend — the one the People team will use starting Monday. It must let them see all candidates at a glance, filter them by status and stage, and access each candidate's full detail without losing context.
 
 The Head of People has shared what they need with urgency:
 
@@ -50,26 +50,26 @@ This milestone is part of the course monorepo. You do not need to clone a new re
 /uis/talent-pipeline-tracker/
 ```
 
-3. Initialize a Next.js project with TypeScript inside that folder:
+1. Initialize a Next.js project with TypeScript inside that folder:
 
 ```bash
 cd uis/talent-pipeline-tracker
 npx create-next-app@latest . --typescript --app --tailwind --eslint
 ```
 
-4. Create a `.env.local` file at the root of your app with the API base URL:
+1. Create a `.env.local` file at the root of your app with the API base URL:
 
 ```
 NEXT_PUBLIC_API_URL=https://playground.4geeks.com/tracker/api/v1
 ```
 
-5. Install dependencies:
+1. Install dependencies:
 
 ```bash
 npm install
 ```
 
-6. Run the development server:
+1. Run the development server:
 
 ```bash
 npm run dev
