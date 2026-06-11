@@ -28,22 +28,22 @@ El objetivo de tu script es validar y resumir estos datos antes de que se usen c
 | `location_id`        | string  | ✅        | Uno de: `COL-01` a `COL-10`, `FLA-01` a `FLA-04`   |
 | `category`           | string  | ✅        | Ver categorías abajo                               |
 | `description`        | string  | ✅        | Texto libre, mínimo 5 caracteres                   |
-| `status`             | string  | ✅        | `ABIERTO`, `CERRADO`, `DESCARTADO`                 |
+| `status`             | string  | ✅        | `OPEN`, `CLOSED`, `DISCARDED`                      |
 | `customer_id`        | string  | ❌        | Opcional. Formato `CLI-XXXXXX`. Puede estar vacío  |
-| `satisfaction_score` | integer | ❌\*      | Entero 1–5. **Requerido si** `status = CERRADO`    |
+| `satisfaction_score` | integer | ❌\*      | Entero 1–5. **Requerido si** `status = CLOSED`     |
 | `reporter_id`        | string  | ✅        | ID de encargado, formato `MGR-XX`                  |
 
-\*`satisfaction_score` es opcional en la estructura, pero un registro `CERRADO` sin este valor se considera **incompleto**.
+\*`satisfaction_score` es opcional en la estructura, pero un registro `CLOSED` sin este valor se considera **incompleto**.
 
 ### Categorías válidas
 
-| Código             | Descripción                                          |
-| ------------------ | ---------------------------------------------------- |
-| `QUEJA_CLIENTE`    | Queja de cliente (servicio, tiempo de espera, trato) |
-| `EQUIPAMIENTO`     | Falla o avería de equipamiento                       |
-| `ABASTECIMIENTO`   | Problema de abastecimiento o falta de stock          |
-| `CALIDAD_ALIMENTO` | Incidente de calidad de alimentos                    |
-| `PERSONAL`         | Incidente relacionado con personal                   |
+| Código               | Descripción                                          |
+| -------------------- | ---------------------------------------------------- |
+| `CUSTOMER_COMPLAINT` | Queja de cliente (servicio, tiempo de espera, trato) |
+| `EQUIPMENT`          | Falla o avería de equipamiento                       |
+| `SUPPLY`             | Problema de abastecimiento o falta de stock          |
+| `FOOD_QUALITY`       | Incidente de calidad de alimentos                    |
+| `STAFF`              | Incidente relacionado con personal                   |
 
 ---
 
@@ -51,14 +51,14 @@ El objetivo de tu script es validar y resumir estos datos antes de que se usen c
 
 Un registro debe marcarse como **inválido** si ocurre cualquiera de estos casos:
 
-| Regla                                         | Descripción                                                          |
-| --------------------------------------------- | -------------------------------------------------------------------- |
-| Falta `location_id`                           | El campo está vacío o no corresponde a uno de los 14 códigos válidos |
-| `category` faltante o inválida                | El campo está vacío o no pertenece a las 5 categorías válidas        |
-| `description` vacía                           | El campo está vacío o tiene menos de 5 caracteres                    |
-| Falta `reporter_id`                           | El campo está vacío                                                  |
-| `status = CERRADO` y sin `satisfaction_score` | Caso cerrado sin puntaje registrado                                  |
-| `satisfaction_score` fuera de rango           | Hay valor, pero no está entre 1 y 5 (inclusive)                      |
+| Regla                                        | Descripción                                                          |
+| -------------------------------------------- | -------------------------------------------------------------------- |
+| Falta `location_id`                          | El campo está vacío o no corresponde a uno de los 14 códigos válidos |
+| `category` faltante o inválida               | El campo está vacío o no pertenece a las 5 categorías válidas        |
+| `description` vacía                          | El campo está vacío o tiene menos de 5 caracteres                    |
+| Falta `reporter_id`                          | El campo está vacío                                                  |
+| `status = CLOSED` y sin `satisfaction_score` | Caso cerrado sin puntaje registrado                                  |
+| `satisfaction_score` fuera de rango          | Hay valor, pero no está entre 1 y 5 (inclusive)                      |
 
 Tu script debe reportar cuántos registros caen en cada tipo de regla.
 
@@ -73,17 +73,17 @@ El archivo `incidents-brasaland.csv` se envió como adjunto (ver ficheros `incid
 **Registros válidos: 96**
 | Categoría | Cantidad |
 |---|---|
-| `QUEJA_CLIENTE` | 29 |
-| `EQUIPAMIENTO` | 17 |
-| `ABASTECIMIENTO` | 22 |
-| `CALIDAD_ALIMENTO` | 19 |
-| `PERSONAL` | 9 |
+| `CUSTOMER_COMPLAINT` | 29 |
+| `EQUIPMENT` | 17 |
+| `SUPPLY` | 22 |
+| `FOOD_QUALITY` | 19 |
+| `STAFF` | 9 |
 
-| Estado       | Cantidad |
-| ------------ | -------- |
-| `ABIERTO`    | 32       |
-| `CERRADO`    | 50       |
-| `DESCARTADO` | 14       |
+| Estado      | Cantidad |
+| ----------- | -------- |
+| `OPEN`      | 32       |
+| `CLOSED`    | 50       |
+| `DISCARDED` | 14       |
 
 **Registros inválidos: 4**
 | Regla activada | Cantidad |
@@ -91,7 +91,7 @@ El archivo `incidents-brasaland.csv` se envió como adjunto (ver ficheros `incid
 | Falta `location_id` | 1 |
 | `category` faltante o inválida | 1 |
 | `description` vacía o demasiado corta | 1 |
-| `status = CERRADO` sin `satisfaction_score` | 1 |
+| `status = CLOSED` sin `satisfaction_score` | 1 |
 
 **Puntajes de satisfacción (50 registros cerrados)**
 | Puntaje | Cantidad |
@@ -126,16 +126,16 @@ INVALID RECORDS BREAKDOWN
   └─ Closed case, no score ......... 1
 
 BREAKDOWN BY CATEGORY (valid records)
-  ├─ QUEJA_CLIENTE ................ 29  (30.2%)
-  ├─ EQUIPAMIENTO ................. 17  (17.7%)
-  ├─ ABASTECIMIENTO ............... 22  (22.9%)
-  ├─ CALIDAD_ALIMENTO ............. 19  (19.8%)
-  └─ PERSONAL ...................... 9   (9.4%)
+  ├─ CUSTOMER_COMPLAINT ........... 29  (30.2%)
+  ├─ EQUIPMENT .................... 17  (17.7%)
+  ├─ SUPPLY ....................... 22  (22.9%)
+  ├─ FOOD_QUALITY ................. 19  (19.8%)
+  └─ STAFF ......................... 9   (9.4%)
 
 BREAKDOWN BY STATUS (valid records)
-  ├─ ABIERTO ...................... 32  (33.3%)
-  ├─ CERRADO ...................... 50  (52.1%)
-  └─ DESCARTADO ................... 14  (14.6%)
+  ├─ OPEN ......................... 32  (33.3%)
+  ├─ CLOSED ....................... 50  (52.1%)
+  └─ DISCARDED .................... 14  (14.6%)
 
 SATISFACTION INDEX (closed cases)
   Scored cases: 50 of 50
