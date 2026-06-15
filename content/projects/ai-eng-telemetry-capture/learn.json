@@ -1,8 +1,8 @@
 {
   "gitpod": true,
   "title": {
-    "en": "Telemetry – Frontend capture",
-    "es": "Telemetría – Captura en el frontend"
+    "en": "Company's Telemetry – Frontend capture",
+    "es": "Telemetría de la compañía – Captura en el frontend"
   },
   "description": {
     "en": "Implement frontend telemetry capture in the company backoffice: FastAPI stub POST /telemetry/events, TelemetryService with local queue, batch debounce (10s / 20 events), sendBeacon flush, retry with backoff, single track() API, and inventory plus auth instrumentation aligned with Phase 1 event-schemas.json — env-driven endpoint, no PII.",
@@ -24,18 +24,18 @@
   "translations": ["es", "en"],
   "projectType": "project",
   "telemetry": {
-    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id="
+    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id=3668"
   },
   "solution": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/ai-eng-telemetry-capture/.learn/solution/README.md",
   "preview": "https://raw.githubusercontent.com/4GeeksAcademy/ai-engineering-syllabus/main/content/projects/ai-eng-telemetry-capture/.learn/preview.png",
   "sharing": [
     {
-      "en": "I just completed Telemetry – Frontend capture with LearnPack @4GeeksAcademy. Check it out: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-capture #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #telemetry #fastapi",
-      "es": "Acabo de completar Telemetría – Captura en el frontend con LearnPack @4GeeksAcademy. Mira el proyecto: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-capture #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #telemetry #fastapi"
+      "en": "I just completed Company's Telemetry – Frontend capture with LearnPack @4GeeksAcademy. Check it out: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-capture #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #telemetry #fastapi",
+      "es": "Acabo de completar Telemetría de la compañía – Captura en el frontend con LearnPack @4GeeksAcademy. Mira el proyecto: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-capture #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #telemetry #fastapi"
     },
     {
-      "en": "Built and shipped: Telemetry – Frontend capture. Learning by building with @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-capture #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #telemetry #fastapi",
-      "es": "Construido y publicado: Telemetría – Captura en el frontend. Aprendiendo con proyectos reales en @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-capture #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #telemetry #fastapi"
+      "en": "Built and shipped: Company's Telemetry – Frontend capture. Learning by building with @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-capture #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #telemetry #fastapi",
+      "es": "Construido y publicado: Telemetría de la Compañía – Captura en el frontend. Aprendiendo con proyectos reales en @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-capture #AIEngineering #LearnPack #4GeeksAcademy #nextjs #react #telemetry #fastapi"
     }
   ]
 }
