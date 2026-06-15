@@ -1,0 +1,41 @@
+{
+  "gitpod": true,
+  "title": {
+    "en": "Company's Telemetry – Report",
+    "es": "Telemetría de la compañía – Reporte"
+  },
+  "description": {
+    "en": "Build a Pandas analysis pipeline over telemetry_events in Supabase: at least two KPI metric functions (load → filter → datetime → groupby → aggregate), GET /telemetry/report with period and metrics JSON, 60-second in-memory cache, optional auth_failure_rate — metrics grouped by time, not global counts.",
+    "es": "Construye un pipeline de análisis con Pandas sobre telemetry_events en Supabase: al menos dos funciones de métrica KPI (cargar → filtrar → datetime → groupby → agregar), GET /telemetry/report con JSON de period y metrics, caché en memoria 60s, auth_failure_rate opcional — métricas agrupadas en el tiempo, no recuentos globales."
+  },
+  "status": "draft",
+  "template_url": "https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo",
+  "slug": "ai-eng-telemetry-report",
+  "difficulty": "intermediate",
+  "duration": 2,
+  "technologies": [
+    "fastapi",
+    "pandas",
+    "supabase",
+    "postgresql",
+    "telemetry",
+    "data-analysis"
+  ],
+  "translations": ["es", "en"],
+  "projectType": "project",
+  "telemetry": {
+    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id="
+  },
+  "solution": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/ai-eng-telemetry-report/.learn/solution/README.md",
+  "preview": "https://raw.githubusercontent.com/4GeeksAcademy/ai-engineering-syllabus/main/content/projects/ai-eng-telemetry-report/.learn/preview.png",
+  "sharing": [
+    {
+      "en": "I just completed Company's Telemetry – Report with LearnPack @4GeeksAcademy. Check it out: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-report #AIEngineering #LearnPack #4GeeksAcademy #fastapi #pandas #supabase #telemetry",
+      "es": "Acabo de completar Telemetría de la compañía – Reporte con LearnPack @4GeeksAcademy. Mira el proyecto: https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-report #AIEngineering #LearnPack #4GeeksAcademy #fastapi #pandas #supabase #telemetry"
+    },
+    {
+      "en": "Built and shipped: Company's Telemetry – Report. Learning by building with @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-report #AIEngineering #LearnPack #4GeeksAcademy #fastapi #pandas #supabase #telemetry",
+      "es": "Construido y publicado: Telemetría de la compañía – Reporte. Aprendiendo con proyectos reales en @4GeeksAcademy. https://github.com/4GeeksAcademy/ai-engineering-syllabus/tree/main/content/projects/ai-eng-telemetry-report #AIEngineering #LearnPack #4GeeksAcademy #fastapi #pandas #supabase #telemetry"
+    }
+  ]
+}
