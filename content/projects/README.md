@@ -2,7 +2,7 @@
 
 Repository of hands-on projects for the **AI Engineering** program at 4Geeks Academy. Each folder is a standalone project with its own README, evaluation criteria, and (when applicable) `learn.json` for the platform.
 
-Projects follow a pedagogical order: from web fundamentals (HTML, CSS, SEO, accessibility) and Tailwind, through company milestones and collaboration, **OpenClaw agent setup and integrations**, then TypeScript and system design, followed by APIs, authentication, agents, and advanced milestones.
+Projects follow a pedagogical order: from web fundamentals (HTML, CSS, SEO, accessibility) and Tailwind, through company milestones and collaboration, **OpenClaw agent setup and integrations**, then TypeScript and system design, React/Next.js and AI-assisted delivery, APIs, authentication, agents, performance, telemetry, and advanced milestones.
 
 ---
 
@@ -32,68 +32,125 @@ Projects follow a pedagogical order: from web fundamentals (HTML, CSS, SEO, acce
 7. **[My Agent, My Way: Teaching Your Personal Assistant New Skills](./openclaw-skills)**  
    Continue in your existing OpenClaw environment and repo from prior assignments: fill the five `.openclaw` briefing files, commit `SKILLS_DESIGN.md`, and implement at least two OpenClaw skills using only Composio integrations you already have (Google apps, GitHub, Telegram); add any missing paths per your instructor and OpenClaw docs.
 
-8. **[Cinema Seat Manager (TypeScript)](./seats-management-typescript)**  
-   Command-line cinema seat reservation system using a 2D array, with reserve, count, and adjacent-seat search functions.
+8. **[My 4Geeks Assistant — Teaching OpenClaw to Track Your Progress](./openclaw-integration)**  
+   Connect OpenClaw to the 4Geeks API with your account token so the agent can report pending projects, course progress, and related LearnPack data.
 
-9. **[Music Playlist Player — Object modeling](./data-modeling-and-class-diagrams-music-player)**  
-   UML-style class diagram for a music playlist player in diagram.4geeks.com: entities, data types, and relationships.
+9. **[Give Your Agent a Memory](./openclaw-memory)**  
+   Configure OpenClaw memory types (episodic, semantic, procedural), restructure workspace files, and validate that context persists across sessions.
 
-10. **[Digital Wallet — Object modeling](./data-modeling-and-class-diagrams-digital-wallet)**  
+10. **[Onboarding Agent with Memory](./openclaw-onboarding-agent)**  
+    Build a company onboarding flow: an OpenClaw agent with memory that reads HR templates and sends personalized onboarding email from your assigned `CONTEXT-company.md`.
+
+11. **[Cinema Seat Manager (TypeScript)](./seats-management-typescript)**  
+    Command-line cinema seat reservation system using a 2D array, with reserve, count, and adjacent-seat search functions.
+
+12. **[Music Playlist Player — Object modeling](./data-modeling-and-class-diagrams-music-player)**  
+    UML-style class diagram for a music playlist player in diagram.4geeks.com: entities, data types, and relationships.
+
+13. **[Digital Wallet — Object modeling](./data-modeling-and-class-diagrams-digital-wallet)**  
     UML-style class diagram for a digital wallet with transaction history in diagram.4geeks.com: entities, data types, and relationships.
 
-11. **[Company Project Milestone: Coding Fundamentals (TypeScript)](./ai-eng-milestone-coding-fundamentals)**  
+14. **[Company Project Milestone: Coding Fundamentals (TypeScript)](./ai-eng-milestone-coding-fundamentals)**  
     `Milestone 2` — Programming fundamentals with TypeScript: small, testable modules focusing on control flow, arrays, objects, functions, and edge cases, using clean code practices.
 
-12. **[AI Agent Rental Platform: Admin panel prototype](./agent-hub-ui-specs-and-prompts)**  
+15. **[AI Agent Rental Platform: Admin panel prototype](./agent-hub-ui-specs-and-prompts)**  
     Spec-driven frontend project for a multi-view admin panel: write `SPECS.md` first, then build dashboard and management views with HTML, Tailwind, and vanilla JavaScript interactions.
 
-13. **[Talk to the Machine: Chat interface with a real AI API](./chat-interface-real-ai-api)**  
+16. **[Talk to the Machine: Chat interface with a real AI API](./chat-interface-real-ai-api)**  
     Build a browser-based chat interface that calls the Groq API with `fetch`, sends full conversation history, and tracks cumulative token usage plus response metrics.
 
-14. **[Wanderlust Explorer with React and Next.js](./nextjs-wanderlust-explorer)**  
+17. **[Wanderlust Explorer with React and Next.js](./nextjs-wanderlust-explorer)**  
     Next.js App Router app from scratch: experiences list with URL-driven search and filters, detail pages, favorites in state, and a local TypeScript dataset.
 
-15. **[Building an Airbnb UI Clone with Next.js and React](./nextjs-airbnb-ui-clone)**  
+18. **[Building an Airbnb UI Clone with Next.js and React](./nextjs-airbnb-ui-clone)**  
     Next.js 16 + TypeScript + Tailwind UI clone from a product brief: layout, reusable components, and typed listing data.
 
-16. **[Company Project Milestone: Talent Pipeline Tracker](./ai-eng-milestone-talent-pipeline-tracker)**  
-    `Milestone 3` — Next.js App Router frontend for the recruitment API: candidate list and detail, filters and search, notes CRUD, register and edit forms, async UI states, and TypeScript types aligned with CONTEXT-company.md.
+19. **[Company Project Milestone: Talent Pipeline Tracker](./ai-eng-milestone-frontend-development)**  
+    `Milestone 3` — Next.js App Router frontend for the recruitment API: candidate list and detail, filters and search, notes CRUD, register and edit forms, async UI states, and TypeScript types aligned with `CONTEXT-company.md`.
 
-17. **[Company financial dashboard context project](./company-financial-dashboard-context-project)**  
+20. **[Company financial dashboard context project](./company-financial-dashboard-context-project)**  
     Module project focused on repository stewardship: fork an existing full-stack repo, validate AI-generated project understanding, define and test actionable rules under `.agents/rules`, and generate a `memory-bank` with product, stack, and current status.
 
-18. **[Company financial dashboard specs project](./company-financial-dashboard-specs-project)**  
+21. **[Company financial dashboard specs project](./company-financial-dashboard-specs-project)**  
     Spec-first assignment on the existing financial dashboard repo: TypeScript types aligned with `/docs`, `components.md`, and a data-contract README for a date range filter, anomaly alerts table, and B2B vs B2C revenue comparison—no React implementation.
 
-19. **[Company financial dashboard skills project](./company-financial-dashboard-skills-project)**  
+22. **[Company financial dashboard skills project](./company-financial-dashboard-skills-project)**  
     Continue on the same financial dashboard repo: apply agent skills (`accessibility`, `vercel-react-best-practices`), explore `skills.sh` with `npx skills find`, author a custom skill under `.skills/`, and update the memory bank—targeted improvements, not a full rebuild.
 
-20. **[Voice to-do list with AI API](./voice-to-do-list-api)**  
-    Build a voice-powered to-do flow that captures user input, integrates with an AI API, and transforms spoken requests into actionable task management behavior.
+23. **[Milestone 4 — AI-driven Engineering](./ai-eng-milestone-ai-driven-engineering)**  
+    `Milestone 4` — Monorepo layout: public Next.js site, internal backoffice, services/APIs, and integration of prior milestones with an AI-assisted delivery workflow.
 
-21. **[Supplier Directory — Lightweight Storage API](./ai-eng-supplier-directory)**  
-    FastAPI + TinyDB + Pydantic supplier API: seeded data from `CONTEXT`, validation, CRUD, and filter endpoints (by country and category) with rate-change timestamps.
-
-22. **[Securing the API: Authentication and Route Restriction in FastAPI](./ai-eng-user-authentication-api)**  
-    JWT-based auth on the supplier API: register, login, protected routes, password hashing, and ownership checks.
-
-23. **[Connecting the Lock: Authentication Flows in the Frontend](./ai-eng-user-authentication-flows)**  
-    Frontend flows against the secured API: login, register, session handling, and protected views.
-
-24. **[The Missing Piece: Password Reset Flow](./ai-eng-user-authentication-restore)**  
-    End-to-end password reset: secure tokens, email or dev stub, and UI/API alignment.
-
-25. **[Incident Analyzer — Script and Control Panel](./ai-eng-company-incidents-file-analyzer)**  
-    Python script to validate and summarize incident CSVs (sensitive data stays internal), then FastAPI + web UI to upload files, view summaries, and export results.
-
-26. **[AI basic Inventory Agent Loop](./ai-basic-inventory-agent-loop)**  
-    Build a basic FastAPI inventory API plus a Python AI agent loop that uses API endpoints as tools, logs each interaction to CSV, and supports natural-language stock operations.
-
-27. **[Backend Architecture Proposal](./ai-eng-architectural-proposal)**  
+24. **[Backend Architecture Proposal](./ai-eng-architectural-proposal)**  
     Produce an architecture document and diagrams for extending the company system (services, data, risks, and trade-offs).
 
-28. **[Milestone 4 — AI-driven Engineering](./ai-eng-ai-driven-engineering)**  
-    `Milestone 4` — Monorepo layout: public Next.js site, internal backoffice, services/APIs, and integration of prior milestones with an AI-assisted delivery workflow.
+25. **[Voice to-do list with AI API](./voice-to-do-list-api)**  
+    Build a voice-powered to-do flow that captures user input, integrates with an AI API, and transforms spoken requests into actionable task management behavior.
+
+26. **[Incident Analyzer — Script and Control Panel](./ai-eng-company-incidents-file-analyzer)**  
+    Python script to validate and summarize incident CSVs (sensitive data stays internal), then FastAPI + web UI to upload files, view summaries, and export results.
+
+27. **[AI basic Inventory Agent Loop](./ai-basic-inventory-agent-loop)**  
+    Build a basic FastAPI inventory API plus a Python AI agent loop that uses API endpoints as tools, logs each interaction to CSV, and supports natural-language stock operations.
+
+28. **[Supplier Directory — Lightweight Storage API](./ai-eng-supplier-directory)**  
+    FastAPI + TinyDB + Pydantic supplier API: seeded data from `CONTEXT`, validation, CRUD, and filter endpoints (by country and category) with rate-change timestamps.
+
+29. **[Securing the API: Authentication and Route Restriction in FastAPI](./ai-eng-user-authentication-api)**  
+    JWT-based auth on the supplier API: register, login, protected routes, password hashing, and ownership checks.
+
+30. **[Connecting the Lock: Authentication Flows in the Frontend](./ai-eng-user-authentication-flows)**  
+    Frontend flows against the secured API: login, register, session handling, and protected views.
+
+31. **[The Missing Piece: Password Reset Flow](./ai-eng-user-authentication-restore)**  
+    End-to-end password reset: secure tokens, email or dev stub, and UI/API alignment.
+
+32. **[Building Bullet-Proof Applications](./ai-eng-building-bullet-proof-applications)**  
+    Add a comprehensive unit-test suite to the authentication API: token logic, validation edge cases, and endpoint behavior without testing framework plumbing.
+
+33. **[Centralized Incident Manager](./ai-eng-centralized-incident-manager)**  
+    Integrate a real-time incident manager into the company monorepo: log, query, and track incidents from the browser using your assigned `CONTEXT-company.md`.
+
+34. **[Error Handling](./ai-eng-error-handling)**  
+    Audit and fix error handling across the monorepo: API failures, loading states, user-facing messages, and script crash output before the next milestone adds complexity.
+
+35. **[EduTrack Data Audit](./edutrack-data-audit-sql)**  
+    SQL audit on a single-table enrollments dataset: data-quality checks, aggregations, and written findings for an operations lead.
+
+36. **[EduTrack Data Audit — Related Tables](./edutrack-data-audit-sql-related-tables)**  
+    Multi-table SQL on a normalized EduTrack schema: JOINs, cross-table metrics, and answers that require relating students, courses, and enrollments.
+
+37. **[Company Project Milestone: Backend — Inventory Management](./ai-eng-milestone-backend-development)**  
+    `Milestone 5` (backend) — FastAPI + SQLModel inventory API on Supabase: dual-database setup, inbound/outbound orders, and business rules from `CONTEXT-company.md`.
+
+38. **[Company Project Milestone: Backoffice — Inventory Management](./ai-eng-inventory-management-backoffice)**  
+    `Milestone 5` (frontend) — Backoffice UI for inventory operations: lists, forms, and states wired to the Milestone 5 backend API.
+
+39. **[Launch Ready: Containerized MVP from Scratch](./launch-ready-containerized-mvp)**  
+    Standalone module: Dockerize a small AI-generated MVP with Dockerfile, Compose, and reproducible local runs.
+
+40. **[Company Monorepo Containerization](./ai-eng-container-project)**  
+    Containerize the company monorepo: multi-service `docker-compose.yml`, environment configuration, and production-ready local orchestration.
+
+41. **[Frontend Performance Audit](./ai-eng-performance-web-vitals)**  
+    Lighthouse audit of corporate site and backoffice, reusable components/hooks refactor, and before/after performance report with Core Web Vitals fixes.
+
+42. **[Backend Serialization Audit](./ai-eng-performance-serialization)**  
+    Endpoint-by-endpoint serialization audit on the monorepo API: DTOs, payload shaping, and security fixes before scale.
+
+43. **[Performance Optimisation: Caching](./ai-eng-performance-caching)**  
+    Profile frontend and API hot paths, implement justified caching (TTL, `useMemo`, FastAPI cache), and document trade-offs in a technical report.
+
+44. **[Company's Telemetry plan design](./ai-eng-telemetry-plan)**  
+    Design `telemetry-plan.md` and `event-schemas.json` from inventory KPIs in `CONTEXT-company.md` before any instrumentation code.
+
+45. **[Company's Telemetry — Frontend capture](./ai-eng-telemetry-capture)**  
+    Next.js `TelemetryService`: queue, batch/debounce, `sendBeacon`, retries, and a single `track()` API posting to `POST /telemetry/events`.
+
+46. **[Company's Telemetry — Storage](./ai-eng-telemetry-storage)**  
+    Persist batched telemetry in Supabase/PostgreSQL with per-event validation, partial batch acceptance, and unchanged frontend contract.
+
+47. **[Company's Telemetry — Report](./ai-eng-telemetry-report)**  
+    Pandas pipeline plus `GET /telemetry/report` with grouped metrics, 60s response cache, and actionable inventory/usage summaries.
 
 ---
 

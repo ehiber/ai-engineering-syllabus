@@ -19,10 +19,37 @@ _These instructions are [available in English](./README.md)_.
 
 ## 🌱 Cómo usar este repositorio
 
-- Cada carpeta representa un hito del proyecto principal del curso de Ingeniería de IA identificado por su numeración y referencia al escenario (ej.: 10-realtime)
+- Cada carpeta representa un hito del proyecto principal del curso de Ingeniería de IA identificado por su numeración y referencia al escenario (ej.: `03-frontend-development`)
 - Abre la carpeta correspondiente al hito que estás resolviendo.
 - Lee el archivo `CONTEXT-<compañía>.md` que corresponde a la empresa que se te ha asignado.
 - ¡Disfruta creando algo genial!
+
+## Carpetas de contexto (orden sugerido)
+
+**Hitos de la empresa (monorepo transversal)**
+
+0. **[Briefings generales de empresa](./00-general-contexts)** — Perfiles para elegir compañía (`CONTEXT-*-briefing.en.md` / `.es.md`).
+1. **[Fundamentos web](./01-web-fundamentals)** — Datos del sitio público y formulario del `Milestone 1`.
+2. **[Fundamentos de programación](./02-coding-fundamentals)** — Entradas para scripts TypeScript del `Milestone 2`.
+3. **[Desarrollo frontend](./03-frontend-development)** — UI del talent pipeline tracker (`Milestone 3`).
+4. **[Ingeniería impulsada por IA](./04-ai-driven-engineering)** — Setup del monorepo (`Milestone 4`; placeholder; el contexto puede ir en el brief del proyecto).
+5. **[Desarrollo backend](./05-backend-development)** — Entidades y reglas de seed del API de inventario (`Milestone 5`).
+6. **[Pipelines de datos de telemetría](./06-telemetry-data-pipelines)** — Reservado para contextos de telemetría (placeholder).
+7. **[Entrenamiento y RAG](./07-trainning-rag)** — Reservado para módulos LLM/RAG (placeholder).
+8. **[Ingeniería de agentes](./08-agent-engineering)** — Reservado para módulos de agentes (placeholder).
+9. **[Workflows y automatización](./09-workflows-automation)** — Reservado para módulos de workflows (placeholder).
+10. **[Tiempo real](./10-realtime)** — Reservado para módulos realtime (placeholder).
+
+**Contextos de proyectos independientes**
+
+11. **[Agente de onboarding OpenClaw](./openclaw-onboarding-agent)** — Campos HR y plantillas de correo por compañía.
+12. **[Directorio de proveedores](./supplier-directory)** — Datos semilla y reglas de validación para la API TinyDB.
+13. **[Análisis de archivos de incidentes](./incidents-file-analysis)** — Esquemas CSV, categorías y salida esperada del analizador.
+14. **[Gestor centralizado de incidentes](./centralized-incident-manager)** — Campos, sedes y valores semilla del gestor en vivo.
+15. **[Plan de telemetría](./telemetry-plan)** — KPIs de inventario y oportunidades de telemetría por compañía.
+16. **[Captura de telemetría](./telemetry-capture)** — Event envelope y restricciones de captura en frontend.
+17. **[Almacenamiento de telemetría](./telemetry-storage)** — Reglas de almacenamiento y validación de eventos en batch.
+18. **[Reporte de telemetría](./telemetry-report)** — Métricas y dimensiones agrupadas para el endpoint de analytics.
 
 ## Colaboradores
 
