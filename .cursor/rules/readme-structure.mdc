@@ -1,0 +1,192 @@
+---
+description: Estructura estándar para archivos README de proyectos
+globs: **/README*.md
+alwaysApply: false
+---
+
+# Estructura de README
+
+Todos los archivos README deben seguir esta estructura estándar:
+
+## 1. Título Principal
+
+```markdown
+# Título del Proyecto
+```
+
+- Usar un solo `#` para el título principal
+- El título debe ser descriptivo y claro
+
+## 2. Bloque Oculto (Metadata)
+
+```markdown
+<!-- hide -->
+
+Por [@usuario](https://github.com/usuario) y [otros contribuidores](https://github.com/org/repo/graphs/contributors) en [4Geeks Academy](https://4geeksacademy.com/)
+
+[![build by developers](https://img.shields.io/badge/build_by-Developers-blue)](https://4geeks.com)
+[![4Geeks Academy](https://img.shields.io/twitter/follow/4geeksacademy?style=social&logo=x)](https://x.com/4geeksacademy)
+
+🌐 _These guidelines are also [available in English/Spanish](./README.md)_.
+
+**Antes de empezar** / **Before you start**:
+
+> ¡Te necesitamos! Estos ejercicios se construyen y mantienen en colaboración con personas como tú. Si encuentras algún error 🐞 o falta de ortografía, por favor contribuye y/o repórtalos.
+
+<!-- endhide -->
+```
+
+**Elementos obligatorios:**
+
+- Autor y enlace a contribuidores
+- Badges: "build by developers" y "4Geeks Academy"
+- Enlace al README en el otro idioma (con texto apropiado según el idioma actual)
+- Mensaje de colaboración con emoji 🐞
+
+## 3. Separador
+
+```markdown
+---
+```
+
+## 4. Sección del Reto
+
+```markdown
+## 🎯 Tu reto / Your challenge
+```
+
+- Siempre usar el emoji 🎯 antes del título
+- Título en español: "Tu reto"
+- Título en inglés: "Your challenge"
+- Incluir contexto completo del proyecto, problema a resolver, y preguntas clave
+
+## 5. Secciones de Contenido (según tipo de proyecto)
+
+### Para Dashboards
+
+```markdown
+### ¿Qué hace que un dashboard sea "bueno"?
+
+**1️⃣ Bloque superior:** Indicadores principales del resultado (KPI)
+**2️⃣ Bloque intermedio:** "Drivers" (factores que explican el resultado)
+**3️⃣ Bloque inferior:** Detalles operacionales (tablas/listados, alertas)
+```
+
+### Para Proyectos Web
+
+```markdown
+### Especificaciones por vista
+
+#### 1) Vista 1
+
+#### 2) Vista 2
+
+...
+```
+
+## 5. Sección de Inicio
+
+```markdown
+## 🌱 Cómo iniciar el proyecto / How to start the project
+```
+
+- **Ubicación obligatoria:** siempre después del reto (y sus subsecciones) y **antes** de "Qué debes hacer".
+- Instrucciones sobre cómo comenzar el proyecto (plantilla, Codespaces, clonado, etc.).
+
+## 6. Sección "Qué debes hacer" / "What you need to do"
+
+```markdown
+## 💻 Qué debes hacer / What you need to do
+```
+
+- Incluir checklist con tareas principales usando `- [ ]`
+- Incluir advertencias importantes con `⚠️ **IMPORTANTE:**`
+
+## 7. Sección de Evaluación
+
+```markdown
+## ✅ Qué vamos a evaluar / What we will evaluate
+```
+
+- Lista de criterios de evaluación con `- [ ]`
+- Puede incluir notas adicionales con `> Nota:`
+
+## 8. Sección de Entrega
+
+```markdown
+## 📦 Cómo entregar este proyecto / How to submit this project
+```
+
+- Instrucciones claras sobre qué entregar
+
+## 9. Footer
+
+```markdown
+---
+
+Este y muchos otros proyectos son construidos por estudiantes como parte de los [Coding Bootcamps](https://4geeksacademy.com/) de 4Geeks Academy. Encuentra más acerca de los [cursos](https://4geeksacademy.com/es/comparar-programas) de [Full-Stack Software Developer](https://4geeksacademy.com/es/programas-de-carrera/desarrollo-full-stack), [Data Science & Machine Learning](https://4geeksacademy.com/en/career-programs/data-science-ml), [Ciberseguridad](https://4geeksacademy.com/es/programas-de-carrera/ciberseguridad) e [Ingeniería de IA](https://4geeksacademy.com/es/programas-de-carrera/ingenieria-ia).
+```
+
+**Elementos obligatorios:**
+
+- Enlace a Coding Bootcamps
+- Lista de cursos con enlaces apropiados según el idioma
+- En español: usar rutas `/es/`
+- En inglés: usar rutas sin `/es/` o con `/en/` según corresponda
+
+## Reglas Adicionales
+
+1. **Emojis en títulos**: Usar emojis consistentes (🎯, 💻, ✅, 📦, 🌱)
+2. **Separadores**: Usar `---` para separar secciones principales
+3. **Checklists**: Usar formato `- [ ]` para tareas y criterios de evaluación
+4. **Citas**: Usar `>` para citas y notas importantes
+5. **Imágenes**: Incluir imágenes cuando sea relevante con formato `![alt](ruta "title")`
+6. **Enlaces relativos**: Usar rutas relativas para enlaces entre READMEs (`./README.md`)
+
+## Ejemplo de Estructura Completa
+
+```markdown
+# Título del Proyecto
+
+<!-- hide -->
+
+[metadata y badges]
+
+<!-- endhide -->
+
+---
+
+## 🎯 Tu reto
+
+[Contenido del reto]
+
+---
+
+## 🌱 Cómo iniciar el proyecto
+
+[Instrucciones: plantilla, Codespaces, clonado, etc.]
+
+---
+
+## 💻 Qué debes hacer
+
+- [ ] Tarea 1
+- [ ] Tarea 2
+
+---
+
+## ✅ Qué vamos a evaluar
+
+- [ ] Criterio 1
+- [ ] Criterio 2
+
+---
+
+## 📦 Cómo entregar este proyecto
+
+[Instrucciones]
+
+---
+
+[Footer con información de 4Geeks Academy]
+```

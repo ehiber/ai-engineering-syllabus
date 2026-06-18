@@ -111,7 +111,7 @@ Recommended execution for single-project scope:
 1. Generate preview image directly from the cover template (target project only):
 
 ```bash
-npx playwright screenshot --viewport-size=1024,576 "file://<repo-root>/assets/cover/cover-template.html?title=<url-encoded-title-en>&author=by%204Geeks%20Academy&image=<url-encoded-image-path>" "content/projects/<target_slug>/.learn/preview.png"
+npx playwright screenshot --viewport-size=1024,576 "file://<workspace-root>/ai-engineering-syllabus/assets/cover/cover-template.html?title=<url-encoded-title-en>&author=by%204Geeks%20Academy&image=<url-encoded-image-path>" "ai-engineering-syllabus/content/projects/<target_slug>/.learn/preview.png"
 ```
 
 2. Set in `content/projects/<target_slug>/learn.json`:
@@ -137,7 +137,7 @@ After Phases 0–4 complete, ask whether the project needs an **instructor class
 - Outputs when accepted: `.learn/example/README.md` and `.learn/example/README.es.md`
 - Purpose: shorter parallel scenario (different domain, same technical spine) for live class demos
 
-**How the question is asked**
+**How the question is asked:**
 
 The script `orchestrate_project_from_readme.py` runs this step **after** scaffolding finishes:
 
@@ -157,8 +157,8 @@ If the user answers yes, apply `classroom-example-brief` before closing the task
 Use this command as the default execution path for new projects from README:
 
 ```bash
-python3 .cursor/skills/readme-project-orchestrator/scripts/orchestrate_project_from_readme.py \
-  --repo-root . \
+python3 ai-engineering-syllabus/.cursor/skills/readme-project-orchestrator/scripts/orchestrate_project_from_readme.py \
+  --repo-root ai-engineering-syllabus \
   --target-slug "<target-slug>" \
   --source-readme "<absolute-or-relative-path-to-readme>" \
   --source-readme-es "<optional-path-to-readme-es>" \

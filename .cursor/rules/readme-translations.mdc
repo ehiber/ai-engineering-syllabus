@@ -1,0 +1,48 @@
+---
+description: Regla para traducciones de archivos README
+alwaysApply: true
+---
+
+# Traducción de README
+
+Cuando el usuario solicite traducir un README específico, debes aplicar la traducción sobre el archivo README del idioma objetivo que esté en el mismo directorio.
+
+## Proceso
+
+1. **Identificar el archivo fuente**: El usuario indicará qué README traducir (por ejemplo, `README.es.md` o `README.md`)
+
+2. **Identificar el idioma objetivo**:
+   - Si el usuario pide traducir `README.es.md` → traducir a inglés en `README.md`
+   - Si el usuario pide traducir `README.md` → traducir a español en `README.es.md`
+   - Si hay otros idiomas (ej: `README.fr.md`), seguir el mismo patrón
+
+3. **Aplicar la traducción**:
+   - Leer el archivo fuente completo
+   - Traducir todo el contenido manteniendo:
+     - La estructura y formato markdown
+     - Los enlaces y referencias
+     - Los bloques de código y ejemplos
+     - La estructura de secciones y títulos
+   - Escribir/actualizar el archivo README del idioma objetivo en el mismo directorio
+
+4. **Mantener consistencia**:
+   - Conservar los mismos badges, imágenes y enlaces
+   - Actualizar solo las referencias de idioma (ej: "available in English" → "available in Spanish")
+   - Mantener la misma estructura de archivos y rutas relativas
+   - **Regla explicita para la linea de idioma cruzado**:
+     - En `README.es.md`, la linea debe ir en ingles: `_These instructions are also available in [English](./README.md)._`
+     - En `README.md`, la linea debe ir en espanol: `_Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._`
+
+## Ejemplo
+
+Si el usuario dice: "Traduce README.es.md a inglés"
+
+1. Leer `/ruta/proyecto/README.es.md`
+2. Traducir el contenido al inglés
+3. Escribir/actualizar `/ruta/proyecto/README.md` con la traducción
+
+Si el usuario dice: "Genera el contenido de README.md en inglés a partir de README.es.md"
+
+1. Leer `/ruta/proyecto/README.es.md`
+2. Traducir el contenido al inglés
+3. Escribir/actualizar `/ruta/proyecto/README.md` con la traducción

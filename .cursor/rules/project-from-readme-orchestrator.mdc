@@ -1,0 +1,41 @@
+---
+description: Flujo obligatorio para crear proyectos desde README
+alwaysApply: true
+---
+
+# Project from README Orchestrator
+
+Cuando el usuario pida crear/generar un proyecto desde uno o dos README, es obligatorio usar la skill:
+
+- `ai-engineering-syllabus/.cursor/skills/readme-project-orchestrator/SKILL.md`
+
+## Regla de activación
+
+Aplicar esta regla cuando el prompt incluya intención equivalente a:
+
+- "genera/crea proyecto a partir de README"
+- "nuevo proyecto usando este README"
+- "create project from readme"
+
+## Pregunta obligatoria antes de generar
+
+Antes de crear o copiar archivos del proyecto, **preguntar solo** si quiere el **brief de clase** (`.learn/example/`) — skill `ai-engineering-syllabus/.cursor/skills/classroom-example-brief/SKILL.md`. Ver Phase 5 en el orquestador.
+
+**No preguntar** por bloques citados del reto en el README del estudiante (p. ej. briefing del CTO, requisitos mínimos, “qué significa hacerlo bien”). Eso es **contenido oficial del proyecto** y se copia tal cual desde los README fuente.
+
+## Requisitos mínimos antes de cerrar la tarea
+
+- Debe constar en el informe `classroom_example`: `yes` | `no` | `ask_required`.
+- Deben existir `README.md` y `README.es.md` en el proyecto.
+- Debe existir `.learn/solution/README.md`.
+- Debe existir `learn.json` válido con:
+  - `slug`
+  - `solution`
+  - `preview`
+  - `sharing` bilingüe (`en` y `es`)
+- Debe existir `.learn/preview.png` generado para ese `slug`.
+
+## Alcance
+
+- El proceso de preview/sharing debe ejecutarse solo para el `slug` objetivo.
+- No regenerar social assets globales salvo petición explícita del usuario.
