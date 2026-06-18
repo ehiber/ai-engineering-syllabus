@@ -1,46 +1,37 @@
 {
-  "gitpod": false,
-  "title": {
-    "en": "Designing a Data Pipeline: From Raw Data to Reliable Insights",
-    "es": "Diseñando un Data Pipeline: del dato crudo a los reportes confiables"
-  },
-  "description": {
-    "en": "Design an ETL pipeline architecture for Veridian Logistics: analyze nightly CSV exports with updates-as-inserts, document deduplication and idempotency strategies, specify execution logging, and produce a production-ready PIPELINE_DESIGN.md — no code implementation.",
-    "es": "Diseña la arquitectura de un pipeline ETL para Veridian Logistics: analiza exportaciones CSV nocturnas con actualizaciones como inserts, documenta estrategias de deduplicación e idempotencia, especifica el logging de ejecución y produce un PIPELINE_DESIGN.md listo para producción — sin implementación de código."
-  },
-  "status": "draft",
-  "repository": "https://github.com/4GeeksAcademy/designing-a-data-pipeline",
-  "template_url": "https://github.com/4GeeksAcademy/designing-a-data-pipeline",
-  "slug": "designing-data-pipeline",
-  "difficulty": "intermediate",
-  "duration": 3,
-  "technologies": [
-    "architecture",
-    "data-engineering",
-    "etl",
-    "backend-design",
-    "technical-documentation"
-  ],
-  "translations": [
-    "es",
-    "en"
-  ],
-  "projectType": "project",
-  "grading": "isolated",
-  "localhostOnly": true,
-  "telemetry": {
-    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id="
-  },
-  "solution": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/designing-data-pipeline/.learn/solution/README.md",
-  "preview": "https://raw.githubusercontent.com/4GeeksAcademy/ai-engineering-syllabus/main/content/projects/designing-data-pipeline/.learn/preview.png",
-  "sharing": [
-    {
-      "en": "I just completed Designing a Data Pipeline: From Raw Data to Reliable Insights with LearnPack @4GeeksAcademy. Check it out: https://github.com/4GeeksAcademy/designing-a-data-pipeline #AIEngineering #LearnPack #4GeeksAcademy #dataengineering #etl #architecture",
-      "es": "Acabo de completar Diseñando un Data Pipeline: del dato crudo a los reportes confiables con LearnPack @4GeeksAcademy. Mira el proyecto: https://github.com/4GeeksAcademy/designing-a-data-pipeline #AIEngineering #LearnPack #4GeeksAcademy #dataengineering #etl #architecture"
+    "slug": "designing-data-pipeline-es",
+    "title": {
+        "es": "Dise\u00f1ando un Data Pipeline: del dato crudo a los reportes confiables",
+        "us": "Designing a Data Pipeline: From Raw Data to Reliable Insights"
     },
-    {
-      "en": "Built and shipped: Designing a Data Pipeline: From Raw Data to Reliable Insights. Learning by building with @4GeeksAcademy. https://github.com/4GeeksAcademy/designing-a-data-pipeline #AIEngineering #LearnPack #4GeeksAcademy #dataengineering #etl #architecture",
-      "es": "Construido y publicado: Diseñando un Data Pipeline: del dato crudo a los reportes confiables. Aprendiendo con proyectos reales en @4GeeksAcademy. https://github.com/4GeeksAcademy/designing-a-data-pipeline #AIEngineering #LearnPack #4GeeksAcademy #dataengineering #etl #architecture"
+    "description": {
+        "es": "Dise\u00f1a la arquitectura de un pipeline ETL para Veridian Logistics: analiza exportaciones CSV nocturnas con actualizaciones como inserts, documenta estrategias de deduplicaci\u00f3n e idempotencia, especifica el logging de ejecuci\u00f3n y produce un PIPELINE_DESIGN.md listo para producci\u00f3n \u2014 sin implementaci\u00f3n de c\u00f3digo.",
+        "us": "Design an ETL pipeline architecture for Veridian Logistics: analyze nightly CSV exports with updates-as-inserts, document deduplication and idempotency strategies, specify execution logging, and produce a production-ready PIPELINE_DESIGN.md \u2014 no code implementation."
+    },
+    "preview": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/designing-data-pipeline/preview.png?raw=true",
+    "difficulty": "INTERMEDIATE",
+    "duration": 3,
+    "template_url": "https://github.com/4GeeksAcademy/designing-a-data-pipeline",
+    "gitpod": true,
+    "technologies": [
+        "architecture",
+        "data-engineering",
+        "etl",
+        "backend-design",
+        "technical-documentation"
+    ],
+    "projectType": "tutorial",
+    "solution": {
+        "es": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/designing-data-pipeline/.learn/solution/README.md",
+        "us": "https://github.com/4GeeksAcademy/ai-engineering-syllabus/blob/main/content/projects/designing-data-pipeline/.learn/solution/README.md"
+    },
+    "grading": "incremental",
+    "localhostOnly": false,
+    "delivery": {
+        "instructions": "",
+        "formats": [
+            "url"
+        ],
+        "regex": ""
     }
-  ]
 }
