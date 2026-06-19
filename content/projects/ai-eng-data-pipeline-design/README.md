@@ -44,8 +44,8 @@ These three attributes are what your design document must demonstrate you have t
 ## 🌱 How to Start
 
 1. Run `git pull` on your monorepo fork to make sure you have the latest state.
-2. Explore the [`data/`](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo/tree/main/data) folder in the monorepo — that is where pipeline scripts, intermediate data files, and pipeline documentation live.
-3. Create the file `data/PIPELINE_DESIGN.md` — that is where your design document goes.
+2. Explore the [`data/`](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo/tree/main/data) folder in the monorepo — it contains the subfolders `raw/`, `process/`, `pipelines/`, and `eval/` that you will use throughout this module.
+3. Create the file `data/pipelines/PIPELINE_DESIGN.md` — that is where your design document goes.
 4. Read your `CONTEXT-company.md` to identify which telemetry events you have available, which KPIs you already calculate, and what the specific requirements of your company are.
 
 > **Note on tooling:** Today you are introduced to **Prefect** as an orchestration framework — flows, tasks, states, and configuration blocks. Your design document should reflect how you would organize your pipeline using these concepts, even though the code implementation comes over the next days.
@@ -82,7 +82,7 @@ These three attributes are what your design document must demonstrate you have t
 
 ## ✅ What We Will Evaluate
 
-- [ ] The file `data/PIPELINE_DESIGN.md` exists in the monorepo and is written in readable Markdown.
+- [ ] The file `data/pipelines/PIPELINE_DESIGN.md` exists in the monorepo and is written in readable Markdown.
 - [ ] The pipeline purpose is defined in a single concrete sentence that mentions the company's business, not only the technology.
 - [ ] The data flow diagram shows at least three distinct stages (extraction, transformation, load) with the real entity or table names from the company.
 - [ ] The strategy for handling updates to existing records is documented with a concrete mechanism (e.g., upsert by primary key, last-modified timestamp, control table).
@@ -95,7 +95,7 @@ These three attributes are what your design document must demonstrate you have t
 
 ## 📦 How to Submit
 
-1. Make sure `data/PIPELINE_DESIGN.md` is committed to your monorepo fork.
+1. Make sure `data/pipelines/PIPELINE_DESIGN.md` is committed to your monorepo fork.
 2. Commit with the message: `feat: add pipeline design document`.
 3. Push your changes to your GitHub repository and share the URL with your tech lead.
 

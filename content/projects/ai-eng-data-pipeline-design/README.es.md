@@ -44,8 +44,8 @@ Estos tres atributos son los que tu documento de diseño debe demostrar que has 
 ## 🌱 Cómo Empezar
 
 1. Haz un `git pull` en tu fork del monorepo para asegurarte de tener el estado más reciente.
-2. Explora la carpeta [`data/`](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo/tree/main/data) del monorepo — ahí es donde viven los scripts, archivos de datos intermedios y documentación del pipeline.
-3. Crea el archivo `data/PIPELINE_DESIGN.md` — ahí va tu documento de diseño.
+2. Explora la carpeta [`data/`](https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo/tree/main/data) del monorepo — contiene las subcarpetas `raw/`, `process/`, `pipelines/` y `eval/` que usarás a lo largo de este módulo.
+3. Crea el archivo `data/pipelines/PIPELINE_DESIGN.md` — ahí va tu documento de diseño.
 4. Lee tu `CONTEXT-empresa.md` para identificar qué eventos de telemetría tienes disponibles, qué KPIs ya calculas y cuáles son los requisitos específicos de tu empresa.
 
 > **Nota sobre las herramientas:** Hoy introduces **Prefect** como framework de orquestación — flows, tasks, estados y bloques de configuración. Tu documento de diseño debe reflejar cómo organizarías tu pipeline usando estos conceptos, aunque la implementación en código llega en los próximos días.
@@ -82,7 +82,7 @@ Estos tres atributos son los que tu documento de diseño debe demostrar que has 
 
 ## ✅ Qué Evaluaremos
 
-- [ ] El documento `data/PIPELINE_DESIGN.md` existe en el monorepo y está escrito en Markdown legible.
+- [ ] El documento `data/pipelines/PIPELINE_DESIGN.md` existe en el monorepo y está escrito en Markdown legible.
 - [ ] El propósito del pipeline está definido en una frase concreta que menciona el negocio de la empresa, no solo la tecnología.
 - [ ] El diagrama de flujo muestra al menos tres etapas diferenciadas (extracción, transformación, carga) con el nombre de las entidades o tablas reales de la empresa.
 - [ ] La estrategia para manejar actualizaciones de registros existentes está documentada con un mecanismo concreto (ej.: upsert por clave primaria, marca de tiempo de última modificación, tabla de control).
@@ -95,7 +95,7 @@ Estos tres atributos son los que tu documento de diseño debe demostrar que has 
 
 ## 📦 Cómo Entregar
 
-1. Asegúrate de que `data/PIPELINE_DESIGN.md` está en tu fork del monorepo.
+1. Asegúrate de que `data/pipelines/PIPELINE_DESIGN.md` está en tu fork del monorepo.
 2. Haz commit con el mensaje: `feat: add pipeline design document`.
 3. Sube los cambios a tu repositorio en GitHub y comparte la URL con tu tech lead.
 
