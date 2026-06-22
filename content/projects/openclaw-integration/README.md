@@ -9,9 +9,9 @@ By [@marcogonzalo](https://github.com/marcogonzalo) and [other contributors](htt
 
 _Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
 
-**Before you start**: 📗 [Read the instructions](https://4geeks.com/lesson/how-to-start-a-project) on how to start a coding project.
-
 <!-- endhide -->
+
+**Before you start**: 📗 [Read the instructions](https://4geeks.com/lesson/how-to-start-a-project) on how to start a coding project.
 
 ---
 
